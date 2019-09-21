@@ -1,0 +1,226 @@
+{
+  "contractName": "Resolvable",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "resolutionCriteriaMet",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "/*\n * Lottery oracle\n *\n * Copyright (C) 2017-2018 Hubii AS\n */\n\npragma solidity ^0.4.25;\n\n/// @title Resolvable\n/// @author Jens Ivar Jørdre <jensivar@hubii.com>\n/// @notice A resolvable base contract\ncontract Resolvable {\n    /// @notice Gauge whether the resolution criteria have been met\n    /// @return true if resolution criteria have been met, else false   \n    function resolutionCriteriaMet() public view returns (bool);\n}\n",
+  "sourcePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Resolvable.sol",
+  "ast": {
+    "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Resolvable.sol",
+    "exportedSymbols": {
+      "Resolvable": [
+        1949
+      ]
+    },
+    "id": 1950,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1943,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".25"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "65:24:6"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Resolvable\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A resolvable base contract",
+        "fullyImplemented": false,
+        "id": 1949,
+        "linearizedBaseContracts": [
+          1949
+        ],
+        "name": "Resolvable",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@notice Gauge whether the resolution criteria have been met\n @return true if resolution criteria have been met, else false   ",
+            "id": 1948,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "resolutionCriteriaMet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1944,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "400:2:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1947,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1946,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1948,
+                  "src": "424:4:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1945,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "424:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "423:6:6"
+            },
+            "scope": 1949,
+            "src": "370:60:6",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1950,
+        "src": "203:229:6"
+      }
+    ],
+    "src": "65:368:6"
+  },
+  "legacyAST": {
+    "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Resolvable.sol",
+    "exportedSymbols": {
+      "Resolvable": [
+        1949
+      ]
+    },
+    "id": 1950,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1943,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".25"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "65:24:6"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Resolvable\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A resolvable base contract",
+        "fullyImplemented": false,
+        "id": 1949,
+        "linearizedBaseContracts": [
+          1949
+        ],
+        "name": "Resolvable",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@notice Gauge whether the resolution criteria have been met\n @return true if resolution criteria have been met, else false   ",
+            "id": 1948,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "resolutionCriteriaMet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1944,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "400:2:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1947,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1946,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1948,
+                  "src": "424:4:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1945,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "424:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "423:6:6"
+            },
+            "scope": 1949,
+            "src": "370:60:6",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1950,
+        "src": "203:229:6"
+      }
+    ],
+    "src": "65:368:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.0-beta.1",
+  "updatedAt": "2018-10-03T15:59:44.217Z"
+}

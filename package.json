@@ -1,0 +1,33 @@
+{
+  "author": {
+    "name": "Jens Ivar Jørdre",
+    "email": "jensivar@hubii.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "glob": "^7.1.4"
+  },
+  "deprecated": false,
+  "description": "Smart contract abstractions for lottery oracle deployed to Ropsten",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  },
+  "keywords": [
+    "smart contracts",
+    "ethereum"
+  ],
+  "license": "LGPL-3.0",
+  "main": "lib/index.js",
+  "name": "lottery-oracle-contract-abstractions-ropsten",
+  "scripts": {
+    "publish:major": "npm version major && npm publish",
+    "publish:minor": "npm version minor && npm publish",
+    "symlink:build": "[ ! -d ../../build/contracts ] && mkdir -p ../../build && ln -vs $(pwd)/build/contracts ../../build/contracts",
+    "symlink:build:force": "rm -rf ../../build/contracts && npm run symlink:build",
+    "symlink:events": "[ ! -d ../../events ] && ln -vs $(pwd)/events ../../events",
+    "symlink:events:force": "rm -rf ../../events && npm run symlink:events",
+    "test": "mocha lib/**/*.spec.js"
+  },
+  "version": "1.0.0"
+}
