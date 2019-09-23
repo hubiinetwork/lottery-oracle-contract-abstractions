@@ -1,0 +1,1789 @@
+{
+  "contractName": "FractionalBalanceAllocator",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "fraction",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_fraction",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "allocate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.11+commit.c082d0b4\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"allocate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"fraction\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_fraction\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"author\":\"Jens Ivar J\\u00f8rdre <jensivar@hubii.com>\",\"methods\":{},\"title\":\"FractionalBalanceAllocator\"},\"userdoc\":{\"methods\":{\"allocate()\":{\"notice\":\"Return the defined allocation from the allocator\"}},\"notice\":\"A bounty allocator allocating by fraction of the bounty fund's token balance\"}},\"settings\":{\"compilationTarget\":{\"/opt/buildagent/work/9988d0feca52d9d9/contracts/FractionalBalanceAllocator.sol\":\"FractionalBalanceAllocator\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/buildagent/work/9988d0feca52d9d9/contracts/Allocator.sol\":{\"keccak256\":\"0x284ac2245b2ac24cf2a5e75aa6b08dbd5a43119048514680d218c6122f0fdb40\",\"urls\":[\"bzz-raw://b1a511aba1c8ffc0374270bfaac005801cd3752f883bd0ffc26058316c0a8c44\",\"dweb:/ipfs/QmWNCjgiBD4MYMrsatPtfJVXu6HT9gt7bWZMPhsJUrWGHi\"]},\"/opt/buildagent/work/9988d0feca52d9d9/contracts/BountyFund.sol\":{\"keccak256\":\"0x6d990c26766c738f5662cfed914af6deda8714cd45d8ac0812ea67dde686d4c9\",\"urls\":[\"bzz-raw://db445cff98f3af4589bcb4250a9d11b371b7aaddfed0a9dbb581b99147d04572\",\"dweb:/ipfs/QmXweM2UzGJdxezPCHyLiQFMDJXDKirLdWzjYRh8iuGAu4\"]},\"/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol\":{\"keccak256\":\"0xc5dd0ff7152da24cdb793b8e9fe020b2bc27c3eeb5790b241491f80ad53d1acf\",\"urls\":[\"bzz-raw://84d1448f609eec6b8c1702896cd1dd531845d702e882957f077ea556feb1b0a5\",\"dweb:/ipfs/QmPgmZ3ifkYzTNGnsZXYZrB9svdjKNT66cMRM1NvDj1BdL\"]},\"/opt/buildagent/work/9988d0feca52d9d9/contracts/FractionalBalanceAllocator.sol\":{\"keccak256\":\"0x84313f4c7f8c1e8d4795197e3fdd2bfdc6dba129b2e6e817bedb74f676343311\",\"urls\":[\"bzz-raw://212c1b76717c9c569b910bf47084cb3109818d1b3ca73e22c3ac491330f8148c\",\"dweb:/ipfs/QmYgupZhip56pKjeyEVpKpAAr9iG1cyLaKCxP24vHyYgTS\"]},\"/opt/buildagent/work/9988d0feca52d9d9/contracts/RBACed.sol\":{\"keccak256\":\"0x5aa1b537cf0ff81234e82148dbecbc808ab15917d9514be42f8c5e6d48bcd512\",\"urls\":[\"bzz-raw://bee61c12a715962c9835378e67f941295265f78387e2c6dcc220ef18fdc3295a\",\"dweb:/ipfs/QmSeYN7yNc2DaNvkgnDjzHjFyTr8LpqxC2zbzeV4svUskb\"]},\"openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xb002c378d7b82a101bd659c341518953ca0919d342c0a400196982c0e7e7bcdb\",\"urls\":[\"bzz-raw://00a788c4631466c220b385bdd100c571d24b2deccd657615cfbcef6cadf669a4\",\"dweb:/ipfs/QmTEwDbjJNxmMNCDMqtuou3dyM8Wtp8Q9NFvn7SAVM7Jf3\"]},\"openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x4ccf2d7b51873db1ccfd54ca2adae5eac3b184f9699911ed4490438419f1c690\",\"urls\":[\"bzz-raw://d62d769b2219d5de39013093412623e624fa887f871826ea3bae6052ee893610\",\"dweb:/ipfs/QmV3yVktya1s617QmuzQR2CfuJgUi3dR2xEZY9ecmqZ2G1\"]},\"openzeppelin-solidity/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x852793a3c2f86d336a683b30d688ec3dcfc57451af5a2bf5975cda3b7191a901\",\"urls\":[\"bzz-raw://4f5b57664069671648fb81f55b0082faecdf1b2f159eec6b1fa6cef9b7d73bc5\",\"dweb:/ipfs/QmcyytaLs7zFdb4Uu7C5PmQRhQdB3wA3fUdkV6mkYfdDFH\"]},\"openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x90e8c2521653bbb1768b05889c5760031e688d9cd361f167489b89215e201b95\",\"urls\":[\"bzz-raw://d0abb99bb8bfc2bc0a89902b8ed1dc0442ad08cc78cee64c291b3df6a27bcccc\",\"dweb:/ipfs/QmP5NaEwZthQeM2ESz4WTT3osrP7jhbvu7ocbttBi2JAw6\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516105383803806105388339818101604052602081101561003357600080fd5b810190808051906020019092919050505073__ConstantsLib__________________________62a123336040518163ffffffff1660e01b815260040160206040518083038186803b15801561008757600080fd5b505af415801561009b573d6000803e3d6000fd5b505050506040513d60208110156100b157600080fd5b810190808051906020019092919050505081111561011a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603d8152602001806104fb603d913960400191505060405180910390fd5b80600081905550506103ca806101316000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063abaa99161461003b578063d8894bb514610059575b600080fd5b610043610077565b6040518082815260200191505060405180910390f35b610061610259565b6040518082815260200191505060405180910390f35b600061025473__ConstantsLib__________________________62a123336040518163ffffffff1660e01b815260040160206040518083038186803b1580156100bf57600080fd5b505af41580156100d3573d6000803e3d6000fd5b505050506040513d60208110156100e957600080fd5b81019080805190602001909291905050506102466000543373ffffffffffffffffffffffffffffffffffffffff1663fc0c546a6040518163ffffffff1660e01b815260040160206040518083038186803b15801561014657600080fd5b505afa15801561015a573d6000803e3d6000fd5b505050506040513d602081101561017057600080fd5b810190808051906020019092919050505073ffffffffffffffffffffffffffffffffffffffff166370a08231336040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101fd57600080fd5b505afa158015610211573d6000803e3d6000fd5b505050506040513d602081101561022757600080fd5b810190808051906020019092919050505061025f90919063ffffffff16565b6102e590919063ffffffff16565b905090565b60005481565b60008083141561027257600090506102df565b600082840290508284828161028357fe5b04146102da576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806103756021913960400191505060405180910390fd5b809150505b92915050565b600080821161035c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601a8152602001807f536166654d6174683a206469766973696f6e206279207a65726f00000000000081525060200191505060405180910390fd5b600082848161036757fe5b049050809150509291505056fe536166654d6174683a206d756c7469706c69636174696f6e206f766572666c6f77a265627a7a7231582023717113b3cc3cab896c15df94e064ff73b1dbc9717eec492be4edc52be2a21064736f6c634300050b00324672616374696f6e616c42616c616e6365416c6c6f6361746f723a206672616374696f6e2069732067726561746572207468616e20656e746972657479",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063abaa99161461003b578063d8894bb514610059575b600080fd5b610043610077565b6040518082815260200191505060405180910390f35b610061610259565b6040518082815260200191505060405180910390f35b600061025473__ConstantsLib__________________________62a123336040518163ffffffff1660e01b815260040160206040518083038186803b1580156100bf57600080fd5b505af41580156100d3573d6000803e3d6000fd5b505050506040513d60208110156100e957600080fd5b81019080805190602001909291905050506102466000543373ffffffffffffffffffffffffffffffffffffffff1663fc0c546a6040518163ffffffff1660e01b815260040160206040518083038186803b15801561014657600080fd5b505afa15801561015a573d6000803e3d6000fd5b505050506040513d602081101561017057600080fd5b810190808051906020019092919050505073ffffffffffffffffffffffffffffffffffffffff166370a08231336040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101fd57600080fd5b505afa158015610211573d6000803e3d6000fd5b505050506040513d602081101561022757600080fd5b810190808051906020019092919050505061025f90919063ffffffff16565b6102e590919063ffffffff16565b905090565b60005481565b60008083141561027257600090506102df565b600082840290508284828161028357fe5b04146102da576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806103756021913960400191505060405180910390fd5b809150505b92915050565b600080821161035c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601a8152602001807f536166654d6174683a206469766973696f6e206279207a65726f00000000000081525060200191505060405180910390fd5b600082848161036757fe5b049050809150509291505056fe536166654d6174683a206d756c7469706c69636174696f6e206f766572666c6f77a265627a7a7231582023717113b3cc3cab896c15df94e064ff73b1dbc9717eec492be4edc52be2a21064736f6c634300050b0032",
+  "sourceMap": "560:708:7:-;;;678:295;8:9:-1;5:2;;;30:1;27;20:12;5:2;678:295:7;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;678:295:7;;;;;;;;;;;;;;;;814:12;:22;:24;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;814:24:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;814:24:7;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;814:24:7;;;;;;;;;;;;;;;;801:9;:37;;793:111;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;957:9;946:8;:20;;;;678:295;560:708;;;;;;",
+  "deployedSourceMap": "560:708:7:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;560:708:7;;;;;;;;;;;;;;;;;;;;;;;;1044:222;;;:::i;:::-;;;;;;;;;;;;;;;;;;;648:23;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1044:222;1097:7;1127:132;1234:12;:22;:24;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1234:24:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1234:24:7;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1234:24:7;;;;;;;;;;;;;;;;1127:93;1211:8;;1138:10;1127:28;;;:30;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1127:30:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1127:30:7;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1127:30:7;;;;;;;;;;;;;;;;:49;;;1185:10;1127:70;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1127:70:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1127:70:7;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1127:70:7;;;;;;;;;;;;;;;;:83;;:93;;;;:::i;:::-;:106;;:132;;;;:::i;:::-;1120:139;;1044:222;:::o;648:23::-;;;;:::o;1693:458:21:-;1751:7;1996:1;1991;:6;1987:45;;;2020:1;2013:8;;;;1987:45;2042:9;2058:1;2054;:5;2042:17;;2086:1;2081;2077;:5;;;;;;:10;2069:56;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2143:1;2136:8;;;1693:458;;;;;:::o;2606:326::-;2664:7;2761:1;2757;:5;2749:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2803:9;2819:1;2815;:5;;;;;;2803:17;;2924:1;2917:8;;;2606:326;;;;:::o",
+  "source": "/*\n * Lottery oracle\n *\n * Copyright (C) 2017-2019 Hubii AS\n */\n\npragma solidity ^0.5.11;\n\nimport {Allocator} from \"./Allocator.sol\";\nimport {SafeMath} from \"openzeppelin-solidity/contracts/math/SafeMath.sol\";\nimport {BountyFund} from \"./BountyFund.sol\";\nimport {ERC20} from \"openzeppelin-solidity/contracts/token/ERC20/ERC20.sol\";\nimport {ConstantsLib} from \"./ConstantsLib.sol\";\n\n/// @title FractionalBalanceAllocator\n/// @author Jens Ivar Jørdre <jensivar@hubii.com>\n/// @notice A bounty allocator allocating by fraction of the bounty fund's token balance\ncontract FractionalBalanceAllocator is Allocator {\n    using SafeMath for uint256;\n\n    uint256 public fraction;\n\n    constructor(uint256 _fraction)\n    public\n    {\n        // Require that fraction is less than the entirety\n        require(_fraction <= ConstantsLib.PARTS_PER(), \"FractionalBalanceAllocator: fraction is greater than entirety\");\n\n        // Initialize fraction\n        fraction = _fraction;\n    }\n\n    /// @notice Return the defined allocation from the allocator\n    function allocate()\n    public\n    view\n    returns (uint256)\n    {\n        return BountyFund(msg.sender).token()\n        .balanceOf(address(msg.sender))\n        .mul(fraction)\n        .div(ConstantsLib.PARTS_PER());\n    }\n}",
+  "sourcePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/FractionalBalanceAllocator.sol",
+  "ast": {
+    "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/FractionalBalanceAllocator.sol",
+    "exportedSymbols": {
+      "FractionalBalanceAllocator": [
+        1127
+      ]
+    },
+    "id": 1128,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1063,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "65:24:7"
+      },
+      {
+        "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Allocator.sol",
+        "file": "./Allocator.sol",
+        "id": 1065,
+        "nodeType": "ImportDirective",
+        "scope": 1128,
+        "sourceUnit": 307,
+        "src": "91:42:7",
+        "symbolAliases": [
+          {
+            "foreign": 1064,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "openzeppelin-solidity/contracts/math/SafeMath.sol",
+        "file": "openzeppelin-solidity/contracts/math/SafeMath.sol",
+        "id": 1067,
+        "nodeType": "ImportDirective",
+        "scope": 1128,
+        "sourceUnit": 3959,
+        "src": "134:75:7",
+        "symbolAliases": [
+          {
+            "foreign": 1066,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/BountyFund.sol",
+        "file": "./BountyFund.sol",
+        "id": 1069,
+        "nodeType": "ImportDirective",
+        "scope": 1128,
+        "sourceUnit": 933,
+        "src": "210:44:7",
+        "symbolAliases": [
+          {
+            "foreign": 1068,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
+        "file": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
+        "id": 1071,
+        "nodeType": "ImportDirective",
+        "scope": 1128,
+        "sourceUnit": 4356,
+        "src": "255:76:7",
+        "symbolAliases": [
+          {
+            "foreign": 1070,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol",
+        "file": "./ConstantsLib.sol",
+        "id": 1073,
+        "nodeType": "ImportDirective",
+        "scope": 1128,
+        "sourceUnit": 1062,
+        "src": "332:48:7",
+        "symbolAliases": [
+          {
+            "foreign": 1072,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1074,
+              "name": "Allocator",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 306,
+              "src": "599:9:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Allocator_$306",
+                "typeString": "contract Allocator"
+              }
+            },
+            "id": 1075,
+            "nodeType": "InheritanceSpecifier",
+            "src": "599:9:7"
+          }
+        ],
+        "contractDependencies": [
+          306
+        ],
+        "contractKind": "contract",
+        "documentation": "@title FractionalBalanceAllocator\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A bounty allocator allocating by fraction of the bounty fund's token balance",
+        "fullyImplemented": true,
+        "id": 1127,
+        "linearizedBaseContracts": [
+          1127,
+          306
+        ],
+        "name": "FractionalBalanceAllocator",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 1078,
+            "libraryName": {
+              "contractScope": null,
+              "id": 1076,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3958,
+              "src": "621:8:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$3958",
+                "typeString": "library SafeMath"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "615:27:7",
+            "typeName": {
+              "id": 1077,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "634:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 1080,
+            "name": "fraction",
+            "nodeType": "VariableDeclaration",
+            "scope": 1127,
+            "src": "648:23:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1079,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "648:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1098,
+              "nodeType": "Block",
+              "src": "724:249:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 1090,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1086,
+                          "name": "_fraction",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1082,
+                          "src": "801:9:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "<=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 1087,
+                              "name": "ConstantsLib",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1061,
+                              "src": "814:12:7",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$1061_$",
+                                "typeString": "type(library ConstantsLib)"
+                              }
+                            },
+                            "id": 1088,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "PARTS_PER",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 1060,
+                            "src": "814:22:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
+                              "typeString": "function () pure returns (uint256)"
+                            }
+                          },
+                          "id": 1089,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "814:24:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "801:37:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4672616374696f6e616c42616c616e6365416c6c6f6361746f723a206672616374696f6e2069732067726561746572207468616e20656e746972657479",
+                        "id": 1091,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "840:63:7",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_937d05a9f9bb32a32b22103007437c7ea282c16d9ea55cfb484164cab9c72a19",
+                          "typeString": "literal_string \"FractionalBalanceAllocator: fraction is greater than entirety\""
+                        },
+                        "value": "FractionalBalanceAllocator: fraction is greater than entirety"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_937d05a9f9bb32a32b22103007437c7ea282c16d9ea55cfb484164cab9c72a19",
+                          "typeString": "literal_string \"FractionalBalanceAllocator: fraction is greater than entirety\""
+                        }
+                      ],
+                      "id": 1085,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4528,
+                        4529
+                      ],
+                      "referencedDeclaration": 4529,
+                      "src": "793:7:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 1092,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "793:111:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1093,
+                  "nodeType": "ExpressionStatement",
+                  "src": "793:111:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1096,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 1094,
+                      "name": "fraction",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1080,
+                      "src": "946:8:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 1095,
+                      "name": "_fraction",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1082,
+                      "src": "957:9:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "946:20:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 1097,
+                  "nodeType": "ExpressionStatement",
+                  "src": "946:20:7"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1099,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1083,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1082,
+                  "name": "_fraction",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "690:17:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1081,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "690:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "689:19:7"
+            },
+            "returnParameters": {
+              "id": 1084,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "724:0:7"
+            },
+            "scope": 1127,
+            "src": "678:295:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1125,
+              "nodeType": "Block",
+              "src": "1110:156:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1120,
+                            "name": "ConstantsLib",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1061,
+                            "src": "1234:12:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$1061_$",
+                              "typeString": "type(library ConstantsLib)"
+                            }
+                          },
+                          "id": 1121,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "PARTS_PER",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 1060,
+                          "src": "1234:22:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
+                            "typeString": "function () pure returns (uint256)"
+                          }
+                        },
+                        "id": 1122,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1234:24:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 1117,
+                            "name": "fraction",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1080,
+                            "src": "1211:8:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "arguments": [
+                              {
+                                "argumentTypes": null,
+                                "arguments": [
+                                  {
+                                    "argumentTypes": null,
+                                    "expression": {
+                                      "argumentTypes": null,
+                                      "id": 1112,
+                                      "name": "msg",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 4525,
+                                      "src": "1185:3:7",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_magic_message",
+                                        "typeString": "msg"
+                                      }
+                                    },
+                                    "id": 1113,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "sender",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": null,
+                                    "src": "1185:10:7",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_address_payable",
+                                      "typeString": "address payable"
+                                    }
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_address_payable",
+                                      "typeString": "address payable"
+                                    }
+                                  ],
+                                  "id": 1111,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "nodeType": "ElementaryTypeNameExpression",
+                                  "src": "1177:7:7",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_type$_t_address_$",
+                                    "typeString": "type(address)"
+                                  },
+                                  "typeName": "address"
+                                },
+                                "id": 1114,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "typeConversion",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "1177:19:7",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_address_payable",
+                                  "typeString": "address payable"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address_payable",
+                                  "typeString": "address payable"
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": null,
+                                "arguments": [],
+                                "expression": {
+                                  "argumentTypes": [],
+                                  "expression": {
+                                    "argumentTypes": null,
+                                    "arguments": [
+                                      {
+                                        "argumentTypes": null,
+                                        "expression": {
+                                          "argumentTypes": null,
+                                          "id": 1105,
+                                          "name": "msg",
+                                          "nodeType": "Identifier",
+                                          "overloadedDeclarations": [],
+                                          "referencedDeclaration": 4525,
+                                          "src": "1138:3:7",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_magic_message",
+                                            "typeString": "msg"
+                                          }
+                                        },
+                                        "id": 1106,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "sender",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": null,
+                                        "src": "1138:10:7",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_address_payable",
+                                          "typeString": "address payable"
+                                        }
+                                      }
+                                    ],
+                                    "expression": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_address_payable",
+                                          "typeString": "address payable"
+                                        }
+                                      ],
+                                      "id": 1104,
+                                      "name": "BountyFund",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 932,
+                                      "src": "1127:10:7",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_type$_t_contract$_BountyFund_$932_$",
+                                        "typeString": "type(contract BountyFund)"
+                                      }
+                                    },
+                                    "id": 1107,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "kind": "typeConversion",
+                                    "lValueRequested": false,
+                                    "names": [],
+                                    "nodeType": "FunctionCall",
+                                    "src": "1127:22:7",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_contract$_BountyFund_$932",
+                                      "typeString": "contract BountyFund"
+                                    }
+                                  },
+                                  "id": 1108,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "token",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 803,
+                                  "src": "1127:28:7",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ERC20_$4355_$",
+                                    "typeString": "function () view external returns (contract ERC20)"
+                                  }
+                                },
+                                "id": 1109,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "functionCall",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "1127:30:7",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_contract$_ERC20_$4355",
+                                  "typeString": "contract ERC20"
+                                }
+                              },
+                              "id": 1110,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "balanceOf",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 3999,
+                              "src": "1127:49:7",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                                "typeString": "function (address) view external returns (uint256)"
+                              }
+                            },
+                            "id": 1115,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "1127:70:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 1116,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "mul",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 3911,
+                          "src": "1127:83:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 1118,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1127:93:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "id": 1119,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "div",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3936,
+                      "src": "1127:106:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                        "typeString": "function (uint256,uint256) pure returns (uint256)"
+                      }
+                    },
+                    "id": 1123,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1127:132:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 1103,
+                  "id": 1124,
+                  "nodeType": "Return",
+                  "src": "1120:139:7"
+                }
+              ]
+            },
+            "documentation": "@notice Return the defined allocation from the allocator",
+            "id": 1126,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "allocate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1100,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1061:2:7"
+            },
+            "returnParameters": {
+              "id": 1103,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1102,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1126,
+                  "src": "1097:7:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1101,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1097:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1096:9:7"
+            },
+            "scope": 1127,
+            "src": "1044:222:7",
+            "stateMutability": "view",
+            "superFunction": 305,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1128,
+        "src": "560:708:7"
+      }
+    ],
+    "src": "65:1203:7"
+  },
+  "legacyAST": {
+    "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/FractionalBalanceAllocator.sol",
+    "exportedSymbols": {
+      "FractionalBalanceAllocator": [
+        1127
+      ]
+    },
+    "id": 1128,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1063,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "65:24:7"
+      },
+      {
+        "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Allocator.sol",
+        "file": "./Allocator.sol",
+        "id": 1065,
+        "nodeType": "ImportDirective",
+        "scope": 1128,
+        "sourceUnit": 307,
+        "src": "91:42:7",
+        "symbolAliases": [
+          {
+            "foreign": 1064,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "openzeppelin-solidity/contracts/math/SafeMath.sol",
+        "file": "openzeppelin-solidity/contracts/math/SafeMath.sol",
+        "id": 1067,
+        "nodeType": "ImportDirective",
+        "scope": 1128,
+        "sourceUnit": 3959,
+        "src": "134:75:7",
+        "symbolAliases": [
+          {
+            "foreign": 1066,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/BountyFund.sol",
+        "file": "./BountyFund.sol",
+        "id": 1069,
+        "nodeType": "ImportDirective",
+        "scope": 1128,
+        "sourceUnit": 933,
+        "src": "210:44:7",
+        "symbolAliases": [
+          {
+            "foreign": 1068,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
+        "file": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
+        "id": 1071,
+        "nodeType": "ImportDirective",
+        "scope": 1128,
+        "sourceUnit": 4356,
+        "src": "255:76:7",
+        "symbolAliases": [
+          {
+            "foreign": 1070,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol",
+        "file": "./ConstantsLib.sol",
+        "id": 1073,
+        "nodeType": "ImportDirective",
+        "scope": 1128,
+        "sourceUnit": 1062,
+        "src": "332:48:7",
+        "symbolAliases": [
+          {
+            "foreign": 1072,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1074,
+              "name": "Allocator",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 306,
+              "src": "599:9:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Allocator_$306",
+                "typeString": "contract Allocator"
+              }
+            },
+            "id": 1075,
+            "nodeType": "InheritanceSpecifier",
+            "src": "599:9:7"
+          }
+        ],
+        "contractDependencies": [
+          306
+        ],
+        "contractKind": "contract",
+        "documentation": "@title FractionalBalanceAllocator\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A bounty allocator allocating by fraction of the bounty fund's token balance",
+        "fullyImplemented": true,
+        "id": 1127,
+        "linearizedBaseContracts": [
+          1127,
+          306
+        ],
+        "name": "FractionalBalanceAllocator",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 1078,
+            "libraryName": {
+              "contractScope": null,
+              "id": 1076,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3958,
+              "src": "621:8:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$3958",
+                "typeString": "library SafeMath"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "615:27:7",
+            "typeName": {
+              "id": 1077,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "634:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 1080,
+            "name": "fraction",
+            "nodeType": "VariableDeclaration",
+            "scope": 1127,
+            "src": "648:23:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1079,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "648:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1098,
+              "nodeType": "Block",
+              "src": "724:249:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 1090,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1086,
+                          "name": "_fraction",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1082,
+                          "src": "801:9:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "<=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 1087,
+                              "name": "ConstantsLib",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1061,
+                              "src": "814:12:7",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$1061_$",
+                                "typeString": "type(library ConstantsLib)"
+                              }
+                            },
+                            "id": 1088,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "PARTS_PER",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 1060,
+                            "src": "814:22:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
+                              "typeString": "function () pure returns (uint256)"
+                            }
+                          },
+                          "id": 1089,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "814:24:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "801:37:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4672616374696f6e616c42616c616e6365416c6c6f6361746f723a206672616374696f6e2069732067726561746572207468616e20656e746972657479",
+                        "id": 1091,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "840:63:7",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_937d05a9f9bb32a32b22103007437c7ea282c16d9ea55cfb484164cab9c72a19",
+                          "typeString": "literal_string \"FractionalBalanceAllocator: fraction is greater than entirety\""
+                        },
+                        "value": "FractionalBalanceAllocator: fraction is greater than entirety"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_937d05a9f9bb32a32b22103007437c7ea282c16d9ea55cfb484164cab9c72a19",
+                          "typeString": "literal_string \"FractionalBalanceAllocator: fraction is greater than entirety\""
+                        }
+                      ],
+                      "id": 1085,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4528,
+                        4529
+                      ],
+                      "referencedDeclaration": 4529,
+                      "src": "793:7:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 1092,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "793:111:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1093,
+                  "nodeType": "ExpressionStatement",
+                  "src": "793:111:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1096,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 1094,
+                      "name": "fraction",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1080,
+                      "src": "946:8:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 1095,
+                      "name": "_fraction",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1082,
+                      "src": "957:9:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "946:20:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 1097,
+                  "nodeType": "ExpressionStatement",
+                  "src": "946:20:7"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1099,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1083,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1082,
+                  "name": "_fraction",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1099,
+                  "src": "690:17:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1081,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "690:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "689:19:7"
+            },
+            "returnParameters": {
+              "id": 1084,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "724:0:7"
+            },
+            "scope": 1127,
+            "src": "678:295:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1125,
+              "nodeType": "Block",
+              "src": "1110:156:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1120,
+                            "name": "ConstantsLib",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1061,
+                            "src": "1234:12:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$1061_$",
+                              "typeString": "type(library ConstantsLib)"
+                            }
+                          },
+                          "id": 1121,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "PARTS_PER",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 1060,
+                          "src": "1234:22:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
+                            "typeString": "function () pure returns (uint256)"
+                          }
+                        },
+                        "id": 1122,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1234:24:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 1117,
+                            "name": "fraction",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1080,
+                            "src": "1211:8:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "arguments": [
+                              {
+                                "argumentTypes": null,
+                                "arguments": [
+                                  {
+                                    "argumentTypes": null,
+                                    "expression": {
+                                      "argumentTypes": null,
+                                      "id": 1112,
+                                      "name": "msg",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 4525,
+                                      "src": "1185:3:7",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_magic_message",
+                                        "typeString": "msg"
+                                      }
+                                    },
+                                    "id": 1113,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "sender",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": null,
+                                    "src": "1185:10:7",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_address_payable",
+                                      "typeString": "address payable"
+                                    }
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_address_payable",
+                                      "typeString": "address payable"
+                                    }
+                                  ],
+                                  "id": 1111,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "nodeType": "ElementaryTypeNameExpression",
+                                  "src": "1177:7:7",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_type$_t_address_$",
+                                    "typeString": "type(address)"
+                                  },
+                                  "typeName": "address"
+                                },
+                                "id": 1114,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "typeConversion",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "1177:19:7",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_address_payable",
+                                  "typeString": "address payable"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address_payable",
+                                  "typeString": "address payable"
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": null,
+                                "arguments": [],
+                                "expression": {
+                                  "argumentTypes": [],
+                                  "expression": {
+                                    "argumentTypes": null,
+                                    "arguments": [
+                                      {
+                                        "argumentTypes": null,
+                                        "expression": {
+                                          "argumentTypes": null,
+                                          "id": 1105,
+                                          "name": "msg",
+                                          "nodeType": "Identifier",
+                                          "overloadedDeclarations": [],
+                                          "referencedDeclaration": 4525,
+                                          "src": "1138:3:7",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_magic_message",
+                                            "typeString": "msg"
+                                          }
+                                        },
+                                        "id": 1106,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "sender",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": null,
+                                        "src": "1138:10:7",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_address_payable",
+                                          "typeString": "address payable"
+                                        }
+                                      }
+                                    ],
+                                    "expression": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_address_payable",
+                                          "typeString": "address payable"
+                                        }
+                                      ],
+                                      "id": 1104,
+                                      "name": "BountyFund",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 932,
+                                      "src": "1127:10:7",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_type$_t_contract$_BountyFund_$932_$",
+                                        "typeString": "type(contract BountyFund)"
+                                      }
+                                    },
+                                    "id": 1107,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "kind": "typeConversion",
+                                    "lValueRequested": false,
+                                    "names": [],
+                                    "nodeType": "FunctionCall",
+                                    "src": "1127:22:7",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_contract$_BountyFund_$932",
+                                      "typeString": "contract BountyFund"
+                                    }
+                                  },
+                                  "id": 1108,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "token",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 803,
+                                  "src": "1127:28:7",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ERC20_$4355_$",
+                                    "typeString": "function () view external returns (contract ERC20)"
+                                  }
+                                },
+                                "id": 1109,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "functionCall",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "1127:30:7",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_contract$_ERC20_$4355",
+                                  "typeString": "contract ERC20"
+                                }
+                              },
+                              "id": 1110,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "balanceOf",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 3999,
+                              "src": "1127:49:7",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                                "typeString": "function (address) view external returns (uint256)"
+                              }
+                            },
+                            "id": 1115,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "1127:70:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 1116,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "mul",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 3911,
+                          "src": "1127:83:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 1118,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1127:93:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "id": 1119,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "div",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3936,
+                      "src": "1127:106:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                        "typeString": "function (uint256,uint256) pure returns (uint256)"
+                      }
+                    },
+                    "id": 1123,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1127:132:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 1103,
+                  "id": 1124,
+                  "nodeType": "Return",
+                  "src": "1120:139:7"
+                }
+              ]
+            },
+            "documentation": "@notice Return the defined allocation from the allocator",
+            "id": 1126,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "allocate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1100,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1061:2:7"
+            },
+            "returnParameters": {
+              "id": 1103,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1102,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1126,
+                  "src": "1097:7:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1101,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1097:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1096:9:7"
+            },
+            "scope": 1127,
+            "src": "1044:222:7",
+            "stateMutability": "view",
+            "superFunction": 305,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1128,
+        "src": "560:708:7"
+      }
+    ],
+    "src": "65:1203:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.11+commit.c082d0b4.Emscripten.clang"
+  },
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {
+        "ConstantsLib": "0xdAF1352efc82885BD328DFB1565eB30C900AA752"
+      },
+      "address": "0x849395c062C89caA006E7F6472fce9EfD5e12519",
+      "transactionHash": "0xd91dfbb300fbb816948da62a2ad2e36e52e383ac8617c6c84e9b2af4534ce290"
+    }
+  },
+  "schemaVersion": "3.0.16",
+  "updatedAt": "2019-09-22T23:17:18.947Z",
+  "devdoc": {
+    "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
+    "methods": {},
+    "title": "FractionalBalanceAllocator"
+  },
+  "userdoc": {
+    "methods": {
+      "allocate()": {
+        "notice": "Return the defined allocation from the allocator"
+      }
+    },
+    "notice": "A bounty allocator allocating by fraction of the bounty fund's token balance"
+  }
+}

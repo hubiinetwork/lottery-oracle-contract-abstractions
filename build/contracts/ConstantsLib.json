@@ -1,0 +1,297 @@
+{
+  "contractName": "ConstantsLib",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "PARTS_PER",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.11+commit.c082d0b4\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"PARTS_PER\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol\":\"ConstantsLib\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol\":{\"keccak256\":\"0xc5dd0ff7152da24cdb793b8e9fe020b2bc27c3eeb5790b241491f80ad53d1acf\",\"urls\":[\"bzz-raw://84d1448f609eec6b8c1702896cd1dd531845d702e882957f077ea556feb1b0a5\",\"dweb:/ipfs/QmPgmZ3ifkYzTNGnsZXYZrB9svdjKNT66cMRM1NvDj1BdL\"]}},\"version\":1}",
+  "bytecode": "0x6098610024600b82828239805160001a607314601757fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060325760003560e01c8062a12333146037575b600080fd5b603d6053565b6040518082815260200191505060405180910390f35b6000670de0b6b3a764000090509056fea265627a7a723158201ea1d825cae346735619d8964dd2a016284f38ea68c05d83b7b7d1c13afc522464736f6c634300050b0032",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060325760003560e01c8062a12333146037575b600080fd5b603d6053565b6040518082815260200191505060405180910390f35b6000670de0b6b3a764000090509056fea265627a7a723158201ea1d825cae346735619d8964dd2a016284f38ea68c05d83b7b7d1c13afc522464736f6c634300050b0032",
+  "sourceMap": "91:197:6:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
+  "deployedSourceMap": "91:197:6:-;;;;;;;;;;;;;;;;;;;;;;;;191:95;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;245:7;275:4;268:11;;191:95;:::o",
+  "source": "/*\n * Lottery oracle\n *\n * Copyright (C) 2017-2019 Hubii AS\n */\n\npragma solidity ^0.5.11;\n\nlibrary ConstantsLib {\n    // Get the fraction that represents the entirety, equivalent of 100%\n    function PARTS_PER()\n    public\n    pure\n    returns (uint256)\n    {\n        return 1e18;\n    }\n}",
+  "sourcePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol",
+  "ast": {
+    "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol",
+    "exportedSymbols": {
+      "ConstantsLib": [
+        1061
+      ]
+    },
+    "id": 1062,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1052,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "65:24:6"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1061,
+        "linearizedBaseContracts": [
+          1061
+        ],
+        "name": "ConstantsLib",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1059,
+              "nodeType": "Block",
+              "src": "258:28:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "31653138",
+                    "id": 1057,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "275:4:6",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_1000000000000000000_by_1",
+                      "typeString": "int_const 1000000000000000000"
+                    },
+                    "value": "1e18"
+                  },
+                  "functionReturnParameters": 1056,
+                  "id": 1058,
+                  "nodeType": "Return",
+                  "src": "268:11:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1060,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "PARTS_PER",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1053,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "209:2:6"
+            },
+            "returnParameters": {
+              "id": 1056,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1055,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1060,
+                  "src": "245:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1054,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "245:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "244:9:6"
+            },
+            "scope": 1061,
+            "src": "191:95:6",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1062,
+        "src": "91:197:6"
+      }
+    ],
+    "src": "65:223:6"
+  },
+  "legacyAST": {
+    "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol",
+    "exportedSymbols": {
+      "ConstantsLib": [
+        1061
+      ]
+    },
+    "id": 1062,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1052,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "65:24:6"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1061,
+        "linearizedBaseContracts": [
+          1061
+        ],
+        "name": "ConstantsLib",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1059,
+              "nodeType": "Block",
+              "src": "258:28:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "31653138",
+                    "id": 1057,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "275:4:6",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_1000000000000000000_by_1",
+                      "typeString": "int_const 1000000000000000000"
+                    },
+                    "value": "1e18"
+                  },
+                  "functionReturnParameters": 1056,
+                  "id": 1058,
+                  "nodeType": "Return",
+                  "src": "268:11:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1060,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "PARTS_PER",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1053,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "209:2:6"
+            },
+            "returnParameters": {
+              "id": 1056,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1055,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1060,
+                  "src": "245:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1054,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "245:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "244:9:6"
+            },
+            "scope": 1061,
+            "src": "191:95:6",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1062,
+        "src": "91:197:6"
+      }
+    ],
+    "src": "65:223:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.11+commit.c082d0b4.Emscripten.clang"
+  },
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0xdAF1352efc82885BD328DFB1565eB30C900AA752",
+      "transactionHash": "0x0c4c5d22c1b7cc7e67a024e597d8da98c1f01d151af5772cad57a6a207c32478"
+    }
+  },
+  "schemaVersion": "3.0.16",
+  "updatedAt": "2019-09-22T23:17:18.945Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
