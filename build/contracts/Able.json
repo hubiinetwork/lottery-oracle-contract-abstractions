@@ -1,0 +1,2961 @@
+{
+  "contractName": "Able",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        }
+      ],
+      "name": "Disabled",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        }
+      ],
+      "name": "Enabled",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        }
+      ],
+      "name": "enable",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        }
+      ],
+      "name": "disable",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        }
+      ],
+      "name": "enabled",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        }
+      ],
+      "name": "disabled",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.11+commit.c082d0b4\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"}],\"name\":\"disabled\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"}],\"name\":\"enabled\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"}],\"name\":\"enable\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"}],\"name\":\"disable\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"}],\"name\":\"Disabled\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"}],\"name\":\"Enabled\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Jens Ivar J\\u00f8rdre <jensivar@hubii.com>\",\"details\":\"By default all is enabled\",\"methods\":{\"disable(string)\":{\"params\":{\"_name\":\"The name to disable\"}},\"disabled(string)\":{\"params\":{\"_name\":\"The name to gauge\"}},\"enable(string)\":{\"params\":{\"_name\":\"The name to enable\"}},\"enabled(string)\":{\"params\":{\"_name\":\"The name to gauge\"}}},\"title\":\"Able\"},\"userdoc\":{\"methods\":{\"disable(string)\":{\"notice\":\"Disable by the given name\"},\"disabled(string)\":{\"notice\":\"Gauge whether the name is disable\"},\"enable(string)\":{\"notice\":\"Enable by the given name\"},\"enabled(string)\":{\"notice\":\"Gauge whether the name is enabled\"}},\"notice\":\"A base contract that supports general enablement and disablement\"}},\"settings\":{\"compilationTarget\":{\"/opt/buildagent/work/9988d0feca52d9d9/contracts/Able.sol\":\"Able\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/buildagent/work/9988d0feca52d9d9/contracts/Able.sol\":{\"keccak256\":\"0x21ff964983517696d97b57fbe8ae2d8a1bf2836a0efd15bef9a5e29fc1c88098\",\"urls\":[\"bzz-raw://e954e7d5cadac7283e844c96b5188a853341bc4eb270cf4bc3b586e3283ad901\",\"dweb:/ipfs/QmdSkxu7oyaVZqhyu42AECfRuQjesrAH99MtSbiVscUcx1\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506108b5806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80635b526811146100515780637ca41f2614610124578063b8724c59146101f7578063e2998381146102b2575b600080fd5b61010a6004803603602081101561006757600080fd5b810190808035906020019064010000000081111561008457600080fd5b82018360208201111561009657600080fd5b803590602001918460018302840111640100000000831117156100b857600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061036d565b604051808215151515815260200191505060405180910390f35b6101dd6004803603602081101561013a57600080fd5b810190808035906020019064010000000081111561015757600080fd5b82018360208201111561016957600080fd5b8035906020019184600183028401116401000000008311171561018b57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506103ec565b604051808215151515815260200191505060405180910390f35b6102b06004803603602081101561020d57600080fd5b810190808035906020019064010000000081111561022a57600080fd5b82018360208201111561023c57600080fd5b8035906020019184600183028401116401000000008311171561025e57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061046c565b005b61036b600480360360208110156102c857600080fd5b81019080803590602001906401000000008111156102e557600080fd5b8201836020820111156102f757600080fd5b8035906020019184600183028401116401000000008311171561031957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610675565b005b600080826040518082805190602001908083835b602083106103a45780518252602082019150602081019050602083039250610381565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060009054906101000a900460ff169050919050565b600080826040518082805190602001908083835b602083106104235780518252602082019150602081019050602083039250610400565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060009054906101000a900460ff16159050919050565b6000816040518082805190602001908083835b602083106104a2578051825260208201915060208101905060208303925061047f565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060009054906101000a900460ff16610555576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260158152602001807f41626c653a206e616d6520697320656e61626c6564000000000000000000000081525060200191505060405180910390fd5b600080826040518082805190602001908083835b6020831061058c5780518252602082019150602081019050602083039250610569565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060006101000a81548160ff0219169083151502179055507fb5e827ca0218ec32f5872a8cdba7c9a069373f7ef4a2fb0c72ae0f25cf78f1c2816040518080602001828103825283818151815260200191508051906020019080838360005b8381101561063857808201518184015260208101905061061d565b50505050905090810190601f1680156106655780820380516001836020036101000a031916815260200191505b509250505060405180910390a150565b6000816040518082805190602001908083835b602083106106ab5780518252602082019150602081019050602083039250610688565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060009054906101000a900460ff161561075f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f41626c653a206e616d652069732064697361626c65640000000000000000000081525060200191505060405180910390fd5b60016000826040518082805190602001908083835b602083106107975780518252602082019150602081019050602083039250610774565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060006101000a81548160ff0219169083151502179055507f1429691d4b3ebbe1b946e4625c94bd72f57e8d9f73242f97d7c968072cb891b9816040518080602001828103825283818151815260200191508051906020019080838360005b83811015610843578082015181840152602081019050610828565b50505050905090810190601f1680156108705780820380516001836020036101000a031916815260200191505b509250505060405180910390a15056fea265627a7a72315820188f0c04fe932ebea50bac45ef900606a1395e713615437ca5131e74124266c364736f6c634300050b0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80635b526811146100515780637ca41f2614610124578063b8724c59146101f7578063e2998381146102b2575b600080fd5b61010a6004803603602081101561006757600080fd5b810190808035906020019064010000000081111561008457600080fd5b82018360208201111561009657600080fd5b803590602001918460018302840111640100000000831117156100b857600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061036d565b604051808215151515815260200191505060405180910390f35b6101dd6004803603602081101561013a57600080fd5b810190808035906020019064010000000081111561015757600080fd5b82018360208201111561016957600080fd5b8035906020019184600183028401116401000000008311171561018b57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506103ec565b604051808215151515815260200191505060405180910390f35b6102b06004803603602081101561020d57600080fd5b810190808035906020019064010000000081111561022a57600080fd5b82018360208201111561023c57600080fd5b8035906020019184600183028401116401000000008311171561025e57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061046c565b005b61036b600480360360208110156102c857600080fd5b81019080803590602001906401000000008111156102e557600080fd5b8201836020820111156102f757600080fd5b8035906020019184600183028401116401000000008311171561031957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610675565b005b600080826040518082805190602001908083835b602083106103a45780518252602082019150602081019050602083039250610381565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060009054906101000a900460ff169050919050565b600080826040518082805190602001908083835b602083106104235780518252602082019150602081019050602083039250610400565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060009054906101000a900460ff16159050919050565b6000816040518082805190602001908083835b602083106104a2578051825260208201915060208101905060208303925061047f565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060009054906101000a900460ff16610555576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260158152602001807f41626c653a206e616d6520697320656e61626c6564000000000000000000000081525060200191505060405180910390fd5b600080826040518082805190602001908083835b6020831061058c5780518252602082019150602081019050602083039250610569565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060006101000a81548160ff0219169083151502179055507fb5e827ca0218ec32f5872a8cdba7c9a069373f7ef4a2fb0c72ae0f25cf78f1c2816040518080602001828103825283818151815260200191508051906020019080838360005b8381101561063857808201518184015260208101905061061d565b50505050905090810190601f1680156106655780820380516001836020036101000a031916815260200191505b509250505060405180910390a150565b6000816040518082805190602001908083835b602083106106ab5780518252602082019150602081019050602083039250610688565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060009054906101000a900460ff161561075f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f41626c653a206e616d652069732064697361626c65640000000000000000000081525060200191505060405180910390fd5b60016000826040518082805190602001908083835b602083106107975780518252602082019150602081019050602083039250610774565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060006101000a81548160ff0219169083151502179055507f1429691d4b3ebbe1b946e4625c94bd72f57e8d9f73242f97d7c968072cb891b9816040518080602001828103825283818151815260200191508051906020019080838360005b83811015610843578082015181840152602081019050610828565b50505050905090810190601f1680156108705780820380516001836020036101000a031916815260200191505b509250505060405180910390a15056fea265627a7a72315820188f0c04fe932ebea50bac45ef900606a1395e713615437ca5131e74124266c364736f6c634300050b0032",
+  "sourceMap": "270:1544:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;270:1544:0;;;;;;;",
+  "deployedSourceMap": "270:1544:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;270:1544:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1439:122;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1439:122:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;1439:122:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;1439:122:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;1439:122:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;1439:122:0;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1222;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1222:122:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;1222:122:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;1222:122:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;1222:122:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;1222:122:0;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;487:274;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;487:274:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;487:274:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;487:274:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;487:274:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;487:274:0;;;;;;;;;;;;;;;:::i;:::-;;850:277;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;850:277:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;850:277:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;850:277:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;850:277:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;850:277:0;;;;;;;;;;;;;;;:::i;:::-;;1439:122;1511:4;1538:9;1548:5;1538:16;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;1538:16:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1531:23;;1439:122;;;:::o;1222:::-;1293:4;1321:9;1331:5;1321:16;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;1321:16:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1320:17;1313:24;;1222:122;;;:::o;487:274::-;602:9;612:5;602:16;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;602:16:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;594:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;697:5;678:9;688:5;678:16;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;678:16:0;;;;;;;;;;;;;;;;;;;;;;:24;;;;;;;;;;;;;;;;;;740:14;748:5;740:14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;740::0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;487:274;:::o;850:277::-;966:9;976:5;966:16;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;966:16:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;965:17;957:52;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1063:4;1044:9;1054:5;1044:16;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;1044:16:0;;;;;;;;;;;;;;;;;;;;;;:23;;;;;;;;;;;;;;;;;;1105:15;1114:5;1105:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1105:15:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;850:277;:::o",
+  "source": "/*\n * Lottery oracle\n *\n * Copyright (C) 2017-2019 Hubii AS\n */\n\npragma solidity ^0.5.11;\n\n/// @title Able\n/// @author Jens Ivar Jørdre <jensivar@hubii.com>\n/// @notice A base contract that supports general enablement and disablement\n/// @dev By default all is enabled\ncontract Able {\n    event Disabled(string _name);\n    event Enabled(string _name);\n\n    mapping(string => bool) private _disabled;\n\n    /// @notice Enable by the given name\n    /// @param _name The name to enable\n    function enable(string memory _name)\n    public\n    {\n        // Require that the name is disabled\n        require(_disabled[_name], \"Able: name is enabled\");\n\n        // Enable name\n        _disabled[_name] = false;\n\n        // Emit event\n        emit Enabled(_name);\n    }\n\n    /// @notice Disable by the given name\n    /// @param _name The name to disable\n    function disable(string memory _name)\n    public\n    {\n        // Require that the name is enabled\n        require(!_disabled[_name], \"Able: name is disabled\");\n\n        // Disable name\n        _disabled[_name] = true;\n\n        // Emit event\n        emit Disabled(_name);\n    }\n\n    /// @notice Gauge whether the name is enabled\n    /// @param _name The name to gauge\n    function enabled(string memory _name)\n    public\n    view\n    returns (bool)\n    {\n        return !_disabled[_name];\n    }\n\n    /// @notice Gauge whether the name is disable\n    /// @param _name The name to gauge\n    function disabled(string memory _name)\n    public\n    view\n    returns (bool)\n    {\n        return _disabled[_name];\n    }\n\n    modifier onlyEnabled(string memory _name) {\n        require(enabled(_name), \"Able: name is disabled\");\n        _;\n    }\n\n    modifier onlyDisabled(string memory _name) {\n        require(disabled(_name), \"Able: name is enabled\");\n        _;\n    }\n}",
+  "sourcePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Able.sol",
+  "ast": {
+    "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Able.sol",
+    "exportedSymbols": {
+      "Able": [
+        112
+      ]
+    },
+    "id": 113,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "65:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Able\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A base contract that supports general enablement and disablement\n @dev By default all is enabled",
+        "fullyImplemented": true,
+        "id": 112,
+        "linearizedBaseContracts": [
+          112
+        ],
+        "name": "Able",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 5,
+            "name": "Disabled",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3,
+                  "indexed": false,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5,
+                  "src": "305:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "305:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "304:14:0"
+            },
+            "src": "290:29:0"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 9,
+            "name": "Enabled",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7,
+                  "indexed": false,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9,
+                  "src": "338:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 6,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "338:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "337:14:0"
+            },
+            "src": "324:28:0"
+          },
+          {
+            "constant": false,
+            "id": 13,
+            "name": "_disabled",
+            "nodeType": "VariableDeclaration",
+            "scope": 112,
+            "src": "358:41:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+              "typeString": "mapping(string => bool)"
+            },
+            "typeName": {
+              "id": 12,
+              "keyType": {
+                "id": 10,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "366:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "358:23:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                "typeString": "mapping(string => bool)"
+              },
+              "valueType": {
+                "id": 11,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "376:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 35,
+              "nodeType": "Block",
+              "src": "539:222:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 19,
+                          "name": "_disabled",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 13,
+                          "src": "602:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                            "typeString": "mapping(string memory => bool)"
+                          }
+                        },
+                        "id": 21,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 20,
+                          "name": "_name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 15,
+                          "src": "612:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "602:16:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "41626c653a206e616d6520697320656e61626c6564",
+                        "id": 22,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "620:23:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_d562b8a152841838eeebc89015182d1db2d88db2e43fa56e0b90290f5252e3ee",
+                          "typeString": "literal_string \"Able: name is enabled\""
+                        },
+                        "value": "Able: name is enabled"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_d562b8a152841838eeebc89015182d1db2d88db2e43fa56e0b90290f5252e3ee",
+                          "typeString": "literal_string \"Able: name is enabled\""
+                        }
+                      ],
+                      "id": 18,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4502,
+                        4503
+                      ],
+                      "referencedDeclaration": 4503,
+                      "src": "594:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 23,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "594:50:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 24,
+                  "nodeType": "ExpressionStatement",
+                  "src": "594:50:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 29,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 25,
+                        "name": "_disabled",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13,
+                        "src": "678:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                          "typeString": "mapping(string memory => bool)"
+                        }
+                      },
+                      "id": 27,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 26,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 15,
+                        "src": "688:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "678:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "66616c7365",
+                      "id": 28,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "697:5:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    },
+                    "src": "678:24:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 30,
+                  "nodeType": "ExpressionStatement",
+                  "src": "678:24:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 32,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 15,
+                        "src": "748:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 31,
+                      "name": "Enabled",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 9,
+                      "src": "740:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 33,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "740:14:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 34,
+                  "nodeType": "EmitStatement",
+                  "src": "735:19:0"
+                }
+              ]
+            },
+            "documentation": "@notice Enable by the given name\n @param _name The name to enable",
+            "id": 36,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "enable",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 16,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 36,
+                  "src": "503:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 14,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "503:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "502:21:0"
+            },
+            "returnParameters": {
+              "id": 17,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "539:0:0"
+            },
+            "scope": 112,
+            "src": "487:274:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 59,
+              "nodeType": "Block",
+              "src": "903:224:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 45,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "UnaryOperation",
+                        "operator": "!",
+                        "prefix": true,
+                        "src": "965:17:0",
+                        "subExpression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 42,
+                            "name": "_disabled",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 13,
+                            "src": "966:9:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                              "typeString": "mapping(string memory => bool)"
+                            }
+                          },
+                          "id": 44,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 43,
+                            "name": "_name",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 38,
+                            "src": "976:5:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "966:16:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "41626c653a206e616d652069732064697361626c6564",
+                        "id": 46,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "984:24:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_4c0aeb1e8fb434c36cae21561b24ee853d2a7d5d1bd98008dac0d6c2bc91dbc7",
+                          "typeString": "literal_string \"Able: name is disabled\""
+                        },
+                        "value": "Able: name is disabled"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_4c0aeb1e8fb434c36cae21561b24ee853d2a7d5d1bd98008dac0d6c2bc91dbc7",
+                          "typeString": "literal_string \"Able: name is disabled\""
+                        }
+                      ],
+                      "id": 41,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4502,
+                        4503
+                      ],
+                      "referencedDeclaration": 4503,
+                      "src": "957:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 47,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "957:52:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 48,
+                  "nodeType": "ExpressionStatement",
+                  "src": "957:52:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 53,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 49,
+                        "name": "_disabled",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13,
+                        "src": "1044:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                          "typeString": "mapping(string memory => bool)"
+                        }
+                      },
+                      "id": 51,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 50,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 38,
+                        "src": "1054:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1044:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 52,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1063:4:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "1044:23:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 54,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1044:23:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 56,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 38,
+                        "src": "1114:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 55,
+                      "name": "Disabled",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5,
+                      "src": "1105:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 57,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1105:15:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 58,
+                  "nodeType": "EmitStatement",
+                  "src": "1100:20:0"
+                }
+              ]
+            },
+            "documentation": "@notice Disable by the given name\n @param _name The name to disable",
+            "id": 60,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "disable",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 39,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 38,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60,
+                  "src": "867:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 37,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "867:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "866:21:0"
+            },
+            "returnParameters": {
+              "id": 40,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "903:0:0"
+            },
+            "scope": 112,
+            "src": "850:277:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 72,
+              "nodeType": "Block",
+              "src": "1303:41:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 70,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "!",
+                    "prefix": true,
+                    "src": "1320:17:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 67,
+                        "name": "_disabled",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13,
+                        "src": "1321:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                          "typeString": "mapping(string memory => bool)"
+                        }
+                      },
+                      "id": 69,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 68,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 62,
+                        "src": "1331:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "1321:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 66,
+                  "id": 71,
+                  "nodeType": "Return",
+                  "src": "1313:24:0"
+                }
+              ]
+            },
+            "documentation": "@notice Gauge whether the name is enabled\n @param _name The name to gauge",
+            "id": 73,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "enabled",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 62,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 73,
+                  "src": "1239:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 61,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1239:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1238:21:0"
+            },
+            "returnParameters": {
+              "id": 66,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 65,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 73,
+                  "src": "1293:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 64,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1293:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1292:6:0"
+            },
+            "scope": 112,
+            "src": "1222:122:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 84,
+              "nodeType": "Block",
+              "src": "1521:40:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 80,
+                      "name": "_disabled",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13,
+                      "src": "1538:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                        "typeString": "mapping(string memory => bool)"
+                      }
+                    },
+                    "id": 82,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 81,
+                      "name": "_name",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 75,
+                      "src": "1548:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1538:16:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 79,
+                  "id": 83,
+                  "nodeType": "Return",
+                  "src": "1531:23:0"
+                }
+              ]
+            },
+            "documentation": "@notice Gauge whether the name is disable\n @param _name The name to gauge",
+            "id": 85,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "disabled",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 76,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 75,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "1457:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 74,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1457:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1456:21:0"
+            },
+            "returnParameters": {
+              "id": 79,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 78,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "1511:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 77,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1511:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1510:6:0"
+            },
+            "scope": 112,
+            "src": "1439:122:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 97,
+              "nodeType": "Block",
+              "src": "1609:77:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 91,
+                            "name": "_name",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 87,
+                            "src": "1635:5:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          ],
+                          "id": 90,
+                          "name": "enabled",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 73,
+                          "src": "1627:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$returns$_t_bool_$",
+                            "typeString": "function (string memory) view returns (bool)"
+                          }
+                        },
+                        "id": 92,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1627:14:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "41626c653a206e616d652069732064697361626c6564",
+                        "id": 93,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1643:24:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_4c0aeb1e8fb434c36cae21561b24ee853d2a7d5d1bd98008dac0d6c2bc91dbc7",
+                          "typeString": "literal_string \"Able: name is disabled\""
+                        },
+                        "value": "Able: name is disabled"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_4c0aeb1e8fb434c36cae21561b24ee853d2a7d5d1bd98008dac0d6c2bc91dbc7",
+                          "typeString": "literal_string \"Able: name is disabled\""
+                        }
+                      ],
+                      "id": 89,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4502,
+                        4503
+                      ],
+                      "referencedDeclaration": 4503,
+                      "src": "1619:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 94,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1619:49:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 95,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1619:49:0"
+                },
+                {
+                  "id": 96,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "1678:1:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 98,
+            "name": "onlyEnabled",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 88,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 87,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 98,
+                  "src": "1588:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 86,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1588:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1587:21:0"
+            },
+            "src": "1567:119:0",
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 110,
+              "nodeType": "Block",
+              "src": "1735:77:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 104,
+                            "name": "_name",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 100,
+                            "src": "1762:5:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          ],
+                          "id": 103,
+                          "name": "disabled",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 85,
+                          "src": "1753:8:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$returns$_t_bool_$",
+                            "typeString": "function (string memory) view returns (bool)"
+                          }
+                        },
+                        "id": 105,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1753:15:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "41626c653a206e616d6520697320656e61626c6564",
+                        "id": 106,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1770:23:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_d562b8a152841838eeebc89015182d1db2d88db2e43fa56e0b90290f5252e3ee",
+                          "typeString": "literal_string \"Able: name is enabled\""
+                        },
+                        "value": "Able: name is enabled"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_d562b8a152841838eeebc89015182d1db2d88db2e43fa56e0b90290f5252e3ee",
+                          "typeString": "literal_string \"Able: name is enabled\""
+                        }
+                      ],
+                      "id": 102,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4502,
+                        4503
+                      ],
+                      "referencedDeclaration": 4503,
+                      "src": "1745:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 107,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1745:49:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 108,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1745:49:0"
+                },
+                {
+                  "id": 109,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "1804:1:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 111,
+            "name": "onlyDisabled",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 101,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 100,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 111,
+                  "src": "1714:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 99,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1714:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1713:21:0"
+            },
+            "src": "1692:120:0",
+            "visibility": "internal"
+          }
+        ],
+        "scope": 113,
+        "src": "270:1544:0"
+      }
+    ],
+    "src": "65:1749:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Able.sol",
+    "exportedSymbols": {
+      "Able": [
+        112
+      ]
+    },
+    "id": 113,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "65:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Able\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A base contract that supports general enablement and disablement\n @dev By default all is enabled",
+        "fullyImplemented": true,
+        "id": 112,
+        "linearizedBaseContracts": [
+          112
+        ],
+        "name": "Able",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 5,
+            "name": "Disabled",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3,
+                  "indexed": false,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5,
+                  "src": "305:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "305:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "304:14:0"
+            },
+            "src": "290:29:0"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 9,
+            "name": "Enabled",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7,
+                  "indexed": false,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9,
+                  "src": "338:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 6,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "338:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "337:14:0"
+            },
+            "src": "324:28:0"
+          },
+          {
+            "constant": false,
+            "id": 13,
+            "name": "_disabled",
+            "nodeType": "VariableDeclaration",
+            "scope": 112,
+            "src": "358:41:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+              "typeString": "mapping(string => bool)"
+            },
+            "typeName": {
+              "id": 12,
+              "keyType": {
+                "id": 10,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "366:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "358:23:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                "typeString": "mapping(string => bool)"
+              },
+              "valueType": {
+                "id": 11,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "376:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 35,
+              "nodeType": "Block",
+              "src": "539:222:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 19,
+                          "name": "_disabled",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 13,
+                          "src": "602:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                            "typeString": "mapping(string memory => bool)"
+                          }
+                        },
+                        "id": 21,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 20,
+                          "name": "_name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 15,
+                          "src": "612:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "602:16:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "41626c653a206e616d6520697320656e61626c6564",
+                        "id": 22,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "620:23:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_d562b8a152841838eeebc89015182d1db2d88db2e43fa56e0b90290f5252e3ee",
+                          "typeString": "literal_string \"Able: name is enabled\""
+                        },
+                        "value": "Able: name is enabled"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_d562b8a152841838eeebc89015182d1db2d88db2e43fa56e0b90290f5252e3ee",
+                          "typeString": "literal_string \"Able: name is enabled\""
+                        }
+                      ],
+                      "id": 18,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4502,
+                        4503
+                      ],
+                      "referencedDeclaration": 4503,
+                      "src": "594:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 23,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "594:50:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 24,
+                  "nodeType": "ExpressionStatement",
+                  "src": "594:50:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 29,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 25,
+                        "name": "_disabled",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13,
+                        "src": "678:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                          "typeString": "mapping(string memory => bool)"
+                        }
+                      },
+                      "id": 27,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 26,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 15,
+                        "src": "688:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "678:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "66616c7365",
+                      "id": 28,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "697:5:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    },
+                    "src": "678:24:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 30,
+                  "nodeType": "ExpressionStatement",
+                  "src": "678:24:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 32,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 15,
+                        "src": "748:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 31,
+                      "name": "Enabled",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 9,
+                      "src": "740:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 33,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "740:14:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 34,
+                  "nodeType": "EmitStatement",
+                  "src": "735:19:0"
+                }
+              ]
+            },
+            "documentation": "@notice Enable by the given name\n @param _name The name to enable",
+            "id": 36,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "enable",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 16,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 36,
+                  "src": "503:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 14,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "503:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "502:21:0"
+            },
+            "returnParameters": {
+              "id": 17,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "539:0:0"
+            },
+            "scope": 112,
+            "src": "487:274:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 59,
+              "nodeType": "Block",
+              "src": "903:224:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 45,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "UnaryOperation",
+                        "operator": "!",
+                        "prefix": true,
+                        "src": "965:17:0",
+                        "subExpression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 42,
+                            "name": "_disabled",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 13,
+                            "src": "966:9:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                              "typeString": "mapping(string memory => bool)"
+                            }
+                          },
+                          "id": 44,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 43,
+                            "name": "_name",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 38,
+                            "src": "976:5:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "966:16:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "41626c653a206e616d652069732064697361626c6564",
+                        "id": 46,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "984:24:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_4c0aeb1e8fb434c36cae21561b24ee853d2a7d5d1bd98008dac0d6c2bc91dbc7",
+                          "typeString": "literal_string \"Able: name is disabled\""
+                        },
+                        "value": "Able: name is disabled"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_4c0aeb1e8fb434c36cae21561b24ee853d2a7d5d1bd98008dac0d6c2bc91dbc7",
+                          "typeString": "literal_string \"Able: name is disabled\""
+                        }
+                      ],
+                      "id": 41,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4502,
+                        4503
+                      ],
+                      "referencedDeclaration": 4503,
+                      "src": "957:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 47,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "957:52:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 48,
+                  "nodeType": "ExpressionStatement",
+                  "src": "957:52:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 53,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 49,
+                        "name": "_disabled",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13,
+                        "src": "1044:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                          "typeString": "mapping(string memory => bool)"
+                        }
+                      },
+                      "id": 51,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 50,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 38,
+                        "src": "1054:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1044:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 52,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1063:4:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "1044:23:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 54,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1044:23:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 56,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 38,
+                        "src": "1114:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 55,
+                      "name": "Disabled",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5,
+                      "src": "1105:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 57,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1105:15:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 58,
+                  "nodeType": "EmitStatement",
+                  "src": "1100:20:0"
+                }
+              ]
+            },
+            "documentation": "@notice Disable by the given name\n @param _name The name to disable",
+            "id": 60,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "disable",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 39,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 38,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60,
+                  "src": "867:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 37,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "867:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "866:21:0"
+            },
+            "returnParameters": {
+              "id": 40,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "903:0:0"
+            },
+            "scope": 112,
+            "src": "850:277:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 72,
+              "nodeType": "Block",
+              "src": "1303:41:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 70,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "!",
+                    "prefix": true,
+                    "src": "1320:17:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 67,
+                        "name": "_disabled",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13,
+                        "src": "1321:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                          "typeString": "mapping(string memory => bool)"
+                        }
+                      },
+                      "id": 69,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 68,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 62,
+                        "src": "1331:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "1321:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 66,
+                  "id": 71,
+                  "nodeType": "Return",
+                  "src": "1313:24:0"
+                }
+              ]
+            },
+            "documentation": "@notice Gauge whether the name is enabled\n @param _name The name to gauge",
+            "id": 73,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "enabled",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 62,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 73,
+                  "src": "1239:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 61,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1239:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1238:21:0"
+            },
+            "returnParameters": {
+              "id": 66,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 65,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 73,
+                  "src": "1293:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 64,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1293:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1292:6:0"
+            },
+            "scope": 112,
+            "src": "1222:122:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 84,
+              "nodeType": "Block",
+              "src": "1521:40:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 80,
+                      "name": "_disabled",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13,
+                      "src": "1538:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_string_memory_$_t_bool_$",
+                        "typeString": "mapping(string memory => bool)"
+                      }
+                    },
+                    "id": 82,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 81,
+                      "name": "_name",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 75,
+                      "src": "1548:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1538:16:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 79,
+                  "id": 83,
+                  "nodeType": "Return",
+                  "src": "1531:23:0"
+                }
+              ]
+            },
+            "documentation": "@notice Gauge whether the name is disable\n @param _name The name to gauge",
+            "id": 85,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "disabled",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 76,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 75,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "1457:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 74,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1457:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1456:21:0"
+            },
+            "returnParameters": {
+              "id": 79,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 78,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "1511:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 77,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1511:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1510:6:0"
+            },
+            "scope": 112,
+            "src": "1439:122:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 97,
+              "nodeType": "Block",
+              "src": "1609:77:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 91,
+                            "name": "_name",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 87,
+                            "src": "1635:5:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          ],
+                          "id": 90,
+                          "name": "enabled",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 73,
+                          "src": "1627:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$returns$_t_bool_$",
+                            "typeString": "function (string memory) view returns (bool)"
+                          }
+                        },
+                        "id": 92,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1627:14:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "41626c653a206e616d652069732064697361626c6564",
+                        "id": 93,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1643:24:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_4c0aeb1e8fb434c36cae21561b24ee853d2a7d5d1bd98008dac0d6c2bc91dbc7",
+                          "typeString": "literal_string \"Able: name is disabled\""
+                        },
+                        "value": "Able: name is disabled"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_4c0aeb1e8fb434c36cae21561b24ee853d2a7d5d1bd98008dac0d6c2bc91dbc7",
+                          "typeString": "literal_string \"Able: name is disabled\""
+                        }
+                      ],
+                      "id": 89,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4502,
+                        4503
+                      ],
+                      "referencedDeclaration": 4503,
+                      "src": "1619:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 94,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1619:49:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 95,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1619:49:0"
+                },
+                {
+                  "id": 96,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "1678:1:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 98,
+            "name": "onlyEnabled",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 88,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 87,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 98,
+                  "src": "1588:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 86,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1588:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1587:21:0"
+            },
+            "src": "1567:119:0",
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 110,
+              "nodeType": "Block",
+              "src": "1735:77:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 104,
+                            "name": "_name",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 100,
+                            "src": "1762:5:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          ],
+                          "id": 103,
+                          "name": "disabled",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 85,
+                          "src": "1753:8:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$returns$_t_bool_$",
+                            "typeString": "function (string memory) view returns (bool)"
+                          }
+                        },
+                        "id": 105,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1753:15:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "41626c653a206e616d6520697320656e61626c6564",
+                        "id": 106,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1770:23:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_d562b8a152841838eeebc89015182d1db2d88db2e43fa56e0b90290f5252e3ee",
+                          "typeString": "literal_string \"Able: name is enabled\""
+                        },
+                        "value": "Able: name is enabled"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_d562b8a152841838eeebc89015182d1db2d88db2e43fa56e0b90290f5252e3ee",
+                          "typeString": "literal_string \"Able: name is enabled\""
+                        }
+                      ],
+                      "id": 102,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4502,
+                        4503
+                      ],
+                      "referencedDeclaration": 4503,
+                      "src": "1745:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 107,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1745:49:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 108,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1745:49:0"
+                },
+                {
+                  "id": 109,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "1804:1:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 111,
+            "name": "onlyDisabled",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 101,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 100,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 111,
+                  "src": "1714:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 99,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1714:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1713:21:0"
+            },
+            "src": "1692:120:0",
+            "visibility": "internal"
+          }
+        ],
+        "scope": 113,
+        "src": "270:1544:0"
+      }
+    ],
+    "src": "65:1749:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.11+commit.c082d0b4.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.16",
+  "updatedAt": "2019-09-26T12:53:50.196Z",
+  "devdoc": {
+    "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
+    "details": "By default all is enabled",
+    "methods": {
+      "disable(string)": {
+        "params": {
+          "_name": "The name to disable"
+        }
+      },
+      "disabled(string)": {
+        "params": {
+          "_name": "The name to gauge"
+        }
+      },
+      "enable(string)": {
+        "params": {
+          "_name": "The name to enable"
+        }
+      },
+      "enabled(string)": {
+        "params": {
+          "_name": "The name to gauge"
+        }
+      }
+    },
+    "title": "Able"
+  },
+  "userdoc": {
+    "methods": {
+      "disable(string)": {
+        "notice": "Disable by the given name"
+      },
+      "disabled(string)": {
+        "notice": "Gauge whether the name is disable"
+      },
+      "enable(string)": {
+        "notice": "Enable by the given name"
+      },
+      "enabled(string)": {
+        "notice": "Gauge whether the name is enabled"
+      }
+    },
+    "notice": "A base contract that supports general enablement and disablement"
+  }
+}

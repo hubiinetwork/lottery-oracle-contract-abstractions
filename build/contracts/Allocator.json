@@ -1,0 +1,237 @@
+{
+  "contractName": "Allocator",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "allocate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.11+commit.c082d0b4\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"allocate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Jens Ivar J\\u00f8rdre <jensivar@hubii.com>\",\"methods\":{},\"title\":\"Allocator\"},\"userdoc\":{\"methods\":{\"allocate()\":{\"notice\":\"Return the defined allocation from the allocator\"}},\"notice\":\"An allocator interface\"}},\"settings\":{\"compilationTarget\":{\"/opt/buildagent/work/9988d0feca52d9d9/contracts/Allocator.sol\":\"Allocator\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/buildagent/work/9988d0feca52d9d9/contracts/Allocator.sol\":{\"keccak256\":\"0x284ac2245b2ac24cf2a5e75aa6b08dbd5a43119048514680d218c6122f0fdb40\",\"urls\":[\"bzz-raw://b1a511aba1c8ffc0374270bfaac005801cd3752f883bd0ffc26058316c0a8c44\",\"dweb:/ipfs/QmWNCjgiBD4MYMrsatPtfJVXu6HT9gt7bWZMPhsJUrWGHi\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "/*\n * Lottery oracle\n *\n * Copyright (C) 2017-2019 Hubii AS\n */\n\npragma solidity ^0.5.11;\n\n/// @title Allocator\n/// @author Jens Ivar Jørdre <jensivar@hubii.com>\n/// @notice An allocator interface\ninterface Allocator {\n    /// @notice Return the defined allocation from the allocator\n    function allocate()\n    external\n    view\n    returns (uint256);\n}\n",
+  "sourcePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Allocator.sol",
+  "ast": {
+    "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Allocator.sol",
+    "exportedSymbols": {
+      "Allocator": [
+        306
+      ]
+    },
+    "id": 307,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 300,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "65:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": "@title Allocator\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice An allocator interface",
+        "fullyImplemented": false,
+        "id": 306,
+        "linearizedBaseContracts": [
+          306
+        ],
+        "name": "Allocator",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@notice Return the defined allocation from the allocator",
+            "id": 305,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "allocate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 301,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "306:2:2"
+            },
+            "returnParameters": {
+              "id": 304,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 303,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 305,
+                  "src": "344:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 302,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "344:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "343:9:2"
+            },
+            "scope": 306,
+            "src": "289:64:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 307,
+        "src": "198:157:2"
+      }
+    ],
+    "src": "65:291:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Allocator.sol",
+    "exportedSymbols": {
+      "Allocator": [
+        306
+      ]
+    },
+    "id": 307,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 300,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "65:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": "@title Allocator\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice An allocator interface",
+        "fullyImplemented": false,
+        "id": 306,
+        "linearizedBaseContracts": [
+          306
+        ],
+        "name": "Allocator",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@notice Return the defined allocation from the allocator",
+            "id": 305,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "allocate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 301,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "306:2:2"
+            },
+            "returnParameters": {
+              "id": 304,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 303,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 305,
+                  "src": "344:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 302,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "344:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "343:9:2"
+            },
+            "scope": 306,
+            "src": "289:64:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 307,
+        "src": "198:157:2"
+      }
+    ],
+    "src": "65:291:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.11+commit.c082d0b4.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.16",
+  "updatedAt": "2019-09-26T12:53:50.200Z",
+  "devdoc": {
+    "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
+    "methods": {},
+    "title": "Allocator"
+  },
+  "userdoc": {
+    "methods": {
+      "allocate()": {
+        "notice": "Return the defined allocation from the allocator"
+      }
+    },
+    "notice": "An allocator interface"
+  }
+}
