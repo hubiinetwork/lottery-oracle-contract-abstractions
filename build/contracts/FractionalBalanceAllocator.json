@@ -44,9 +44,9 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.11+commit.c082d0b4\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"allocate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"fraction\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_fraction\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"author\":\"Jens Ivar J\\u00f8rdre <jensivar@hubii.com>\",\"methods\":{},\"title\":\"FractionalBalanceAllocator\"},\"userdoc\":{\"methods\":{\"allocate()\":{\"notice\":\"Return the defined allocation from the allocator\"}},\"notice\":\"A bounty allocator allocating by fraction of the bounty fund's token balance\"}},\"settings\":{\"compilationTarget\":{\"/opt/buildagent/work/9988d0feca52d9d9/contracts/FractionalBalanceAllocator.sol\":\"FractionalBalanceAllocator\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/buildagent/work/9988d0feca52d9d9/contracts/Allocator.sol\":{\"keccak256\":\"0x284ac2245b2ac24cf2a5e75aa6b08dbd5a43119048514680d218c6122f0fdb40\",\"urls\":[\"bzz-raw://b1a511aba1c8ffc0374270bfaac005801cd3752f883bd0ffc26058316c0a8c44\",\"dweb:/ipfs/QmWNCjgiBD4MYMrsatPtfJVXu6HT9gt7bWZMPhsJUrWGHi\"]},\"/opt/buildagent/work/9988d0feca52d9d9/contracts/BountyFund.sol\":{\"keccak256\":\"0x6d990c26766c738f5662cfed914af6deda8714cd45d8ac0812ea67dde686d4c9\",\"urls\":[\"bzz-raw://db445cff98f3af4589bcb4250a9d11b371b7aaddfed0a9dbb581b99147d04572\",\"dweb:/ipfs/QmXweM2UzGJdxezPCHyLiQFMDJXDKirLdWzjYRh8iuGAu4\"]},\"/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol\":{\"keccak256\":\"0xc5dd0ff7152da24cdb793b8e9fe020b2bc27c3eeb5790b241491f80ad53d1acf\",\"urls\":[\"bzz-raw://84d1448f609eec6b8c1702896cd1dd531845d702e882957f077ea556feb1b0a5\",\"dweb:/ipfs/QmPgmZ3ifkYzTNGnsZXYZrB9svdjKNT66cMRM1NvDj1BdL\"]},\"/opt/buildagent/work/9988d0feca52d9d9/contracts/FractionalBalanceAllocator.sol\":{\"keccak256\":\"0x84313f4c7f8c1e8d4795197e3fdd2bfdc6dba129b2e6e817bedb74f676343311\",\"urls\":[\"bzz-raw://212c1b76717c9c569b910bf47084cb3109818d1b3ca73e22c3ac491330f8148c\",\"dweb:/ipfs/QmYgupZhip56pKjeyEVpKpAAr9iG1cyLaKCxP24vHyYgTS\"]},\"/opt/buildagent/work/9988d0feca52d9d9/contracts/RBACed.sol\":{\"keccak256\":\"0x5aa1b537cf0ff81234e82148dbecbc808ab15917d9514be42f8c5e6d48bcd512\",\"urls\":[\"bzz-raw://bee61c12a715962c9835378e67f941295265f78387e2c6dcc220ef18fdc3295a\",\"dweb:/ipfs/QmSeYN7yNc2DaNvkgnDjzHjFyTr8LpqxC2zbzeV4svUskb\"]},\"openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xb002c378d7b82a101bd659c341518953ca0919d342c0a400196982c0e7e7bcdb\",\"urls\":[\"bzz-raw://00a788c4631466c220b385bdd100c571d24b2deccd657615cfbcef6cadf669a4\",\"dweb:/ipfs/QmTEwDbjJNxmMNCDMqtuou3dyM8Wtp8Q9NFvn7SAVM7Jf3\"]},\"openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x4ccf2d7b51873db1ccfd54ca2adae5eac3b184f9699911ed4490438419f1c690\",\"urls\":[\"bzz-raw://d62d769b2219d5de39013093412623e624fa887f871826ea3bae6052ee893610\",\"dweb:/ipfs/QmV3yVktya1s617QmuzQR2CfuJgUi3dR2xEZY9ecmqZ2G1\"]},\"openzeppelin-solidity/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x852793a3c2f86d336a683b30d688ec3dcfc57451af5a2bf5975cda3b7191a901\",\"urls\":[\"bzz-raw://4f5b57664069671648fb81f55b0082faecdf1b2f159eec6b1fa6cef9b7d73bc5\",\"dweb:/ipfs/QmcyytaLs7zFdb4Uu7C5PmQRhQdB3wA3fUdkV6mkYfdDFH\"]},\"openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x90e8c2521653bbb1768b05889c5760031e688d9cd361f167489b89215e201b95\",\"urls\":[\"bzz-raw://d0abb99bb8bfc2bc0a89902b8ed1dc0442ad08cc78cee64c291b3df6a27bcccc\",\"dweb:/ipfs/QmP5NaEwZthQeM2ESz4WTT3osrP7jhbvu7ocbttBi2JAw6\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506040516105383803806105388339818101604052602081101561003357600080fd5b810190808051906020019092919050505073__ConstantsLib__________________________62a123336040518163ffffffff1660e01b815260040160206040518083038186803b15801561008757600080fd5b505af415801561009b573d6000803e3d6000fd5b505050506040513d60208110156100b157600080fd5b810190808051906020019092919050505081111561011a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603d8152602001806104fb603d913960400191505060405180910390fd5b80600081905550506103ca806101316000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063abaa99161461003b578063d8894bb514610059575b600080fd5b610043610077565b6040518082815260200191505060405180910390f35b610061610259565b6040518082815260200191505060405180910390f35b600061025473__ConstantsLib__________________________62a123336040518163ffffffff1660e01b815260040160206040518083038186803b1580156100bf57600080fd5b505af41580156100d3573d6000803e3d6000fd5b505050506040513d60208110156100e957600080fd5b81019080805190602001909291905050506102466000543373ffffffffffffffffffffffffffffffffffffffff1663fc0c546a6040518163ffffffff1660e01b815260040160206040518083038186803b15801561014657600080fd5b505afa15801561015a573d6000803e3d6000fd5b505050506040513d602081101561017057600080fd5b810190808051906020019092919050505073ffffffffffffffffffffffffffffffffffffffff166370a08231336040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101fd57600080fd5b505afa158015610211573d6000803e3d6000fd5b505050506040513d602081101561022757600080fd5b810190808051906020019092919050505061025f90919063ffffffff16565b6102e590919063ffffffff16565b905090565b60005481565b60008083141561027257600090506102df565b600082840290508284828161028357fe5b04146102da576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806103756021913960400191505060405180910390fd5b809150505b92915050565b600080821161035c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601a8152602001807f536166654d6174683a206469766973696f6e206279207a65726f00000000000081525060200191505060405180910390fd5b600082848161036757fe5b049050809150509291505056fe536166654d6174683a206d756c7469706c69636174696f6e206f766572666c6f77a265627a7a7231582023717113b3cc3cab896c15df94e064ff73b1dbc9717eec492be4edc52be2a21064736f6c634300050b00324672616374696f6e616c42616c616e6365416c6c6f6361746f723a206672616374696f6e2069732067726561746572207468616e20656e746972657479",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063abaa99161461003b578063d8894bb514610059575b600080fd5b610043610077565b6040518082815260200191505060405180910390f35b610061610259565b6040518082815260200191505060405180910390f35b600061025473__ConstantsLib__________________________62a123336040518163ffffffff1660e01b815260040160206040518083038186803b1580156100bf57600080fd5b505af41580156100d3573d6000803e3d6000fd5b505050506040513d60208110156100e957600080fd5b81019080805190602001909291905050506102466000543373ffffffffffffffffffffffffffffffffffffffff1663fc0c546a6040518163ffffffff1660e01b815260040160206040518083038186803b15801561014657600080fd5b505afa15801561015a573d6000803e3d6000fd5b505050506040513d602081101561017057600080fd5b810190808051906020019092919050505073ffffffffffffffffffffffffffffffffffffffff166370a08231336040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101fd57600080fd5b505afa158015610211573d6000803e3d6000fd5b505050506040513d602081101561022757600080fd5b810190808051906020019092919050505061025f90919063ffffffff16565b6102e590919063ffffffff16565b905090565b60005481565b60008083141561027257600090506102df565b600082840290508284828161028357fe5b04146102da576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806103756021913960400191505060405180910390fd5b809150505b92915050565b600080821161035c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601a8152602001807f536166654d6174683a206469766973696f6e206279207a65726f00000000000081525060200191505060405180910390fd5b600082848161036757fe5b049050809150509291505056fe536166654d6174683a206d756c7469706c69636174696f6e206f766572666c6f77a265627a7a7231582023717113b3cc3cab896c15df94e064ff73b1dbc9717eec492be4edc52be2a21064736f6c634300050b0032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.11+commit.c082d0b4\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"allocate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"fraction\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_fraction\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"author\":\"Jens Ivar J\\u00f8rdre <jensivar@hubii.com>\",\"methods\":{},\"title\":\"FractionalBalanceAllocator\"},\"userdoc\":{\"methods\":{\"allocate()\":{\"notice\":\"Return the defined allocation from the allocator\"}},\"notice\":\"A bounty allocator allocating by fraction of the bounty fund's token balance\"}},\"settings\":{\"compilationTarget\":{\"/opt/buildagent/work/9988d0feca52d9d9/contracts/FractionalBalanceAllocator.sol\":\"FractionalBalanceAllocator\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/buildagent/work/9988d0feca52d9d9/contracts/Allocator.sol\":{\"keccak256\":\"0x284ac2245b2ac24cf2a5e75aa6b08dbd5a43119048514680d218c6122f0fdb40\",\"urls\":[\"bzz-raw://b1a511aba1c8ffc0374270bfaac005801cd3752f883bd0ffc26058316c0a8c44\",\"dweb:/ipfs/QmWNCjgiBD4MYMrsatPtfJVXu6HT9gt7bWZMPhsJUrWGHi\"]},\"/opt/buildagent/work/9988d0feca52d9d9/contracts/BountyFund.sol\":{\"keccak256\":\"0x16b5dea3df2c8e908c2fe229338d0f539012ed8925e4a6ff4510394b483f9b82\",\"urls\":[\"bzz-raw://638ed56f9b477e7021c0c29bb02d41f965b0fecae5746a9513959103b957f0a9\",\"dweb:/ipfs/QmcDt2gJtj1ySA4WFPurwhZ22gvymUYMEQdyHML6JYgoWC\"]},\"/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol\":{\"keccak256\":\"0xc5dd0ff7152da24cdb793b8e9fe020b2bc27c3eeb5790b241491f80ad53d1acf\",\"urls\":[\"bzz-raw://84d1448f609eec6b8c1702896cd1dd531845d702e882957f077ea556feb1b0a5\",\"dweb:/ipfs/QmPgmZ3ifkYzTNGnsZXYZrB9svdjKNT66cMRM1NvDj1BdL\"]},\"/opt/buildagent/work/9988d0feca52d9d9/contracts/FractionalBalanceAllocator.sol\":{\"keccak256\":\"0x84313f4c7f8c1e8d4795197e3fdd2bfdc6dba129b2e6e817bedb74f676343311\",\"urls\":[\"bzz-raw://212c1b76717c9c569b910bf47084cb3109818d1b3ca73e22c3ac491330f8148c\",\"dweb:/ipfs/QmYgupZhip56pKjeyEVpKpAAr9iG1cyLaKCxP24vHyYgTS\"]},\"/opt/buildagent/work/9988d0feca52d9d9/contracts/RBACed.sol\":{\"keccak256\":\"0xff8d14a14a9bcd9b3befa1d8fc2c7abb48e9b8b5c59cbe43e3f260f222b2ee9c\",\"urls\":[\"bzz-raw://325f59ac1a54597e8bb535e7bb95340dd992e05f91e9e6a99e60b368d272aea2\",\"dweb:/ipfs/Qmdz6u7Gtr8RgkyuZqE8MwxK2tkdZY3EgqE1STwnu8uiWk\"]},\"openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xb002c378d7b82a101bd659c341518953ca0919d342c0a400196982c0e7e7bcdb\",\"urls\":[\"bzz-raw://00a788c4631466c220b385bdd100c571d24b2deccd657615cfbcef6cadf669a4\",\"dweb:/ipfs/QmTEwDbjJNxmMNCDMqtuou3dyM8Wtp8Q9NFvn7SAVM7Jf3\"]},\"openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x4ccf2d7b51873db1ccfd54ca2adae5eac3b184f9699911ed4490438419f1c690\",\"urls\":[\"bzz-raw://d62d769b2219d5de39013093412623e624fa887f871826ea3bae6052ee893610\",\"dweb:/ipfs/QmV3yVktya1s617QmuzQR2CfuJgUi3dR2xEZY9ecmqZ2G1\"]},\"openzeppelin-solidity/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x852793a3c2f86d336a683b30d688ec3dcfc57451af5a2bf5975cda3b7191a901\",\"urls\":[\"bzz-raw://4f5b57664069671648fb81f55b0082faecdf1b2f159eec6b1fa6cef9b7d73bc5\",\"dweb:/ipfs/QmcyytaLs7zFdb4Uu7C5PmQRhQdB3wA3fUdkV6mkYfdDFH\"]},\"openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x90e8c2521653bbb1768b05889c5760031e688d9cd361f167489b89215e201b95\",\"urls\":[\"bzz-raw://d0abb99bb8bfc2bc0a89902b8ed1dc0442ad08cc78cee64c291b3df6a27bcccc\",\"dweb:/ipfs/QmP5NaEwZthQeM2ESz4WTT3osrP7jhbvu7ocbttBi2JAw6\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516105383803806105388339818101604052602081101561003357600080fd5b810190808051906020019092919050505073__ConstantsLib__________________________62a123336040518163ffffffff1660e01b815260040160206040518083038186803b15801561008757600080fd5b505af415801561009b573d6000803e3d6000fd5b505050506040513d60208110156100b157600080fd5b810190808051906020019092919050505081111561011a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603d8152602001806104fb603d913960400191505060405180910390fd5b80600081905550506103ca806101316000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063abaa99161461003b578063d8894bb514610059575b600080fd5b610043610077565b6040518082815260200191505060405180910390f35b610061610259565b6040518082815260200191505060405180910390f35b600061025473__ConstantsLib__________________________62a123336040518163ffffffff1660e01b815260040160206040518083038186803b1580156100bf57600080fd5b505af41580156100d3573d6000803e3d6000fd5b505050506040513d60208110156100e957600080fd5b81019080805190602001909291905050506102466000543373ffffffffffffffffffffffffffffffffffffffff1663fc0c546a6040518163ffffffff1660e01b815260040160206040518083038186803b15801561014657600080fd5b505afa15801561015a573d6000803e3d6000fd5b505050506040513d602081101561017057600080fd5b810190808051906020019092919050505073ffffffffffffffffffffffffffffffffffffffff166370a08231336040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101fd57600080fd5b505afa158015610211573d6000803e3d6000fd5b505050506040513d602081101561022757600080fd5b810190808051906020019092919050505061025f90919063ffffffff16565b6102e590919063ffffffff16565b905090565b60005481565b60008083141561027257600090506102df565b600082840290508284828161028357fe5b04146102da576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806103756021913960400191505060405180910390fd5b809150505b92915050565b600080821161035c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601a8152602001807f536166654d6174683a206469766973696f6e206279207a65726f00000000000081525060200191505060405180910390fd5b600082848161036757fe5b049050809150509291505056fe536166654d6174683a206d756c7469706c69636174696f6e206f766572666c6f77a265627a7a723158202d71e453e43c8bed8097a842797a45b9f6326a10dbfcd151028f421b0773e16664736f6c634300050b00324672616374696f6e616c42616c616e6365416c6c6f6361746f723a206672616374696f6e2069732067726561746572207468616e20656e746972657479",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063abaa99161461003b578063d8894bb514610059575b600080fd5b610043610077565b6040518082815260200191505060405180910390f35b610061610259565b6040518082815260200191505060405180910390f35b600061025473__ConstantsLib__________________________62a123336040518163ffffffff1660e01b815260040160206040518083038186803b1580156100bf57600080fd5b505af41580156100d3573d6000803e3d6000fd5b505050506040513d60208110156100e957600080fd5b81019080805190602001909291905050506102466000543373ffffffffffffffffffffffffffffffffffffffff1663fc0c546a6040518163ffffffff1660e01b815260040160206040518083038186803b15801561014657600080fd5b505afa15801561015a573d6000803e3d6000fd5b505050506040513d602081101561017057600080fd5b810190808051906020019092919050505073ffffffffffffffffffffffffffffffffffffffff166370a08231336040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101fd57600080fd5b505afa158015610211573d6000803e3d6000fd5b505050506040513d602081101561022757600080fd5b810190808051906020019092919050505061025f90919063ffffffff16565b6102e590919063ffffffff16565b905090565b60005481565b60008083141561027257600090506102df565b600082840290508284828161028357fe5b04146102da576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806103756021913960400191505060405180910390fd5b809150505b92915050565b600080821161035c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601a8152602001807f536166654d6174683a206469766973696f6e206279207a65726f00000000000081525060200191505060405180910390fd5b600082848161036757fe5b049050809150509291505056fe536166654d6174683a206d756c7469706c69636174696f6e206f766572666c6f77a265627a7a723158202d71e453e43c8bed8097a842797a45b9f6326a10dbfcd151028f421b0773e16664736f6c634300050b0032",
   "sourceMap": "560:708:7:-;;;678:295;8:9:-1;5:2;;;30:1;27;20:12;5:2;678:295:7;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;678:295:7;;;;;;;;;;;;;;;;814:12;:22;:24;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;814:24:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;814:24:7;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;814:24:7;;;;;;;;;;;;;;;;801:9;:37;;793:111;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;957:9;946:8;:20;;;;678:295;560:708;;;;;;",
   "deployedSourceMap": "560:708:7:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;560:708:7;;;;;;;;;;;;;;;;;;;;;;;;1044:222;;;:::i;:::-;;;;;;;;;;;;;;;;;;;648:23;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1044:222;1097:7;1127:132;1234:12;:22;:24;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1234:24:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1234:24:7;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1234:24:7;;;;;;;;;;;;;;;;1127:93;1211:8;;1138:10;1127:28;;;:30;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1127:30:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1127:30:7;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1127:30:7;;;;;;;;;;;;;;;;:49;;;1185:10;1127:70;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1127:70:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1127:70:7;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1127:70:7;;;;;;;;;;;;;;;;:83;;:93;;;;:::i;:::-;:106;;:132;;;;:::i;:::-;1120:139;;1044:222;:::o;648:23::-;;;;:::o;1693:458:21:-;1751:7;1996:1;1991;:6;1987:45;;;2020:1;2013:8;;;;1987:45;2042:9;2058:1;2054;:5;2042:17;;2086:1;2081;2077;:5;;;;;;:10;2069:56;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2143:1;2136:8;;;1693:458;;;;;:::o;2606:326::-;2664:7;2761:1;2757;:5;2749:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2803:9;2819:1;2815;:5;;;;;;2803:17;;2924:1;2917:8;;;2606:326;;;;:::o",
   "source": "/*\n * Lottery oracle\n *\n * Copyright (C) 2017-2019 Hubii AS\n */\n\npragma solidity ^0.5.11;\n\nimport {Allocator} from \"./Allocator.sol\";\nimport {SafeMath} from \"openzeppelin-solidity/contracts/math/SafeMath.sol\";\nimport {BountyFund} from \"./BountyFund.sol\";\nimport {ERC20} from \"openzeppelin-solidity/contracts/token/ERC20/ERC20.sol\";\nimport {ConstantsLib} from \"./ConstantsLib.sol\";\n\n/// @title FractionalBalanceAllocator\n/// @author Jens Ivar Jørdre <jensivar@hubii.com>\n/// @notice A bounty allocator allocating by fraction of the bounty fund's token balance\ncontract FractionalBalanceAllocator is Allocator {\n    using SafeMath for uint256;\n\n    uint256 public fraction;\n\n    constructor(uint256 _fraction)\n    public\n    {\n        // Require that fraction is less than the entirety\n        require(_fraction <= ConstantsLib.PARTS_PER(), \"FractionalBalanceAllocator: fraction is greater than entirety\");\n\n        // Initialize fraction\n        fraction = _fraction;\n    }\n\n    /// @notice Return the defined allocation from the allocator\n    function allocate()\n    public\n    view\n    returns (uint256)\n    {\n        return BountyFund(msg.sender).token()\n        .balanceOf(address(msg.sender))\n        .mul(fraction)\n        .div(ConstantsLib.PARTS_PER());\n    }\n}",
@@ -94,7 +94,7 @@
         "id": 1067,
         "nodeType": "ImportDirective",
         "scope": 1128,
-        "sourceUnit": 3959,
+        "sourceUnit": 4090,
         "src": "134:75:7",
         "symbolAliases": [
           {
@@ -126,7 +126,7 @@
         "id": 1071,
         "nodeType": "ImportDirective",
         "scope": 1128,
-        "sourceUnit": 4356,
+        "sourceUnit": 4487,
         "src": "255:76:7",
         "symbolAliases": [
           {
@@ -194,10 +194,10 @@
               "id": 1076,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3958,
+              "referencedDeclaration": 4089,
               "src": "621:8:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$3958",
+                "typeIdentifier": "t_contract$_SafeMath_$4089",
                 "typeString": "library SafeMath"
               }
             },
@@ -362,10 +362,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4528,
-                        4529
+                        4659,
+                        4660
                       ],
-                      "referencedDeclaration": 4529,
+                      "referencedDeclaration": 4660,
                       "src": "793:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -592,7 +592,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 4525,
+                                      "referencedDeclaration": 4656,
                                       "src": "1185:3:7",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -672,7 +672,7 @@
                                           "name": "msg",
                                           "nodeType": "Identifier",
                                           "overloadedDeclarations": [],
-                                          "referencedDeclaration": 4525,
+                                          "referencedDeclaration": 4656,
                                           "src": "1138:3:7",
                                           "typeDescriptions": {
                                             "typeIdentifier": "t_magic_message",
@@ -736,7 +736,7 @@
                                   "referencedDeclaration": 803,
                                   "src": "1127:28:7",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ERC20_$4355_$",
+                                    "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ERC20_$4486_$",
                                     "typeString": "function () view external returns (contract ERC20)"
                                   }
                                 },
@@ -750,7 +750,7 @@
                                 "nodeType": "FunctionCall",
                                 "src": "1127:30:7",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_ERC20_$4355",
+                                  "typeIdentifier": "t_contract$_ERC20_$4486",
                                   "typeString": "contract ERC20"
                                 }
                               },
@@ -761,7 +761,7 @@
                               "lValueRequested": false,
                               "memberName": "balanceOf",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 3999,
+                              "referencedDeclaration": 4130,
                               "src": "1127:49:7",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
@@ -789,7 +789,7 @@
                           "lValueRequested": false,
                           "memberName": "mul",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 3911,
+                          "referencedDeclaration": 4042,
                           "src": "1127:83:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -817,7 +817,7 @@
                       "lValueRequested": false,
                       "memberName": "div",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3936,
+                      "referencedDeclaration": 4067,
                       "src": "1127:106:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -947,7 +947,7 @@
         "id": 1067,
         "nodeType": "ImportDirective",
         "scope": 1128,
-        "sourceUnit": 3959,
+        "sourceUnit": 4090,
         "src": "134:75:7",
         "symbolAliases": [
           {
@@ -979,7 +979,7 @@
         "id": 1071,
         "nodeType": "ImportDirective",
         "scope": 1128,
-        "sourceUnit": 4356,
+        "sourceUnit": 4487,
         "src": "255:76:7",
         "symbolAliases": [
           {
@@ -1047,10 +1047,10 @@
               "id": 1076,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3958,
+              "referencedDeclaration": 4089,
               "src": "621:8:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$3958",
+                "typeIdentifier": "t_contract$_SafeMath_$4089",
                 "typeString": "library SafeMath"
               }
             },
@@ -1215,10 +1215,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4528,
-                        4529
+                        4659,
+                        4660
                       ],
-                      "referencedDeclaration": 4529,
+                      "referencedDeclaration": 4660,
                       "src": "793:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1445,7 +1445,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 4525,
+                                      "referencedDeclaration": 4656,
                                       "src": "1185:3:7",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -1525,7 +1525,7 @@
                                           "name": "msg",
                                           "nodeType": "Identifier",
                                           "overloadedDeclarations": [],
-                                          "referencedDeclaration": 4525,
+                                          "referencedDeclaration": 4656,
                                           "src": "1138:3:7",
                                           "typeDescriptions": {
                                             "typeIdentifier": "t_magic_message",
@@ -1589,7 +1589,7 @@
                                   "referencedDeclaration": 803,
                                   "src": "1127:28:7",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ERC20_$4355_$",
+                                    "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ERC20_$4486_$",
                                     "typeString": "function () view external returns (contract ERC20)"
                                   }
                                 },
@@ -1603,7 +1603,7 @@
                                 "nodeType": "FunctionCall",
                                 "src": "1127:30:7",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_ERC20_$4355",
+                                  "typeIdentifier": "t_contract$_ERC20_$4486",
                                   "typeString": "contract ERC20"
                                 }
                               },
@@ -1614,7 +1614,7 @@
                               "lValueRequested": false,
                               "memberName": "balanceOf",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 3999,
+                              "referencedDeclaration": 4130,
                               "src": "1127:49:7",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
@@ -1642,7 +1642,7 @@
                           "lValueRequested": false,
                           "memberName": "mul",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 3911,
+                          "referencedDeclaration": 4042,
                           "src": "1127:83:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -1670,7 +1670,7 @@
                       "lValueRequested": false,
                       "memberName": "div",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3936,
+                      "referencedDeclaration": 4067,
                       "src": "1127:106:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -1765,14 +1765,14 @@
     "3": {
       "events": {},
       "links": {
-        "ConstantsLib": "0xdAF1352efc82885BD328DFB1565eB30C900AA752"
+        "ConstantsLib": "0x7A57aC6033D86327DD31A5Ac7146905165F983CB"
       },
-      "address": "0x849395c062C89caA006E7F6472fce9EfD5e12519",
-      "transactionHash": "0xd91dfbb300fbb816948da62a2ad2e36e52e383ac8617c6c84e9b2af4534ce290"
+      "address": "0x56321d6eD4bC0E765E9c5011E631b40cfE34dd81",
+      "transactionHash": "0x493021742134ffac9b69f02e25716a1438a32523113a8763d1a2cf3d55292198"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-22T23:17:18.947Z",
+  "updatedAt": "2019-09-23T20:12:01.440Z",
   "devdoc": {
     "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
     "methods": {},
