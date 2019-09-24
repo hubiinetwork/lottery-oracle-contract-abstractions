@@ -58,14 +58,14 @@
     "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Resolvable.sol",
     "exportedSymbols": {
       "Resolvable": [
-        3439
+        3322
       ]
     },
-    "id": 3440,
+    "id": 3323,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3423,
+        "id": 3306,
         "literals": [
           "solidity",
           "^",
@@ -73,7 +73,7 @@
           ".11"
         ],
         "nodeType": "PragmaDirective",
-        "src": "65:24:15"
+        "src": "65:24:13"
       },
       {
         "baseContracts": [],
@@ -81,9 +81,9 @@
         "contractKind": "contract",
         "documentation": "@title Resolvable\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A resolvable base contract",
         "fullyImplemented": false,
-        "id": 3439,
+        "id": 3322,
         "linearizedBaseContracts": [
-          3439
+          3322
         ],
         "name": "Resolvable",
         "nodeType": "ContractDefinition",
@@ -91,26 +91,26 @@
           {
             "body": null,
             "documentation": "@notice Resolve the market in the current verification phase if resolution criteria have been met",
-            "id": 3426,
+            "id": 3309,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "resolveIfCriteriaMet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3424,
+              "id": 3307,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "364:2:15"
+              "src": "364:2:13"
             },
             "returnParameters": {
-              "id": 3425,
+              "id": 3308,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "377:0:15"
+              "src": "377:0:13"
             },
-            "scope": 3439,
-            "src": "335:43:15",
+            "scope": 3322,
+            "src": "335:43:13",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -118,29 +118,29 @@
           {
             "body": null,
             "documentation": "@notice Gauge whether the resolution criteria have been met\n @return true if resolution criteria have been met, else false   ",
-            "id": 3431,
+            "id": 3314,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "resolutionCriteriaMet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3427,
+              "id": 3310,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "555:2:15"
+              "src": "555:2:13"
             },
             "returnParameters": {
-              "id": 3430,
+              "id": 3313,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3429,
+                  "id": 3312,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3431,
-                  "src": "591:4:15",
+                  "scope": 3314,
+                  "src": "591:4:13",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -148,10 +148,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3428,
+                    "id": 3311,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "591:4:15",
+                    "src": "591:4:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -161,10 +161,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "590:6:15"
+              "src": "590:6:13"
             },
-            "scope": 3439,
-            "src": "525:72:15",
+            "scope": 3322,
+            "src": "525:72:13",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -172,23 +172,23 @@
           {
             "body": null,
             "documentation": "@notice Return the amount needed to resolve the current market for the given status\n @param _status The concerned status\n @return the amount needed to obtain to resolve the market",
-            "id": 3438,
+            "id": 3321,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "resolutionDeltaAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3434,
+              "id": 3317,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3433,
+                  "id": 3316,
                   "name": "_status",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3438,
-                  "src": "836:12:15",
+                  "scope": 3321,
+                  "src": "836:12:13",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -196,10 +196,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3432,
+                    "id": 3315,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "836:4:15",
+                    "src": "836:4:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -209,19 +209,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "835:14:15"
+              "src": "835:14:13"
             },
             "returnParameters": {
-              "id": 3437,
+              "id": 3320,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3436,
+                  "id": 3319,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3438,
-                  "src": "883:7:15",
+                  "scope": 3321,
+                  "src": "883:7:13",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -229,10 +229,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3435,
+                    "id": 3318,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "883:7:15",
+                    "src": "883:7:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -242,33 +242,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "882:9:15"
+              "src": "882:9:13"
             },
-            "scope": 3439,
-            "src": "805:87:15",
+            "scope": 3322,
+            "src": "805:87:13",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3440,
-        "src": "203:691:15"
+        "scope": 3323,
+        "src": "203:691:13"
       }
     ],
-    "src": "65:830:15"
+    "src": "65:830:13"
   },
   "legacyAST": {
     "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Resolvable.sol",
     "exportedSymbols": {
       "Resolvable": [
-        3439
+        3322
       ]
     },
-    "id": 3440,
+    "id": 3323,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3423,
+        "id": 3306,
         "literals": [
           "solidity",
           "^",
@@ -276,7 +276,7 @@
           ".11"
         ],
         "nodeType": "PragmaDirective",
-        "src": "65:24:15"
+        "src": "65:24:13"
       },
       {
         "baseContracts": [],
@@ -284,9 +284,9 @@
         "contractKind": "contract",
         "documentation": "@title Resolvable\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A resolvable base contract",
         "fullyImplemented": false,
-        "id": 3439,
+        "id": 3322,
         "linearizedBaseContracts": [
-          3439
+          3322
         ],
         "name": "Resolvable",
         "nodeType": "ContractDefinition",
@@ -294,26 +294,26 @@
           {
             "body": null,
             "documentation": "@notice Resolve the market in the current verification phase if resolution criteria have been met",
-            "id": 3426,
+            "id": 3309,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "resolveIfCriteriaMet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3424,
+              "id": 3307,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "364:2:15"
+              "src": "364:2:13"
             },
             "returnParameters": {
-              "id": 3425,
+              "id": 3308,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "377:0:15"
+              "src": "377:0:13"
             },
-            "scope": 3439,
-            "src": "335:43:15",
+            "scope": 3322,
+            "src": "335:43:13",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -321,29 +321,29 @@
           {
             "body": null,
             "documentation": "@notice Gauge whether the resolution criteria have been met\n @return true if resolution criteria have been met, else false   ",
-            "id": 3431,
+            "id": 3314,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "resolutionCriteriaMet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3427,
+              "id": 3310,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "555:2:15"
+              "src": "555:2:13"
             },
             "returnParameters": {
-              "id": 3430,
+              "id": 3313,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3429,
+                  "id": 3312,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3431,
-                  "src": "591:4:15",
+                  "scope": 3314,
+                  "src": "591:4:13",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -351,10 +351,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3428,
+                    "id": 3311,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "591:4:15",
+                    "src": "591:4:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -364,10 +364,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "590:6:15"
+              "src": "590:6:13"
             },
-            "scope": 3439,
-            "src": "525:72:15",
+            "scope": 3322,
+            "src": "525:72:13",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -375,23 +375,23 @@
           {
             "body": null,
             "documentation": "@notice Return the amount needed to resolve the current market for the given status\n @param _status The concerned status\n @return the amount needed to obtain to resolve the market",
-            "id": 3438,
+            "id": 3321,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "resolutionDeltaAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3434,
+              "id": 3317,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3433,
+                  "id": 3316,
                   "name": "_status",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3438,
-                  "src": "836:12:15",
+                  "scope": 3321,
+                  "src": "836:12:13",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -399,10 +399,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3432,
+                    "id": 3315,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "836:4:15",
+                    "src": "836:4:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -412,19 +412,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "835:14:15"
+              "src": "835:14:13"
             },
             "returnParameters": {
-              "id": 3437,
+              "id": 3320,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3436,
+                  "id": 3319,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3438,
-                  "src": "883:7:15",
+                  "scope": 3321,
+                  "src": "883:7:13",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -432,10 +432,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3435,
+                    "id": 3318,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "883:7:15",
+                    "src": "883:7:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -445,20 +445,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "882:9:15"
+              "src": "882:9:13"
             },
-            "scope": 3439,
-            "src": "805:87:15",
+            "scope": 3322,
+            "src": "805:87:13",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3440,
-        "src": "203:691:15"
+        "scope": 3323,
+        "src": "203:691:13"
       }
     ],
-    "src": "65:830:15"
+    "src": "65:830:13"
   },
   "compiler": {
     "name": "solc",
@@ -466,7 +466,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-23T19:58:01.545Z",
+  "updatedAt": "2019-09-24T16:15:06.980Z",
   "devdoc": {
     "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
     "methods": {
