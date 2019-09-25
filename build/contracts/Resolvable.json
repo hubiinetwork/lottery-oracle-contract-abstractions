@@ -58,14 +58,14 @@
     "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Resolvable.sol",
     "exportedSymbols": {
       "Resolvable": [
-        3322
+        3397
       ]
     },
-    "id": 3323,
+    "id": 3398,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3306,
+        "id": 3381,
         "literals": [
           "solidity",
           "^",
@@ -81,9 +81,9 @@
         "contractKind": "contract",
         "documentation": "@title Resolvable\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A resolvable base contract",
         "fullyImplemented": false,
-        "id": 3322,
+        "id": 3397,
         "linearizedBaseContracts": [
-          3322
+          3397
         ],
         "name": "Resolvable",
         "nodeType": "ContractDefinition",
@@ -91,25 +91,25 @@
           {
             "body": null,
             "documentation": "@notice Resolve the market in the current verification phase if resolution criteria have been met",
-            "id": 3309,
+            "id": 3384,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "resolveIfCriteriaMet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3307,
+              "id": 3382,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "364:2:13"
             },
             "returnParameters": {
-              "id": 3308,
+              "id": 3383,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "377:0:13"
             },
-            "scope": 3322,
+            "scope": 3397,
             "src": "335:43:13",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -118,28 +118,28 @@
           {
             "body": null,
             "documentation": "@notice Gauge whether the resolution criteria have been met\n @return true if resolution criteria have been met, else false   ",
-            "id": 3314,
+            "id": 3389,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "resolutionCriteriaMet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3310,
+              "id": 3385,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "555:2:13"
             },
             "returnParameters": {
-              "id": 3313,
+              "id": 3388,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3312,
+                  "id": 3387,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3314,
+                  "scope": 3389,
                   "src": "591:4:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -148,7 +148,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3311,
+                    "id": 3386,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "591:4:13",
@@ -163,7 +163,7 @@
               ],
               "src": "590:6:13"
             },
-            "scope": 3322,
+            "scope": 3397,
             "src": "525:72:13",
             "stateMutability": "view",
             "superFunction": null,
@@ -172,22 +172,22 @@
           {
             "body": null,
             "documentation": "@notice Return the amount needed to resolve the current market for the given status\n @param _status The concerned status\n @return the amount needed to obtain to resolve the market",
-            "id": 3321,
+            "id": 3396,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "resolutionDeltaAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3317,
+              "id": 3392,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3316,
+                  "id": 3391,
                   "name": "_status",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3321,
+                  "scope": 3396,
                   "src": "836:12:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -196,7 +196,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3315,
+                    "id": 3390,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "836:4:13",
@@ -212,15 +212,15 @@
               "src": "835:14:13"
             },
             "returnParameters": {
-              "id": 3320,
+              "id": 3395,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3319,
+                  "id": 3394,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3321,
+                  "scope": 3396,
                   "src": "883:7:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -229,7 +229,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3318,
+                    "id": 3393,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "883:7:13",
@@ -244,14 +244,14 @@
               ],
               "src": "882:9:13"
             },
-            "scope": 3322,
+            "scope": 3397,
             "src": "805:87:13",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3323,
+        "scope": 3398,
         "src": "203:691:13"
       }
     ],
@@ -261,14 +261,14 @@
     "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Resolvable.sol",
     "exportedSymbols": {
       "Resolvable": [
-        3322
+        3397
       ]
     },
-    "id": 3323,
+    "id": 3398,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3306,
+        "id": 3381,
         "literals": [
           "solidity",
           "^",
@@ -284,9 +284,9 @@
         "contractKind": "contract",
         "documentation": "@title Resolvable\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A resolvable base contract",
         "fullyImplemented": false,
-        "id": 3322,
+        "id": 3397,
         "linearizedBaseContracts": [
-          3322
+          3397
         ],
         "name": "Resolvable",
         "nodeType": "ContractDefinition",
@@ -294,25 +294,25 @@
           {
             "body": null,
             "documentation": "@notice Resolve the market in the current verification phase if resolution criteria have been met",
-            "id": 3309,
+            "id": 3384,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "resolveIfCriteriaMet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3307,
+              "id": 3382,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "364:2:13"
             },
             "returnParameters": {
-              "id": 3308,
+              "id": 3383,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "377:0:13"
             },
-            "scope": 3322,
+            "scope": 3397,
             "src": "335:43:13",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -321,28 +321,28 @@
           {
             "body": null,
             "documentation": "@notice Gauge whether the resolution criteria have been met\n @return true if resolution criteria have been met, else false   ",
-            "id": 3314,
+            "id": 3389,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "resolutionCriteriaMet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3310,
+              "id": 3385,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "555:2:13"
             },
             "returnParameters": {
-              "id": 3313,
+              "id": 3388,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3312,
+                  "id": 3387,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3314,
+                  "scope": 3389,
                   "src": "591:4:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -351,7 +351,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3311,
+                    "id": 3386,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "591:4:13",
@@ -366,7 +366,7 @@
               ],
               "src": "590:6:13"
             },
-            "scope": 3322,
+            "scope": 3397,
             "src": "525:72:13",
             "stateMutability": "view",
             "superFunction": null,
@@ -375,22 +375,22 @@
           {
             "body": null,
             "documentation": "@notice Return the amount needed to resolve the current market for the given status\n @param _status The concerned status\n @return the amount needed to obtain to resolve the market",
-            "id": 3321,
+            "id": 3396,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "resolutionDeltaAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3317,
+              "id": 3392,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3316,
+                  "id": 3391,
                   "name": "_status",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3321,
+                  "scope": 3396,
                   "src": "836:12:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -399,7 +399,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3315,
+                    "id": 3390,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "836:4:13",
@@ -415,15 +415,15 @@
               "src": "835:14:13"
             },
             "returnParameters": {
-              "id": 3320,
+              "id": 3395,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3319,
+                  "id": 3394,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3321,
+                  "scope": 3396,
                   "src": "883:7:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -432,7 +432,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3318,
+                    "id": 3393,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "883:7:13",
@@ -447,14 +447,14 @@
               ],
               "src": "882:9:13"
             },
-            "scope": 3322,
+            "scope": 3397,
             "src": "805:87:13",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3323,
+        "scope": 3398,
         "src": "203:691:13"
       }
     ],
@@ -466,7 +466,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-25T10:02:20.780Z",
+  "updatedAt": "2019-09-25T13:39:49.339Z",
   "devdoc": {
     "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
     "methods": {
