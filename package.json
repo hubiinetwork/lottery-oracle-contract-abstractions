@@ -8,7 +8,7 @@
     "glob": "^7.1.4"
   },
   "deprecated": false,
-  "description": "Smart contract abstractions for lottery oracle deployed to Ropsten",
+  "description": "Smart contract abstractions for lottery oracle deployed to mainnet",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.0.2"
@@ -19,7 +19,7 @@
   ],
   "license": "LGPL-3.0",
   "main": "lib/index.js",
-  "name": "lottery-oracle-contract-abstractions-ropsten",
+  "name": "lottery-oracle-contract-abstractions",
   "scripts": {
     "publish:major": "npm version major && npm publish",
     "publish:minor": "npm version minor && npm publish",
@@ -29,5 +29,5 @@
     "symlink:events:force": "rm -rf ../../events && npm run symlink:events",
     "test": "mocha lib/**/*.spec.js"
   },
-  "version": "1.6.0"
+  "version": "1.0.0"
 }

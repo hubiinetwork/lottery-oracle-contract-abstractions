@@ -3601,14 +3601,14 @@
         }
       },
       "links": {
-        "ConstantsLib": "0x7888fCE60aAF5aE7A831432399C47083477bAe73"
+        "ConstantsLib": "0xBd1854a8aE9D26E38Ce7d81a4E6D356c9F4D2cef"
       },
-      "address": "0x7f238EBC04B28bDEaef5597D0bF20BBb5D4E3dbB",
-      "transactionHash": "0x581a5b65dc9e378edc9e38d891ae9e353b4fca3b5aa56464ae6053e19127194a"
+      "address": "0xeF641B01C66fa8EA125604e319fBa890058B06e7",
+      "transactionHash": "0x8f350cfc341c499867baf7ab33902ea0103aea674997ec6a248fe91845f7c3ae"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-25T13:55:44.026Z",
+  "updatedAt": "2019-10-03T22:53:22.146Z",
   "devdoc": {
     "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
     "methods": {

@@ -4842,12 +4842,12 @@
     "3": {
       "events": {},
       "links": {},
-      "address": "0x012d65c7C7779ee4eCBf7be834613927b6fAbF59",
-      "transactionHash": "0x5b6b071a4d0f92698469b62ebfed77ae28a6b227e255d4a12b43d325efcbc56d"
+      "address": "0x37446014ce92caE6d4B693Bc55066D1C8Fe27128",
+      "transactionHash": "0xda04f56c770380f627d0f4ec8970e05f1eb524aa7e68f61fea381aa01aa2a4b2"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-25T13:46:26.248Z",
+  "updatedAt": "2019-10-03T22:48:25.648Z",
   "devdoc": {
     "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
     "methods": {},

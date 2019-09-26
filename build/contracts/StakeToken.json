@@ -1404,12 +1404,12 @@
         }
       },
       "links": {},
-      "address": "0x5705acB00cc0000DCD0d371a20175DA4C9b57eF2",
-      "transactionHash": "0x1cad744559e0d6a743175f762e3a20853c1a5a72d8d0aa9d7725597a5c415015"
+      "address": "0x9b9F8852e22d55b0F1ebcBeCA0A38B28cD40f1Ad",
+      "transactionHash": "0xa1f0771c4c84ae6c50b5203e5be96d30696da7a6d96aed806b73ec37e719505b"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-25T13:55:44.059Z",
+  "updatedAt": "2019-10-03T22:53:22.173Z",
   "devdoc": {
     "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
     "methods": {

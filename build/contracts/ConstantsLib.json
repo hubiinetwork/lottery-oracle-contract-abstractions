@@ -282,12 +282,12 @@
     "3": {
       "events": {},
       "links": {},
-      "address": "0x7888fCE60aAF5aE7A831432399C47083477bAe73",
-      "transactionHash": "0x375357ff246aa0dceb477ff3a8251f687c302ad59807487ea5367b5b83ed0f37"
+      "address": "0xBd1854a8aE9D26E38Ce7d81a4E6D356c9F4D2cef",
+      "transactionHash": "0x495d4617181ac60c2be291673da6bf9ae46abfba5169aea773bf0ff0756649ce"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-25T13:55:44.022Z",
+  "updatedAt": "2019-10-03T22:53:22.143Z",
   "devdoc": {
     "methods": {}
   },
