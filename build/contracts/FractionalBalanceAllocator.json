@@ -3603,12 +3603,12 @@
       "links": {
         "ConstantsLib": "0x005615CB698d8e8AF5edE43CC5a9507285426Ccb"
       },
-      "address": "0x8EFE595d077Fb7D4bB3dC2c6eA6C064fC50103E5",
-      "transactionHash": "0x7bdb5717c24ff9087946c39dc59b55b1f6255513aa9683b62eadde0ed34e232a"
+      "address": "0x9270c5Dd5426aFfF0ce0B925C31EdEEDB0bd8475",
+      "transactionHash": "0x0490e34b14b56961eb62a89199a5203ce3218dcaea15ad267d081f4a702aec95"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-26T12:53:50.211Z",
+  "updatedAt": "2019-10-04T09:26:54.542Z",
   "devdoc": {
     "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
     "methods": {

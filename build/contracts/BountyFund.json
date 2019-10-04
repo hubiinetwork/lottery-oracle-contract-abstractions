@@ -6406,12 +6406,12 @@
         }
       },
       "links": {},
-      "address": "0xbC3B16bB30dcf3191652F1Ba1b1F9E610F8B6d8E",
-      "transactionHash": "0x950b8d46c8696ef8cb946a8dcc24a1b1639ce26c9e5cb2807bcf057efce1f5a3"
+      "address": "0x0C6F9D649086011eBB5f11f7Ea6213Da07361B27",
+      "transactionHash": "0x30bc36ec49f1cef2db431e9a83bc4592d17746b25446ae676074df691118b930"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-26T12:53:50.208Z",
+  "updatedAt": "2019-10-04T09:26:54.533Z",
   "devdoc": {
     "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
     "methods": {
