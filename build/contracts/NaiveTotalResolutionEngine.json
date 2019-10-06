@@ -1293,14 +1293,14 @@
     "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/NaiveTotalResolutionEngine.sol",
     "exportedSymbols": {
       "NaiveTotalResolutionEngine": [
-        1330
+        1356
       ]
     },
-    "id": 1331,
+    "id": 1357,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1187,
+        "id": 1213,
         "literals": [
           "solidity",
           "^",
@@ -1313,14 +1313,14 @@
       {
         "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Resolvable.sol",
         "file": "./Resolvable.sol",
-        "id": 1189,
+        "id": 1215,
         "nodeType": "ImportDirective",
-        "scope": 1331,
-        "sourceUnit": 3398,
+        "scope": 1357,
+        "sourceUnit": 3424,
         "src": "91:44:8",
         "symbolAliases": [
           {
-            "foreign": 1188,
+            "foreign": 1214,
             "local": null
           }
         ],
@@ -1329,14 +1329,14 @@
       {
         "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/ResolutionEngine.sol",
         "file": "./ResolutionEngine.sol",
-        "id": 1191,
+        "id": 1217,
         "nodeType": "ImportDirective",
-        "scope": 1331,
-        "sourceUnit": 3380,
+        "scope": 1357,
+        "sourceUnit": 3406,
         "src": "136:56:8",
         "symbolAliases": [
           {
-            "foreign": 1190,
+            "foreign": 1216,
             "local": null
           }
         ],
@@ -1348,17 +1348,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1192,
+              "id": 1218,
               "name": "Resolvable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3397,
+              "referencedDeclaration": 3423,
               "src": "498:10:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Resolvable_$3397",
+                "typeIdentifier": "t_contract$_Resolvable_$3423",
                 "typeString": "contract Resolvable"
               }
             },
-            "id": 1193,
+            "id": 1219,
             "nodeType": "InheritanceSpecifier",
             "src": "498:10:8"
           },
@@ -1366,37 +1366,37 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1194,
+              "id": 1220,
               "name": "ResolutionEngine",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3379,
+              "referencedDeclaration": 3405,
               "src": "510:16:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ResolutionEngine_$3379",
+                "typeIdentifier": "t_contract$_ResolutionEngine_$3405",
                 "typeString": "contract ResolutionEngine"
               }
             },
-            "id": 1195,
+            "id": 1221,
             "nodeType": "InheritanceSpecifier",
             "src": "510:16:8"
           }
         ],
         "contractDependencies": [
           112,
-          2266,
-          3379,
-          3397
+          2292,
+          3405,
+          3423
         ],
         "contractKind": "contract",
         "documentation": "@title NaiveTotalResolutionEngine\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A naïve total resolution engine\n Resolve the staking market when:\n - The total number of tokens staked on either option reaches the defined amount criterion",
         "fullyImplemented": true,
-        "id": 1330,
+        "id": 1356,
         "linearizedBaseContracts": [
-          1330,
-          3379,
+          1356,
+          3405,
           112,
-          2266,
-          3397
+          2292,
+          3423
         ],
         "name": "NaiveTotalResolutionEngine",
         "nodeType": "ContractDefinition",
@@ -1404,20 +1404,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 1199,
+            "id": 1225,
             "name": "NextAmountSet",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 1198,
+              "id": 1224,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1197,
+                  "id": 1223,
                   "indexed": false,
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1199,
+                  "scope": 1225,
                   "src": "554:14:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1426,7 +1426,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1196,
+                    "id": 1222,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "554:7:8",
@@ -1445,10 +1445,10 @@
           },
           {
             "constant": false,
-            "id": 1201,
+            "id": 1227,
             "name": "nextAmount",
             "nodeType": "VariableDeclaration",
-            "scope": 1330,
+            "scope": 1356,
             "src": "576:25:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1457,7 +1457,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 1200,
+              "id": 1226,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "576:7:8",
@@ -1471,25 +1471,25 @@
           },
           {
             "body": {
-              "id": 1221,
+              "id": 1247,
               "nodeType": "Block",
               "src": "1075:41:8",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1219,
+                    "id": 1245,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1217,
+                      "id": 1243,
                       "name": "nextAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1201,
+                      "referencedDeclaration": 1227,
                       "src": "1085:10:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1500,11 +1500,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1218,
+                      "id": 1244,
                       "name": "_nextAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1209,
+                      "referencedDeclaration": 1235,
                       "src": "1098:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1517,14 +1517,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1220,
+                  "id": 1246,
                   "nodeType": "ExpressionStatement",
                   "src": "1085:24:8"
                 }
               ]
             },
             "documentation": "@notice `msg.sender` will be added as accessor to the owner role\n @param _oracle The address of oracle\n @param _operator The address of operator\n @param _bountyFund The address of bounty fund\n @param _nextAmount The next amount criterion of this resolution engine",
-            "id": 1222,
+            "id": 1248,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
@@ -1532,11 +1532,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 1212,
+                    "id": 1238,
                     "name": "_oracle",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1203,
+                    "referencedDeclaration": 1229,
                     "src": "1038:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1545,11 +1545,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 1213,
+                    "id": 1239,
                     "name": "_operator",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1205,
+                    "referencedDeclaration": 1231,
                     "src": "1047:9:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1558,11 +1558,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 1214,
+                    "id": 1240,
                     "name": "_bountyFund",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1207,
+                    "referencedDeclaration": 1233,
                     "src": "1058:11:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1570,17 +1570,17 @@
                     }
                   }
                 ],
-                "id": 1215,
+                "id": 1241,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1211,
+                  "id": 1237,
                   "name": "ResolutionEngine",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 3379,
+                  "referencedDeclaration": 3405,
                   "src": "1021:16:8",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_ResolutionEngine_$3379_$",
+                    "typeIdentifier": "t_type$_t_contract$_ResolutionEngine_$3405_$",
                     "typeString": "type(contract ResolutionEngine)"
                   }
                 },
@@ -1591,15 +1591,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1210,
+              "id": 1236,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1203,
+                  "id": 1229,
                   "name": "_oracle",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1222,
+                  "scope": 1248,
                   "src": "920:15:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1608,7 +1608,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1202,
+                    "id": 1228,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "920:7:8",
@@ -1623,10 +1623,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1205,
+                  "id": 1231,
                   "name": "_operator",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1222,
+                  "scope": 1248,
                   "src": "937:17:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1635,7 +1635,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1204,
+                    "id": 1230,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "937:7:8",
@@ -1650,10 +1650,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1207,
+                  "id": 1233,
                   "name": "_bountyFund",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1222,
+                  "scope": 1248,
                   "src": "956:19:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1662,7 +1662,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1206,
+                    "id": 1232,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "956:7:8",
@@ -1677,10 +1677,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1209,
+                  "id": 1235,
                   "name": "_nextAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1222,
+                  "scope": 1248,
                   "src": "985:19:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1689,7 +1689,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1208,
+                    "id": 1234,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "985:7:8",
@@ -1705,12 +1705,12 @@
               "src": "919:86:8"
             },
             "returnParameters": {
-              "id": 1216,
+              "id": 1242,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1075:0:8"
             },
-            "scope": 1330,
+            "scope": 1356,
             "src": "908:208:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1718,7 +1718,7 @@
           },
           {
             "body": {
-              "id": 1254,
+              "id": 1280,
               "nodeType": "Block",
               "src": "1415:364:8",
               "statements": [
@@ -1734,7 +1734,7 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 1238,
+                          "id": 1264,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1744,11 +1744,11 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 1230,
+                                "id": 1256,
                                 "name": "verificationPhaseNumber",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2374,
+                                "referencedDeclaration": 2400,
                                 "src": "1462:23:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -1763,18 +1763,18 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "id": 1229,
+                              "id": 1255,
                               "name": "amountByPhaseNumber",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1317,
+                              "referencedDeclaration": 1343,
                               "src": "1442:19:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_uint256_$",
                                 "typeString": "function (uint256) view returns (uint256)"
                               }
                             },
-                            "id": 1231,
+                            "id": 1257,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1798,25 +1798,25 @@
                                 "argumentTypes": null,
                                 "baseExpression": {
                                   "argumentTypes": null,
-                                  "id": 1232,
+                                  "id": 1258,
                                   "name": "verificationPhaseByPhaseNumber",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2378,
+                                  "referencedDeclaration": 2404,
                                   "src": "1497:30:8",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3495_storage_$",
+                                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3521_storage_$",
                                     "typeString": "mapping(uint256 => struct VerificationPhaseLib.VerificationPhase storage ref)"
                                   }
                                 },
-                                "id": 1234,
+                                "id": 1260,
                                 "indexExpression": {
                                   "argumentTypes": null,
-                                  "id": 1233,
+                                  "id": 1259,
                                   "name": "verificationPhaseNumber",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2374,
+                                  "referencedDeclaration": 2400,
                                   "src": "1528:23:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
@@ -1830,32 +1830,32 @@
                                 "nodeType": "IndexAccess",
                                 "src": "1497:55:8",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_VerificationPhase_$3495_storage",
+                                  "typeIdentifier": "t_struct$_VerificationPhase_$3521_storage",
                                   "typeString": "struct VerificationPhaseLib.VerificationPhase storage ref"
                                 }
                               },
-                              "id": 1235,
+                              "id": 1261,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "stakedAmountByStatus",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 3465,
+                              "referencedDeclaration": 3491,
                               "src": "1497:76:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_bool_$_t_uint256_$",
                                 "typeString": "mapping(bool => uint256)"
                               }
                             },
-                            "id": 1237,
+                            "id": 1263,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 1236,
+                              "id": 1262,
                               "name": "_status",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1224,
+                              "referencedDeclaration": 1250,
                               "src": "1574:7:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bool",
@@ -1882,7 +1882,7 @@
                         "falseExpression": {
                           "argumentTypes": null,
                           "hexValue": "30",
-                          "id": 1250,
+                          "id": 1276,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1897,7 +1897,7 @@
                           },
                           "value": "0"
                         },
-                        "id": 1251,
+                        "id": 1277,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1915,25 +1915,25 @@
                                   "argumentTypes": null,
                                   "baseExpression": {
                                     "argumentTypes": null,
-                                    "id": 1243,
+                                    "id": 1269,
                                     "name": "verificationPhaseByPhaseNumber",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 2378,
+                                    "referencedDeclaration": 2404,
                                     "src": "1655:30:8",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3495_storage_$",
+                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3521_storage_$",
                                       "typeString": "mapping(uint256 => struct VerificationPhaseLib.VerificationPhase storage ref)"
                                     }
                                   },
-                                  "id": 1245,
+                                  "id": 1271,
                                   "indexExpression": {
                                     "argumentTypes": null,
-                                    "id": 1244,
+                                    "id": 1270,
                                     "name": "verificationPhaseNumber",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 2374,
+                                    "referencedDeclaration": 2400,
                                     "src": "1686:23:8",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -1947,32 +1947,32 @@
                                   "nodeType": "IndexAccess",
                                   "src": "1655:55:8",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_VerificationPhase_$3495_storage",
+                                    "typeIdentifier": "t_struct$_VerificationPhase_$3521_storage",
                                     "typeString": "struct VerificationPhaseLib.VerificationPhase storage ref"
                                   }
                                 },
-                                "id": 1246,
+                                "id": 1272,
                                 "isConstant": false,
                                 "isLValue": true,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "stakedAmountByStatus",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 3465,
+                                "referencedDeclaration": 3491,
                                 "src": "1655:76:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_mapping$_t_bool_$_t_uint256_$",
                                   "typeString": "mapping(bool => uint256)"
                                 }
                               },
-                              "id": 1248,
+                              "id": 1274,
                               "indexExpression": {
                                 "argumentTypes": null,
-                                "id": 1247,
+                                "id": 1273,
                                 "name": "_status",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1224,
+                                "referencedDeclaration": 1250,
                                 "src": "1732:7:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_bool",
@@ -2003,11 +2003,11 @@
                               "arguments": [
                                 {
                                   "argumentTypes": null,
-                                  "id": 1240,
+                                  "id": 1266,
                                   "name": "verificationPhaseNumber",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2374,
+                                  "referencedDeclaration": 2400,
                                   "src": "1613:23:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
@@ -2022,18 +2022,18 @@
                                     "typeString": "uint256"
                                   }
                                 ],
-                                "id": 1239,
+                                "id": 1265,
                                 "name": "amountByPhaseNumber",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1317,
+                                "referencedDeclaration": 1343,
                                 "src": "1593:19:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_uint256_$",
                                   "typeString": "function (uint256) view returns (uint256)"
                                 }
                               },
-                              "id": 1241,
+                              "id": 1267,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -2047,21 +2047,21 @@
                                 "typeString": "uint256"
                               }
                             },
-                            "id": 1242,
+                            "id": 1268,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "sub",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 3879,
+                            "referencedDeclaration": 3905,
                             "src": "1593:48:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
                               "typeString": "function (uint256,uint256) pure returns (uint256)"
                             }
                           },
-                          "id": 1249,
+                          "id": 1275,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2081,7 +2081,7 @@
                         }
                       }
                     ],
-                    "id": 1252,
+                    "id": 1278,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -2094,30 +2094,30 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 1228,
-                  "id": 1253,
+                  "functionReturnParameters": 1254,
+                  "id": 1279,
                   "nodeType": "Return",
                   "src": "1425:347:8"
                 }
               ]
             },
             "documentation": "@notice Return the amount needed to resolve the current market for the given status\n @param _status The concerned status\n @return the amount needed to obtain to resolve the market",
-            "id": 1255,
+            "id": 1281,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "resolutionDeltaAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1225,
+              "id": 1251,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1224,
+                  "id": 1250,
                   "name": "_status",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1255,
+                  "scope": 1281,
                   "src": "1355:12:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2126,7 +2126,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1223,
+                    "id": 1249,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1355:4:8",
@@ -2142,15 +2142,15 @@
               "src": "1354:14:8"
             },
             "returnParameters": {
-              "id": 1228,
+              "id": 1254,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1227,
+                  "id": 1253,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1255,
+                  "scope": 1281,
                   "src": "1402:7:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2159,7 +2159,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1226,
+                    "id": 1252,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1402:7:8",
@@ -2174,15 +2174,15 @@
               ],
               "src": "1401:9:8"
             },
-            "scope": 1330,
+            "scope": 1356,
             "src": "1324:455:8",
             "stateMutability": "view",
-            "superFunction": 3396,
+            "superFunction": 3422,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1282,
+              "id": 1308,
               "nodeType": "Block",
               "src": "1999:313:8",
               "statements": [
@@ -2193,7 +2193,7 @@
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     },
-                    "id": 1280,
+                    "id": 1306,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2204,7 +2204,7 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 1269,
+                      "id": 1295,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2217,25 +2217,25 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 1260,
+                              "id": 1286,
                               "name": "verificationPhaseByPhaseNumber",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2378,
+                              "referencedDeclaration": 2404,
                               "src": "2016:30:8",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3495_storage_$",
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3521_storage_$",
                                 "typeString": "mapping(uint256 => struct VerificationPhaseLib.VerificationPhase storage ref)"
                               }
                             },
-                            "id": 1262,
+                            "id": 1288,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 1261,
+                              "id": 1287,
                               "name": "verificationPhaseNumber",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2374,
+                              "referencedDeclaration": 2400,
                               "src": "2047:23:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -2249,29 +2249,29 @@
                             "nodeType": "IndexAccess",
                             "src": "2016:55:8",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_VerificationPhase_$3495_storage",
+                              "typeIdentifier": "t_struct$_VerificationPhase_$3521_storage",
                               "typeString": "struct VerificationPhaseLib.VerificationPhase storage ref"
                             }
                           },
-                          "id": 1263,
+                          "id": 1289,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "stakedAmountByStatus",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 3465,
+                          "referencedDeclaration": 3491,
                           "src": "2016:76:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bool_$_t_uint256_$",
                             "typeString": "mapping(bool => uint256)"
                           }
                         },
-                        "id": 1265,
+                        "id": 1291,
                         "indexExpression": {
                           "argumentTypes": null,
                           "hexValue": "74727565",
-                          "id": 1264,
+                          "id": 1290,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2304,11 +2304,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 1267,
+                            "id": 1293,
                             "name": "verificationPhaseNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2374,
+                            "referencedDeclaration": 2400,
                             "src": "2130:23:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2323,18 +2323,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 1266,
+                          "id": 1292,
                           "name": "amountByPhaseNumber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1317,
+                          "referencedDeclaration": 1343,
                           "src": "2110:19:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_uint256_$",
                             "typeString": "function (uint256) view returns (uint256)"
                           }
                         },
-                        "id": 1268,
+                        "id": 1294,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2362,7 +2362,7 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 1279,
+                      "id": 1305,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2375,25 +2375,25 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 1270,
+                              "id": 1296,
                               "name": "verificationPhaseByPhaseNumber",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2378,
+                              "referencedDeclaration": 2404,
                               "src": "2166:30:8",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3495_storage_$",
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3521_storage_$",
                                 "typeString": "mapping(uint256 => struct VerificationPhaseLib.VerificationPhase storage ref)"
                               }
                             },
-                            "id": 1272,
+                            "id": 1298,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 1271,
+                              "id": 1297,
                               "name": "verificationPhaseNumber",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2374,
+                              "referencedDeclaration": 2400,
                               "src": "2197:23:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -2407,29 +2407,29 @@
                             "nodeType": "IndexAccess",
                             "src": "2166:55:8",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_VerificationPhase_$3495_storage",
+                              "typeIdentifier": "t_struct$_VerificationPhase_$3521_storage",
                               "typeString": "struct VerificationPhaseLib.VerificationPhase storage ref"
                             }
                           },
-                          "id": 1273,
+                          "id": 1299,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "stakedAmountByStatus",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 3465,
+                          "referencedDeclaration": 3491,
                           "src": "2166:76:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bool_$_t_uint256_$",
                             "typeString": "mapping(bool => uint256)"
                           }
                         },
-                        "id": 1275,
+                        "id": 1301,
                         "indexExpression": {
                           "argumentTypes": null,
                           "hexValue": "66616c7365",
-                          "id": 1274,
+                          "id": 1300,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2462,11 +2462,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 1277,
+                            "id": 1303,
                             "name": "verificationPhaseNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2374,
+                            "referencedDeclaration": 2400,
                             "src": "2281:23:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2481,18 +2481,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 1276,
+                          "id": 1302,
                           "name": "amountByPhaseNumber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1317,
+                          "referencedDeclaration": 1343,
                           "src": "2261:19:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_uint256_$",
                             "typeString": "function (uint256) view returns (uint256)"
                           }
                         },
-                        "id": 1278,
+                        "id": 1304,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2518,36 +2518,36 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 1259,
-                  "id": 1281,
+                  "functionReturnParameters": 1285,
+                  "id": 1307,
                   "nodeType": "Return",
                   "src": "2009:296:8"
                 }
               ]
             },
             "documentation": "@notice Gauge whether the resolution criteria have been met\n @return true if resolution criteria have been met, else false",
-            "id": 1283,
+            "id": 1309,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "resolutionCriteriaMet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1256,
+              "id": 1282,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1953:2:8"
             },
             "returnParameters": {
-              "id": 1259,
+              "id": 1285,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1258,
+                  "id": 1284,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1283,
+                  "scope": 1309,
                   "src": "1989:4:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2556,7 +2556,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1257,
+                    "id": 1283,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1989:4:8",
@@ -2571,33 +2571,33 @@
               ],
               "src": "1988:6:8"
             },
-            "scope": 1330,
+            "scope": 1356,
             "src": "1923:389:8",
             "stateMutability": "view",
-            "superFunction": 3389,
+            "superFunction": 3415,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1301,
+              "id": 1327,
               "nodeType": "Block",
               "src": "2585:130:8",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1295,
+                    "id": 1321,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1293,
+                      "id": 1319,
                       "name": "nextAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1201,
+                      "referencedDeclaration": 1227,
                       "src": "2621:10:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2608,11 +2608,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1294,
+                      "id": 1320,
                       "name": "_nextAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1285,
+                      "referencedDeclaration": 1311,
                       "src": "2634:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2625,7 +2625,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1296,
+                  "id": 1322,
                   "nodeType": "ExpressionStatement",
                   "src": "2621:24:8"
                 },
@@ -2635,11 +2635,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1298,
+                        "id": 1324,
                         "name": "nextAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1201,
+                        "referencedDeclaration": 1227,
                         "src": "2697:10:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2654,18 +2654,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 1297,
+                      "id": 1323,
                       "name": "NextAmountSet",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1199,
+                      "referencedDeclaration": 1225,
                       "src": "2683:13:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 1299,
+                    "id": 1325,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2679,14 +2679,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1300,
+                  "id": 1326,
                   "nodeType": "EmitStatement",
                   "src": "2678:30:8"
                 }
               ]
             },
             "documentation": "@notice Set the next amount criterion\n @dev Only enabled when the resolution engine is not frozen\n @param _nextAmount The next amount",
-            "id": 1302,
+            "id": 1328,
             "implemented": true,
             "kind": "function",
             "modifiers": [
@@ -2694,11 +2694,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 1288,
+                    "id": 1314,
                     "name": "OWNER_ROLE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2056,
+                    "referencedDeclaration": 2082,
                     "src": "2551:10:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory",
@@ -2706,14 +2706,14 @@
                     }
                   }
                 ],
-                "id": 1289,
+                "id": 1315,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1287,
+                  "id": 1313,
                   "name": "onlyRoleAccessor",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2096,
+                  "referencedDeclaration": 2122,
                   "src": "2534:16:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_string_memory_ptr_$",
@@ -2725,14 +2725,14 @@
               },
               {
                 "arguments": null,
-                "id": 1291,
+                "id": 1317,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1290,
+                  "id": 1316,
                   "name": "onlyNotFrozen",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2476,
+                  "referencedDeclaration": 2502,
                   "src": "2567:13:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -2746,15 +2746,15 @@
             "name": "setNextAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1286,
+              "id": 1312,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1285,
+                  "id": 1311,
                   "name": "_nextAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1302,
+                  "scope": 1328,
                   "src": "2498:19:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2763,7 +2763,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1284,
+                    "id": 1310,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2498:7:8",
@@ -2779,12 +2779,12 @@
               "src": "2497:21:8"
             },
             "returnParameters": {
-              "id": 1292,
+              "id": 1318,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2585:0:8"
             },
-            "scope": 1330,
+            "scope": 1356,
             "src": "2475:240:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2792,7 +2792,7 @@
           },
           {
             "body": {
-              "id": 1316,
+              "id": 1342,
               "nodeType": "Block",
               "src": "3023:96:8",
               "statements": [
@@ -2805,25 +2805,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 1309,
+                          "id": 1335,
                           "name": "verificationPhaseByPhaseNumber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2378,
+                          "referencedDeclaration": 2404,
                           "src": "3040:30:8",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3495_storage_$",
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3521_storage_$",
                             "typeString": "mapping(uint256 => struct VerificationPhaseLib.VerificationPhase storage ref)"
                           }
                         },
-                        "id": 1311,
+                        "id": 1337,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 1310,
+                          "id": 1336,
                           "name": "_verificationPhaseNumber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1304,
+                          "referencedDeclaration": 1330,
                           "src": "3071:24:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -2837,29 +2837,29 @@
                         "nodeType": "IndexAccess",
                         "src": "3040:56:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_VerificationPhase_$3495_storage",
+                          "typeIdentifier": "t_struct$_VerificationPhase_$3521_storage",
                           "typeString": "struct VerificationPhaseLib.VerificationPhase storage ref"
                         }
                       },
-                      "id": 1312,
+                      "id": 1338,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "uintCriteria",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3494,
+                      "referencedDeclaration": 3520,
                       "src": "3040:69:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
                         "typeString": "uint256[] storage ref"
                       }
                     },
-                    "id": 1314,
+                    "id": 1340,
                     "indexExpression": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 1313,
+                      "id": 1339,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2885,30 +2885,30 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 1308,
-                  "id": 1315,
+                  "functionReturnParameters": 1334,
+                  "id": 1341,
                   "nodeType": "Return",
                   "src": "3033:79:8"
                 }
               ]
             },
             "documentation": "@notice Get the amount parameter by the given verification phase number\n @param _verificationPhaseNumber The concerned verification phase number\n @return the amount value",
-            "id": 1317,
+            "id": 1343,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "amountByPhaseNumber",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1305,
+              "id": 1331,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1304,
+                  "id": 1330,
                   "name": "_verificationPhaseNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1317,
+                  "scope": 1343,
                   "src": "2943:32:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2917,7 +2917,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1303,
+                    "id": 1329,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2943:7:8",
@@ -2933,15 +2933,15 @@
               "src": "2942:34:8"
             },
             "returnParameters": {
-              "id": 1308,
+              "id": 1334,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1307,
+                  "id": 1333,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1317,
+                  "scope": 1343,
                   "src": "3010:7:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2950,7 +2950,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1306,
+                    "id": 1332,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3010:7:8",
@@ -2965,7 +2965,7 @@
               ],
               "src": "3009:9:8"
             },
-            "scope": 1330,
+            "scope": 1356,
             "src": "2914:205:8",
             "stateMutability": "view",
             "superFunction": null,
@@ -2973,7 +2973,7 @@
           },
           {
             "body": {
-              "id": 1328,
+              "id": 1354,
               "nodeType": "Block",
               "src": "3259:102:8",
               "statements": [
@@ -2983,11 +2983,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1325,
+                        "id": 1351,
                         "name": "nextAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1201,
+                        "referencedDeclaration": 1227,
                         "src": "3343:10:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3008,25 +3008,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 1320,
+                            "id": 1346,
                             "name": "verificationPhaseByPhaseNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2378,
+                            "referencedDeclaration": 2404,
                             "src": "3269:30:8",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3495_storage_$",
+                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3521_storage_$",
                               "typeString": "mapping(uint256 => struct VerificationPhaseLib.VerificationPhase storage ref)"
                             }
                           },
-                          "id": 1322,
+                          "id": 1348,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 1321,
+                            "id": 1347,
                             "name": "verificationPhaseNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2374,
+                            "referencedDeclaration": 2400,
                             "src": "3300:23:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3040,25 +3040,25 @@
                           "nodeType": "IndexAccess",
                           "src": "3269:55:8",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_VerificationPhase_$3495_storage",
+                            "typeIdentifier": "t_struct$_VerificationPhase_$3521_storage",
                             "typeString": "struct VerificationPhaseLib.VerificationPhase storage ref"
                           }
                         },
-                        "id": 1323,
+                        "id": 1349,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "uintCriteria",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 3494,
+                        "referencedDeclaration": 3520,
                         "src": "3269:68:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
                           "typeString": "uint256[] storage ref"
                         }
                       },
-                      "id": 1324,
+                      "id": 1350,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3072,7 +3072,7 @@
                         "typeString": "function (uint256) returns (uint256)"
                       }
                     },
-                    "id": 1326,
+                    "id": 1352,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3086,39 +3086,39 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1327,
+                  "id": 1353,
                   "nodeType": "ExpressionStatement",
                   "src": "3269:85:8"
                 }
               ]
             },
             "documentation": "@notice Augment the verification phase with verification criteria params",
-            "id": 1329,
+            "id": 1355,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_addVerificationCriteria",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1318,
+              "id": 1344,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3239:2:8"
             },
             "returnParameters": {
-              "id": 1319,
+              "id": 1345,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3259:0:8"
             },
-            "scope": 1330,
+            "scope": 1356,
             "src": "3206:155:8",
             "stateMutability": "nonpayable",
-            "superFunction": 3172,
+            "superFunction": 3198,
             "visibility": "internal"
           }
         ],
-        "scope": 1331,
+        "scope": 1357,
         "src": "459:2904:8"
       }
     ],
@@ -3128,14 +3128,14 @@
     "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/NaiveTotalResolutionEngine.sol",
     "exportedSymbols": {
       "NaiveTotalResolutionEngine": [
-        1330
+        1356
       ]
     },
-    "id": 1331,
+    "id": 1357,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1187,
+        "id": 1213,
         "literals": [
           "solidity",
           "^",
@@ -3148,14 +3148,14 @@
       {
         "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Resolvable.sol",
         "file": "./Resolvable.sol",
-        "id": 1189,
+        "id": 1215,
         "nodeType": "ImportDirective",
-        "scope": 1331,
-        "sourceUnit": 3398,
+        "scope": 1357,
+        "sourceUnit": 3424,
         "src": "91:44:8",
         "symbolAliases": [
           {
-            "foreign": 1188,
+            "foreign": 1214,
             "local": null
           }
         ],
@@ -3164,14 +3164,14 @@
       {
         "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/ResolutionEngine.sol",
         "file": "./ResolutionEngine.sol",
-        "id": 1191,
+        "id": 1217,
         "nodeType": "ImportDirective",
-        "scope": 1331,
-        "sourceUnit": 3380,
+        "scope": 1357,
+        "sourceUnit": 3406,
         "src": "136:56:8",
         "symbolAliases": [
           {
-            "foreign": 1190,
+            "foreign": 1216,
             "local": null
           }
         ],
@@ -3183,17 +3183,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1192,
+              "id": 1218,
               "name": "Resolvable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3397,
+              "referencedDeclaration": 3423,
               "src": "498:10:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Resolvable_$3397",
+                "typeIdentifier": "t_contract$_Resolvable_$3423",
                 "typeString": "contract Resolvable"
               }
             },
-            "id": 1193,
+            "id": 1219,
             "nodeType": "InheritanceSpecifier",
             "src": "498:10:8"
           },
@@ -3201,37 +3201,37 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1194,
+              "id": 1220,
               "name": "ResolutionEngine",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3379,
+              "referencedDeclaration": 3405,
               "src": "510:16:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ResolutionEngine_$3379",
+                "typeIdentifier": "t_contract$_ResolutionEngine_$3405",
                 "typeString": "contract ResolutionEngine"
               }
             },
-            "id": 1195,
+            "id": 1221,
             "nodeType": "InheritanceSpecifier",
             "src": "510:16:8"
           }
         ],
         "contractDependencies": [
           112,
-          2266,
-          3379,
-          3397
+          2292,
+          3405,
+          3423
         ],
         "contractKind": "contract",
         "documentation": "@title NaiveTotalResolutionEngine\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A naïve total resolution engine\n Resolve the staking market when:\n - The total number of tokens staked on either option reaches the defined amount criterion",
         "fullyImplemented": true,
-        "id": 1330,
+        "id": 1356,
         "linearizedBaseContracts": [
-          1330,
-          3379,
+          1356,
+          3405,
           112,
-          2266,
-          3397
+          2292,
+          3423
         ],
         "name": "NaiveTotalResolutionEngine",
         "nodeType": "ContractDefinition",
@@ -3239,20 +3239,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 1199,
+            "id": 1225,
             "name": "NextAmountSet",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 1198,
+              "id": 1224,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1197,
+                  "id": 1223,
                   "indexed": false,
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1199,
+                  "scope": 1225,
                   "src": "554:14:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3261,7 +3261,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1196,
+                    "id": 1222,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "554:7:8",
@@ -3280,10 +3280,10 @@
           },
           {
             "constant": false,
-            "id": 1201,
+            "id": 1227,
             "name": "nextAmount",
             "nodeType": "VariableDeclaration",
-            "scope": 1330,
+            "scope": 1356,
             "src": "576:25:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3292,7 +3292,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 1200,
+              "id": 1226,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "576:7:8",
@@ -3306,25 +3306,25 @@
           },
           {
             "body": {
-              "id": 1221,
+              "id": 1247,
               "nodeType": "Block",
               "src": "1075:41:8",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1219,
+                    "id": 1245,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1217,
+                      "id": 1243,
                       "name": "nextAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1201,
+                      "referencedDeclaration": 1227,
                       "src": "1085:10:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3335,11 +3335,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1218,
+                      "id": 1244,
                       "name": "_nextAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1209,
+                      "referencedDeclaration": 1235,
                       "src": "1098:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3352,14 +3352,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1220,
+                  "id": 1246,
                   "nodeType": "ExpressionStatement",
                   "src": "1085:24:8"
                 }
               ]
             },
             "documentation": "@notice `msg.sender` will be added as accessor to the owner role\n @param _oracle The address of oracle\n @param _operator The address of operator\n @param _bountyFund The address of bounty fund\n @param _nextAmount The next amount criterion of this resolution engine",
-            "id": 1222,
+            "id": 1248,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
@@ -3367,11 +3367,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 1212,
+                    "id": 1238,
                     "name": "_oracle",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1203,
+                    "referencedDeclaration": 1229,
                     "src": "1038:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3380,11 +3380,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 1213,
+                    "id": 1239,
                     "name": "_operator",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1205,
+                    "referencedDeclaration": 1231,
                     "src": "1047:9:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3393,11 +3393,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 1214,
+                    "id": 1240,
                     "name": "_bountyFund",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1207,
+                    "referencedDeclaration": 1233,
                     "src": "1058:11:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3405,17 +3405,17 @@
                     }
                   }
                 ],
-                "id": 1215,
+                "id": 1241,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1211,
+                  "id": 1237,
                   "name": "ResolutionEngine",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 3379,
+                  "referencedDeclaration": 3405,
                   "src": "1021:16:8",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_ResolutionEngine_$3379_$",
+                    "typeIdentifier": "t_type$_t_contract$_ResolutionEngine_$3405_$",
                     "typeString": "type(contract ResolutionEngine)"
                   }
                 },
@@ -3426,15 +3426,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1210,
+              "id": 1236,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1203,
+                  "id": 1229,
                   "name": "_oracle",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1222,
+                  "scope": 1248,
                   "src": "920:15:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3443,7 +3443,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1202,
+                    "id": 1228,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "920:7:8",
@@ -3458,10 +3458,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1205,
+                  "id": 1231,
                   "name": "_operator",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1222,
+                  "scope": 1248,
                   "src": "937:17:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3470,7 +3470,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1204,
+                    "id": 1230,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "937:7:8",
@@ -3485,10 +3485,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1207,
+                  "id": 1233,
                   "name": "_bountyFund",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1222,
+                  "scope": 1248,
                   "src": "956:19:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3497,7 +3497,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1206,
+                    "id": 1232,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "956:7:8",
@@ -3512,10 +3512,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1209,
+                  "id": 1235,
                   "name": "_nextAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1222,
+                  "scope": 1248,
                   "src": "985:19:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3524,7 +3524,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1208,
+                    "id": 1234,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "985:7:8",
@@ -3540,12 +3540,12 @@
               "src": "919:86:8"
             },
             "returnParameters": {
-              "id": 1216,
+              "id": 1242,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1075:0:8"
             },
-            "scope": 1330,
+            "scope": 1356,
             "src": "908:208:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3553,7 +3553,7 @@
           },
           {
             "body": {
-              "id": 1254,
+              "id": 1280,
               "nodeType": "Block",
               "src": "1415:364:8",
               "statements": [
@@ -3569,7 +3569,7 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 1238,
+                          "id": 1264,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3579,11 +3579,11 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 1230,
+                                "id": 1256,
                                 "name": "verificationPhaseNumber",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2374,
+                                "referencedDeclaration": 2400,
                                 "src": "1462:23:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -3598,18 +3598,18 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "id": 1229,
+                              "id": 1255,
                               "name": "amountByPhaseNumber",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1317,
+                              "referencedDeclaration": 1343,
                               "src": "1442:19:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_uint256_$",
                                 "typeString": "function (uint256) view returns (uint256)"
                               }
                             },
-                            "id": 1231,
+                            "id": 1257,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -3633,25 +3633,25 @@
                                 "argumentTypes": null,
                                 "baseExpression": {
                                   "argumentTypes": null,
-                                  "id": 1232,
+                                  "id": 1258,
                                   "name": "verificationPhaseByPhaseNumber",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2378,
+                                  "referencedDeclaration": 2404,
                                   "src": "1497:30:8",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3495_storage_$",
+                                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3521_storage_$",
                                     "typeString": "mapping(uint256 => struct VerificationPhaseLib.VerificationPhase storage ref)"
                                   }
                                 },
-                                "id": 1234,
+                                "id": 1260,
                                 "indexExpression": {
                                   "argumentTypes": null,
-                                  "id": 1233,
+                                  "id": 1259,
                                   "name": "verificationPhaseNumber",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2374,
+                                  "referencedDeclaration": 2400,
                                   "src": "1528:23:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
@@ -3665,32 +3665,32 @@
                                 "nodeType": "IndexAccess",
                                 "src": "1497:55:8",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_VerificationPhase_$3495_storage",
+                                  "typeIdentifier": "t_struct$_VerificationPhase_$3521_storage",
                                   "typeString": "struct VerificationPhaseLib.VerificationPhase storage ref"
                                 }
                               },
-                              "id": 1235,
+                              "id": 1261,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "stakedAmountByStatus",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 3465,
+                              "referencedDeclaration": 3491,
                               "src": "1497:76:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_bool_$_t_uint256_$",
                                 "typeString": "mapping(bool => uint256)"
                               }
                             },
-                            "id": 1237,
+                            "id": 1263,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 1236,
+                              "id": 1262,
                               "name": "_status",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1224,
+                              "referencedDeclaration": 1250,
                               "src": "1574:7:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bool",
@@ -3717,7 +3717,7 @@
                         "falseExpression": {
                           "argumentTypes": null,
                           "hexValue": "30",
-                          "id": 1250,
+                          "id": 1276,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3732,7 +3732,7 @@
                           },
                           "value": "0"
                         },
-                        "id": 1251,
+                        "id": 1277,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3750,25 +3750,25 @@
                                   "argumentTypes": null,
                                   "baseExpression": {
                                     "argumentTypes": null,
-                                    "id": 1243,
+                                    "id": 1269,
                                     "name": "verificationPhaseByPhaseNumber",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 2378,
+                                    "referencedDeclaration": 2404,
                                     "src": "1655:30:8",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3495_storage_$",
+                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3521_storage_$",
                                       "typeString": "mapping(uint256 => struct VerificationPhaseLib.VerificationPhase storage ref)"
                                     }
                                   },
-                                  "id": 1245,
+                                  "id": 1271,
                                   "indexExpression": {
                                     "argumentTypes": null,
-                                    "id": 1244,
+                                    "id": 1270,
                                     "name": "verificationPhaseNumber",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 2374,
+                                    "referencedDeclaration": 2400,
                                     "src": "1686:23:8",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -3782,32 +3782,32 @@
                                   "nodeType": "IndexAccess",
                                   "src": "1655:55:8",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_VerificationPhase_$3495_storage",
+                                    "typeIdentifier": "t_struct$_VerificationPhase_$3521_storage",
                                     "typeString": "struct VerificationPhaseLib.VerificationPhase storage ref"
                                   }
                                 },
-                                "id": 1246,
+                                "id": 1272,
                                 "isConstant": false,
                                 "isLValue": true,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "stakedAmountByStatus",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 3465,
+                                "referencedDeclaration": 3491,
                                 "src": "1655:76:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_mapping$_t_bool_$_t_uint256_$",
                                   "typeString": "mapping(bool => uint256)"
                                 }
                               },
-                              "id": 1248,
+                              "id": 1274,
                               "indexExpression": {
                                 "argumentTypes": null,
-                                "id": 1247,
+                                "id": 1273,
                                 "name": "_status",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1224,
+                                "referencedDeclaration": 1250,
                                 "src": "1732:7:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_bool",
@@ -3838,11 +3838,11 @@
                               "arguments": [
                                 {
                                   "argumentTypes": null,
-                                  "id": 1240,
+                                  "id": 1266,
                                   "name": "verificationPhaseNumber",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2374,
+                                  "referencedDeclaration": 2400,
                                   "src": "1613:23:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
@@ -3857,18 +3857,18 @@
                                     "typeString": "uint256"
                                   }
                                 ],
-                                "id": 1239,
+                                "id": 1265,
                                 "name": "amountByPhaseNumber",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1317,
+                                "referencedDeclaration": 1343,
                                 "src": "1593:19:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_uint256_$",
                                   "typeString": "function (uint256) view returns (uint256)"
                                 }
                               },
-                              "id": 1241,
+                              "id": 1267,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -3882,21 +3882,21 @@
                                 "typeString": "uint256"
                               }
                             },
-                            "id": 1242,
+                            "id": 1268,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "sub",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 3879,
+                            "referencedDeclaration": 3905,
                             "src": "1593:48:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
                               "typeString": "function (uint256,uint256) pure returns (uint256)"
                             }
                           },
-                          "id": 1249,
+                          "id": 1275,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3916,7 +3916,7 @@
                         }
                       }
                     ],
-                    "id": 1252,
+                    "id": 1278,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -3929,30 +3929,30 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 1228,
-                  "id": 1253,
+                  "functionReturnParameters": 1254,
+                  "id": 1279,
                   "nodeType": "Return",
                   "src": "1425:347:8"
                 }
               ]
             },
             "documentation": "@notice Return the amount needed to resolve the current market for the given status\n @param _status The concerned status\n @return the amount needed to obtain to resolve the market",
-            "id": 1255,
+            "id": 1281,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "resolutionDeltaAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1225,
+              "id": 1251,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1224,
+                  "id": 1250,
                   "name": "_status",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1255,
+                  "scope": 1281,
                   "src": "1355:12:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3961,7 +3961,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1223,
+                    "id": 1249,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1355:4:8",
@@ -3977,15 +3977,15 @@
               "src": "1354:14:8"
             },
             "returnParameters": {
-              "id": 1228,
+              "id": 1254,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1227,
+                  "id": 1253,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1255,
+                  "scope": 1281,
                   "src": "1402:7:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3994,7 +3994,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1226,
+                    "id": 1252,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1402:7:8",
@@ -4009,15 +4009,15 @@
               ],
               "src": "1401:9:8"
             },
-            "scope": 1330,
+            "scope": 1356,
             "src": "1324:455:8",
             "stateMutability": "view",
-            "superFunction": 3396,
+            "superFunction": 3422,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1282,
+              "id": 1308,
               "nodeType": "Block",
               "src": "1999:313:8",
               "statements": [
@@ -4028,7 +4028,7 @@
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     },
-                    "id": 1280,
+                    "id": 1306,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4039,7 +4039,7 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 1269,
+                      "id": 1295,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4052,25 +4052,25 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 1260,
+                              "id": 1286,
                               "name": "verificationPhaseByPhaseNumber",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2378,
+                              "referencedDeclaration": 2404,
                               "src": "2016:30:8",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3495_storage_$",
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3521_storage_$",
                                 "typeString": "mapping(uint256 => struct VerificationPhaseLib.VerificationPhase storage ref)"
                               }
                             },
-                            "id": 1262,
+                            "id": 1288,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 1261,
+                              "id": 1287,
                               "name": "verificationPhaseNumber",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2374,
+                              "referencedDeclaration": 2400,
                               "src": "2047:23:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -4084,29 +4084,29 @@
                             "nodeType": "IndexAccess",
                             "src": "2016:55:8",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_VerificationPhase_$3495_storage",
+                              "typeIdentifier": "t_struct$_VerificationPhase_$3521_storage",
                               "typeString": "struct VerificationPhaseLib.VerificationPhase storage ref"
                             }
                           },
-                          "id": 1263,
+                          "id": 1289,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "stakedAmountByStatus",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 3465,
+                          "referencedDeclaration": 3491,
                           "src": "2016:76:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bool_$_t_uint256_$",
                             "typeString": "mapping(bool => uint256)"
                           }
                         },
-                        "id": 1265,
+                        "id": 1291,
                         "indexExpression": {
                           "argumentTypes": null,
                           "hexValue": "74727565",
-                          "id": 1264,
+                          "id": 1290,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -4139,11 +4139,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 1267,
+                            "id": 1293,
                             "name": "verificationPhaseNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2374,
+                            "referencedDeclaration": 2400,
                             "src": "2130:23:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -4158,18 +4158,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 1266,
+                          "id": 1292,
                           "name": "amountByPhaseNumber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1317,
+                          "referencedDeclaration": 1343,
                           "src": "2110:19:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_uint256_$",
                             "typeString": "function (uint256) view returns (uint256)"
                           }
                         },
-                        "id": 1268,
+                        "id": 1294,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4197,7 +4197,7 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 1279,
+                      "id": 1305,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4210,25 +4210,25 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 1270,
+                              "id": 1296,
                               "name": "verificationPhaseByPhaseNumber",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2378,
+                              "referencedDeclaration": 2404,
                               "src": "2166:30:8",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3495_storage_$",
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3521_storage_$",
                                 "typeString": "mapping(uint256 => struct VerificationPhaseLib.VerificationPhase storage ref)"
                               }
                             },
-                            "id": 1272,
+                            "id": 1298,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 1271,
+                              "id": 1297,
                               "name": "verificationPhaseNumber",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2374,
+                              "referencedDeclaration": 2400,
                               "src": "2197:23:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -4242,29 +4242,29 @@
                             "nodeType": "IndexAccess",
                             "src": "2166:55:8",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_VerificationPhase_$3495_storage",
+                              "typeIdentifier": "t_struct$_VerificationPhase_$3521_storage",
                               "typeString": "struct VerificationPhaseLib.VerificationPhase storage ref"
                             }
                           },
-                          "id": 1273,
+                          "id": 1299,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "stakedAmountByStatus",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 3465,
+                          "referencedDeclaration": 3491,
                           "src": "2166:76:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bool_$_t_uint256_$",
                             "typeString": "mapping(bool => uint256)"
                           }
                         },
-                        "id": 1275,
+                        "id": 1301,
                         "indexExpression": {
                           "argumentTypes": null,
                           "hexValue": "66616c7365",
-                          "id": 1274,
+                          "id": 1300,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -4297,11 +4297,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 1277,
+                            "id": 1303,
                             "name": "verificationPhaseNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2374,
+                            "referencedDeclaration": 2400,
                             "src": "2281:23:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -4316,18 +4316,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 1276,
+                          "id": 1302,
                           "name": "amountByPhaseNumber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1317,
+                          "referencedDeclaration": 1343,
                           "src": "2261:19:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_uint256_$",
                             "typeString": "function (uint256) view returns (uint256)"
                           }
                         },
-                        "id": 1278,
+                        "id": 1304,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4353,36 +4353,36 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 1259,
-                  "id": 1281,
+                  "functionReturnParameters": 1285,
+                  "id": 1307,
                   "nodeType": "Return",
                   "src": "2009:296:8"
                 }
               ]
             },
             "documentation": "@notice Gauge whether the resolution criteria have been met\n @return true if resolution criteria have been met, else false",
-            "id": 1283,
+            "id": 1309,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "resolutionCriteriaMet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1256,
+              "id": 1282,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1953:2:8"
             },
             "returnParameters": {
-              "id": 1259,
+              "id": 1285,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1258,
+                  "id": 1284,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1283,
+                  "scope": 1309,
                   "src": "1989:4:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4391,7 +4391,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1257,
+                    "id": 1283,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1989:4:8",
@@ -4406,33 +4406,33 @@
               ],
               "src": "1988:6:8"
             },
-            "scope": 1330,
+            "scope": 1356,
             "src": "1923:389:8",
             "stateMutability": "view",
-            "superFunction": 3389,
+            "superFunction": 3415,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1301,
+              "id": 1327,
               "nodeType": "Block",
               "src": "2585:130:8",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1295,
+                    "id": 1321,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1293,
+                      "id": 1319,
                       "name": "nextAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1201,
+                      "referencedDeclaration": 1227,
                       "src": "2621:10:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -4443,11 +4443,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1294,
+                      "id": 1320,
                       "name": "_nextAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1285,
+                      "referencedDeclaration": 1311,
                       "src": "2634:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -4460,7 +4460,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1296,
+                  "id": 1322,
                   "nodeType": "ExpressionStatement",
                   "src": "2621:24:8"
                 },
@@ -4470,11 +4470,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1298,
+                        "id": 1324,
                         "name": "nextAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1201,
+                        "referencedDeclaration": 1227,
                         "src": "2697:10:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4489,18 +4489,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 1297,
+                      "id": 1323,
                       "name": "NextAmountSet",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1199,
+                      "referencedDeclaration": 1225,
                       "src": "2683:13:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 1299,
+                    "id": 1325,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4514,14 +4514,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1300,
+                  "id": 1326,
                   "nodeType": "EmitStatement",
                   "src": "2678:30:8"
                 }
               ]
             },
             "documentation": "@notice Set the next amount criterion\n @dev Only enabled when the resolution engine is not frozen\n @param _nextAmount The next amount",
-            "id": 1302,
+            "id": 1328,
             "implemented": true,
             "kind": "function",
             "modifiers": [
@@ -4529,11 +4529,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 1288,
+                    "id": 1314,
                     "name": "OWNER_ROLE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2056,
+                    "referencedDeclaration": 2082,
                     "src": "2551:10:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory",
@@ -4541,14 +4541,14 @@
                     }
                   }
                 ],
-                "id": 1289,
+                "id": 1315,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1287,
+                  "id": 1313,
                   "name": "onlyRoleAccessor",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2096,
+                  "referencedDeclaration": 2122,
                   "src": "2534:16:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_string_memory_ptr_$",
@@ -4560,14 +4560,14 @@
               },
               {
                 "arguments": null,
-                "id": 1291,
+                "id": 1317,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1290,
+                  "id": 1316,
                   "name": "onlyNotFrozen",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2476,
+                  "referencedDeclaration": 2502,
                   "src": "2567:13:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -4581,15 +4581,15 @@
             "name": "setNextAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1286,
+              "id": 1312,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1285,
+                  "id": 1311,
                   "name": "_nextAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1302,
+                  "scope": 1328,
                   "src": "2498:19:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4598,7 +4598,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1284,
+                    "id": 1310,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2498:7:8",
@@ -4614,12 +4614,12 @@
               "src": "2497:21:8"
             },
             "returnParameters": {
-              "id": 1292,
+              "id": 1318,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2585:0:8"
             },
-            "scope": 1330,
+            "scope": 1356,
             "src": "2475:240:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -4627,7 +4627,7 @@
           },
           {
             "body": {
-              "id": 1316,
+              "id": 1342,
               "nodeType": "Block",
               "src": "3023:96:8",
               "statements": [
@@ -4640,25 +4640,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 1309,
+                          "id": 1335,
                           "name": "verificationPhaseByPhaseNumber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2378,
+                          "referencedDeclaration": 2404,
                           "src": "3040:30:8",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3495_storage_$",
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3521_storage_$",
                             "typeString": "mapping(uint256 => struct VerificationPhaseLib.VerificationPhase storage ref)"
                           }
                         },
-                        "id": 1311,
+                        "id": 1337,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 1310,
+                          "id": 1336,
                           "name": "_verificationPhaseNumber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1304,
+                          "referencedDeclaration": 1330,
                           "src": "3071:24:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -4672,29 +4672,29 @@
                         "nodeType": "IndexAccess",
                         "src": "3040:56:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_VerificationPhase_$3495_storage",
+                          "typeIdentifier": "t_struct$_VerificationPhase_$3521_storage",
                           "typeString": "struct VerificationPhaseLib.VerificationPhase storage ref"
                         }
                       },
-                      "id": 1312,
+                      "id": 1338,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "uintCriteria",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3494,
+                      "referencedDeclaration": 3520,
                       "src": "3040:69:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
                         "typeString": "uint256[] storage ref"
                       }
                     },
-                    "id": 1314,
+                    "id": 1340,
                     "indexExpression": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 1313,
+                      "id": 1339,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -4720,30 +4720,30 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 1308,
-                  "id": 1315,
+                  "functionReturnParameters": 1334,
+                  "id": 1341,
                   "nodeType": "Return",
                   "src": "3033:79:8"
                 }
               ]
             },
             "documentation": "@notice Get the amount parameter by the given verification phase number\n @param _verificationPhaseNumber The concerned verification phase number\n @return the amount value",
-            "id": 1317,
+            "id": 1343,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "amountByPhaseNumber",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1305,
+              "id": 1331,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1304,
+                  "id": 1330,
                   "name": "_verificationPhaseNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1317,
+                  "scope": 1343,
                   "src": "2943:32:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4752,7 +4752,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1303,
+                    "id": 1329,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2943:7:8",
@@ -4768,15 +4768,15 @@
               "src": "2942:34:8"
             },
             "returnParameters": {
-              "id": 1308,
+              "id": 1334,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1307,
+                  "id": 1333,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1317,
+                  "scope": 1343,
                   "src": "3010:7:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4785,7 +4785,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1306,
+                    "id": 1332,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3010:7:8",
@@ -4800,7 +4800,7 @@
               ],
               "src": "3009:9:8"
             },
-            "scope": 1330,
+            "scope": 1356,
             "src": "2914:205:8",
             "stateMutability": "view",
             "superFunction": null,
@@ -4808,7 +4808,7 @@
           },
           {
             "body": {
-              "id": 1328,
+              "id": 1354,
               "nodeType": "Block",
               "src": "3259:102:8",
               "statements": [
@@ -4818,11 +4818,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1325,
+                        "id": 1351,
                         "name": "nextAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1201,
+                        "referencedDeclaration": 1227,
                         "src": "3343:10:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4843,25 +4843,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 1320,
+                            "id": 1346,
                             "name": "verificationPhaseByPhaseNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2378,
+                            "referencedDeclaration": 2404,
                             "src": "3269:30:8",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3495_storage_$",
+                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_VerificationPhase_$3521_storage_$",
                               "typeString": "mapping(uint256 => struct VerificationPhaseLib.VerificationPhase storage ref)"
                             }
                           },
-                          "id": 1322,
+                          "id": 1348,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 1321,
+                            "id": 1347,
                             "name": "verificationPhaseNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2374,
+                            "referencedDeclaration": 2400,
                             "src": "3300:23:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -4875,25 +4875,25 @@
                           "nodeType": "IndexAccess",
                           "src": "3269:55:8",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_VerificationPhase_$3495_storage",
+                            "typeIdentifier": "t_struct$_VerificationPhase_$3521_storage",
                             "typeString": "struct VerificationPhaseLib.VerificationPhase storage ref"
                           }
                         },
-                        "id": 1323,
+                        "id": 1349,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "uintCriteria",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 3494,
+                        "referencedDeclaration": 3520,
                         "src": "3269:68:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
                           "typeString": "uint256[] storage ref"
                         }
                       },
-                      "id": 1324,
+                      "id": 1350,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4907,7 +4907,7 @@
                         "typeString": "function (uint256) returns (uint256)"
                       }
                     },
-                    "id": 1326,
+                    "id": 1352,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4921,39 +4921,39 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1327,
+                  "id": 1353,
                   "nodeType": "ExpressionStatement",
                   "src": "3269:85:8"
                 }
               ]
             },
             "documentation": "@notice Augment the verification phase with verification criteria params",
-            "id": 1329,
+            "id": 1355,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_addVerificationCriteria",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1318,
+              "id": 1344,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3239:2:8"
             },
             "returnParameters": {
-              "id": 1319,
+              "id": 1345,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3259:0:8"
             },
-            "scope": 1330,
+            "scope": 1356,
             "src": "3206:155:8",
             "stateMutability": "nonpayable",
-            "superFunction": 3172,
+            "superFunction": 3198,
             "visibility": "internal"
           }
         ],
-        "scope": 1331,
+        "scope": 1357,
         "src": "459:2904:8"
       }
     ],
@@ -5263,14 +5263,14 @@
         }
       },
       "links": {
-        "VerificationPhaseLib": "0x28D10dFFC0c815aa2458F44805548143e602bcC3"
+        "VerificationPhaseLib": "0x4FE11C073dFCcC9D77eFB7028704442525322B98"
       },
-      "address": "0x8489E2558D8aafc841077b4F0dD06FEbeCfA50AD",
-      "transactionHash": "0xea5dd2b2d52444930cda389f8775d691d3c8535b7d2fd361d22975f3da5faf97"
+      "address": "0x359f7b70af2723A9B5386B2dc2F84CAa4171F1f8",
+      "transactionHash": "0x87e8b8255ad0f6d3b79ec3da85201b7319ad653bea7805923b4c5d2028f6ac66"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-10-03T22:51:21.342Z",
+  "updatedAt": "2019-10-06T10:14:39.585Z",
   "devdoc": {
     "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
     "methods": {

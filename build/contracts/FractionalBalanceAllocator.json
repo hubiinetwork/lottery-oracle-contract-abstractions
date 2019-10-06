@@ -317,14 +317,14 @@
     "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/FractionalBalanceAllocator.sol",
     "exportedSymbols": {
       "FractionalBalanceAllocator": [
-        1128
+        1154
       ]
     },
-    "id": 1129,
+    "id": 1155,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1000,
+        "id": 1026,
         "literals": [
           "solidity",
           "^",
@@ -337,14 +337,14 @@
       {
         "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Allocator.sol",
         "file": "./Allocator.sol",
-        "id": 1002,
+        "id": 1028,
         "nodeType": "ImportDirective",
-        "scope": 1129,
+        "scope": 1155,
         "sourceUnit": 307,
         "src": "91:42:6",
         "symbolAliases": [
           {
-            "foreign": 1001,
+            "foreign": 1027,
             "local": null
           }
         ],
@@ -353,14 +353,14 @@
       {
         "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/RBACed.sol",
         "file": "./RBACed.sol",
-        "id": 1004,
+        "id": 1030,
         "nodeType": "ImportDirective",
-        "scope": 1129,
-        "sourceUnit": 2267,
+        "scope": 1155,
+        "sourceUnit": 2293,
         "src": "134:36:6",
         "symbolAliases": [
           {
-            "foreign": 1003,
+            "foreign": 1029,
             "local": null
           }
         ],
@@ -369,14 +369,14 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/math/SafeMath.sol",
         "file": "openzeppelin-solidity/contracts/math/SafeMath.sol",
-        "id": 1006,
+        "id": 1032,
         "nodeType": "ImportDirective",
-        "scope": 1129,
-        "sourceUnit": 3961,
+        "scope": 1155,
+        "sourceUnit": 3987,
         "src": "171:75:6",
         "symbolAliases": [
           {
-            "foreign": 1005,
+            "foreign": 1031,
             "local": null
           }
         ],
@@ -385,14 +385,14 @@
       {
         "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/BountyFund.sol",
         "file": "./BountyFund.sol",
-        "id": 1008,
+        "id": 1034,
         "nodeType": "ImportDirective",
-        "scope": 1129,
-        "sourceUnit": 988,
+        "scope": 1155,
+        "sourceUnit": 1014,
         "src": "247:44:6",
         "symbolAliases": [
           {
-            "foreign": 1007,
+            "foreign": 1033,
             "local": null
           }
         ],
@@ -401,14 +401,14 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
         "file": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
-        "id": 1010,
+        "id": 1036,
         "nodeType": "ImportDirective",
-        "scope": 1129,
-        "sourceUnit": 4358,
+        "scope": 1155,
+        "sourceUnit": 4384,
         "src": "292:76:6",
         "symbolAliases": [
           {
-            "foreign": 1009,
+            "foreign": 1035,
             "local": null
           }
         ],
@@ -417,14 +417,14 @@
       {
         "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol",
         "file": "./ConstantsLib.sol",
-        "id": 1012,
+        "id": 1038,
         "nodeType": "ImportDirective",
-        "scope": 1129,
-        "sourceUnit": 999,
+        "scope": 1155,
+        "sourceUnit": 1025,
         "src": "369:48:6",
         "symbolAliases": [
           {
-            "foreign": 1011,
+            "foreign": 1037,
             "local": null
           }
         ],
@@ -436,7 +436,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1013,
+              "id": 1039,
               "name": "Allocator",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 306,
@@ -446,7 +446,7 @@
                 "typeString": "contract Allocator"
               }
             },
-            "id": 1014,
+            "id": 1040,
             "nodeType": "InheritanceSpecifier",
             "src": "636:9:6"
           },
@@ -454,55 +454,55 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1015,
+              "id": 1041,
               "name": "RBACed",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2266,
+              "referencedDeclaration": 2292,
               "src": "647:6:6",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_RBACed_$2266",
+                "typeIdentifier": "t_contract$_RBACed_$2292",
                 "typeString": "contract RBACed"
               }
             },
-            "id": 1016,
+            "id": 1042,
             "nodeType": "InheritanceSpecifier",
             "src": "647:6:6"
           }
         ],
         "contractDependencies": [
           306,
-          2266
+          2292
         ],
         "contractKind": "contract",
         "documentation": "@title FractionalBalanceAllocator\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A bounty allocator allocating by fraction of the bounty fund's token balance",
         "fullyImplemented": true,
-        "id": 1128,
+        "id": 1154,
         "linearizedBaseContracts": [
-          1128,
-          2266,
+          1154,
+          2292,
           306
         ],
         "name": "FractionalBalanceAllocator",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 1019,
+            "id": 1045,
             "libraryName": {
               "contractScope": null,
-              "id": 1017,
+              "id": 1043,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3960,
+              "referencedDeclaration": 3986,
               "src": "666:8:6",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$3960",
+                "typeIdentifier": "t_contract$_SafeMath_$3986",
                 "typeString": "library SafeMath"
               }
             },
             "nodeType": "UsingForDirective",
             "src": "660:27:6",
             "typeName": {
-              "id": 1018,
+              "id": 1044,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "679:7:6",
@@ -515,11 +515,11 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 1021,
+            "id": 1047,
             "name": "Frozen",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 1020,
+              "id": 1046,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "705:2:6"
@@ -529,20 +529,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 1025,
+            "id": 1051,
             "name": "FractionSet",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 1024,
+              "id": 1050,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1023,
+                  "id": 1049,
                   "indexed": false,
                   "name": "_fraction",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1025,
+                  "scope": 1051,
                   "src": "731:17:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -551,7 +551,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1022,
+                    "id": 1048,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "731:7:6",
@@ -570,10 +570,10 @@
           },
           {
             "constant": false,
-            "id": 1027,
+            "id": 1053,
             "name": "fraction",
             "nodeType": "VariableDeclaration",
-            "scope": 1128,
+            "scope": 1154,
             "src": "756:23:6",
             "stateVariable": true,
             "storageLocation": "default",
@@ -582,7 +582,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 1026,
+              "id": 1052,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "756:7:6",
@@ -596,10 +596,10 @@
           },
           {
             "constant": false,
-            "id": 1029,
+            "id": 1055,
             "name": "frozen",
             "nodeType": "VariableDeclaration",
-            "scope": 1128,
+            "scope": 1154,
             "src": "785:18:6",
             "stateVariable": true,
             "storageLocation": "default",
@@ -608,7 +608,7 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 1028,
+              "id": 1054,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
               "src": "785:4:6",
@@ -622,7 +622,7 @@
           },
           {
             "body": {
-              "id": 1047,
+              "id": 1073,
               "nodeType": "Block",
               "src": "856:261:6",
               "statements": [
@@ -636,18 +636,18 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1039,
+                        "id": 1065,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 1035,
+                          "id": 1061,
                           "name": "_fraction",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1031,
+                          "referencedDeclaration": 1057,
                           "src": "933:9:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -663,32 +663,32 @@
                             "argumentTypes": [],
                             "expression": {
                               "argumentTypes": null,
-                              "id": 1036,
+                              "id": 1062,
                               "name": "ConstantsLib",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 998,
+                              "referencedDeclaration": 1024,
                               "src": "946:12:6",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$998_$",
+                                "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$1024_$",
                                 "typeString": "type(library ConstantsLib)"
                               }
                             },
-                            "id": 1037,
+                            "id": 1063,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "PARTS_PER",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 997,
+                            "referencedDeclaration": 1023,
                             "src": "946:22:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
                               "typeString": "function () pure returns (uint256)"
                             }
                           },
-                          "id": 1038,
+                          "id": 1064,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -711,7 +711,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4672616374696f6e616c42616c616e6365416c6c6f6361746f723a206672616374696f6e2069732067726561746572207468616e20656e746972657479",
-                        "id": 1040,
+                        "id": 1066,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -738,21 +738,21 @@
                           "typeString": "literal_string \"FractionalBalanceAllocator: fraction is greater than entirety\""
                         }
                       ],
-                      "id": 1034,
+                      "id": 1060,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4502,
-                        4503
+                        4528,
+                        4529
                       ],
-                      "referencedDeclaration": 4503,
+                      "referencedDeclaration": 4529,
                       "src": "925:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1041,
+                    "id": 1067,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -766,25 +766,25 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1042,
+                  "id": 1068,
                   "nodeType": "ExpressionStatement",
                   "src": "925:123:6"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1045,
+                    "id": 1071,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1043,
+                      "id": 1069,
                       "name": "fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1027,
+                      "referencedDeclaration": 1053,
                       "src": "1090:8:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -795,11 +795,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1044,
+                      "id": 1070,
                       "name": "_fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1031,
+                      "referencedDeclaration": 1057,
                       "src": "1101:9:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -812,29 +812,29 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1046,
+                  "id": 1072,
                   "nodeType": "ExpressionStatement",
                   "src": "1090:20:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 1048,
+            "id": 1074,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1032,
+              "id": 1058,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1031,
+                  "id": 1057,
                   "name": "_fraction",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1048,
+                  "scope": 1074,
                   "src": "822:17:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -843,7 +843,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1030,
+                    "id": 1056,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "822:7:6",
@@ -859,12 +859,12 @@
               "src": "821:19:6"
             },
             "returnParameters": {
-              "id": 1033,
+              "id": 1059,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "856:0:6"
             },
-            "scope": 1128,
+            "scope": 1154,
             "src": "810:307:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -872,7 +872,7 @@
           },
           {
             "body": {
-              "id": 1057,
+              "id": 1083,
               "nodeType": "Block",
               "src": "1148:85:6",
               "statements": [
@@ -882,7 +882,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1052,
+                        "id": 1078,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -893,11 +893,11 @@
                         "src": "1166:7:6",
                         "subExpression": {
                           "argumentTypes": null,
-                          "id": 1051,
+                          "id": 1077,
                           "name": "frozen",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1029,
+                          "referencedDeclaration": 1055,
                           "src": "1167:6:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
@@ -912,7 +912,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4672616374696f6e616c42616c616e6365416c6c6f6361746f723a2069732066726f7a656e",
-                        "id": 1053,
+                        "id": 1079,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -939,21 +939,21 @@
                           "typeString": "literal_string \"FractionalBalanceAllocator: is frozen\""
                         }
                       ],
-                      "id": 1050,
+                      "id": 1076,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4502,
-                        4503
+                        4528,
+                        4529
                       ],
-                      "referencedDeclaration": 4503,
+                      "referencedDeclaration": 4529,
                       "src": "1158:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1054,
+                    "id": 1080,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -967,23 +967,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1055,
+                  "id": 1081,
                   "nodeType": "ExpressionStatement",
                   "src": "1158:57:6"
                 },
                 {
-                  "id": 1056,
+                  "id": 1082,
                   "nodeType": "PlaceholderStatement",
                   "src": "1225:1:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 1058,
+            "id": 1084,
             "name": "onlyNotFrozen",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 1049,
+              "id": 1075,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1145:2:6"
@@ -993,25 +993,25 @@
           },
           {
             "body": {
-              "id": 1071,
+              "id": 1097,
               "nodeType": "Block",
               "src": "1397:107:6",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1066,
+                    "id": 1092,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1064,
+                      "id": 1090,
                       "name": "frozen",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1029,
+                      "referencedDeclaration": 1055,
                       "src": "1438:6:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -1023,7 +1023,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 1065,
+                      "id": 1091,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1044,7 +1044,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 1067,
+                  "id": 1093,
                   "nodeType": "ExpressionStatement",
                   "src": "1438:13:6"
                 },
@@ -1054,18 +1054,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 1068,
+                      "id": 1094,
                       "name": "Frozen",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1021,
+                      "referencedDeclaration": 1047,
                       "src": "1489:6:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$__$returns$__$",
                         "typeString": "function ()"
                       }
                     },
-                    "id": 1069,
+                    "id": 1095,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1079,14 +1079,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1070,
+                  "id": 1096,
                   "nodeType": "EmitStatement",
                   "src": "1484:13:6"
                 }
               ]
             },
             "documentation": "@notice Freeze updates this allocator\n @dev This operation can not be undone",
-            "id": 1072,
+            "id": 1098,
             "implemented": true,
             "kind": "function",
             "modifiers": [
@@ -1094,11 +1094,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 1061,
+                    "id": 1087,
                     "name": "OWNER_ROLE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2056,
+                    "referencedDeclaration": 2082,
                     "src": "1381:10:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory",
@@ -1106,14 +1106,14 @@
                     }
                   }
                 ],
-                "id": 1062,
+                "id": 1088,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1060,
+                  "id": 1086,
                   "name": "onlyRoleAccessor",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2096,
+                  "referencedDeclaration": 2122,
                   "src": "1364:16:6",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_string_memory_ptr_$",
@@ -1127,18 +1127,18 @@
             "name": "freeze",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1059,
+              "id": 1085,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1346:2:6"
             },
             "returnParameters": {
-              "id": 1063,
+              "id": 1089,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1397:0:6"
             },
-            "scope": 1128,
+            "scope": 1154,
             "src": "1331:173:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1146,7 +1146,7 @@
           },
           {
             "body": {
-              "id": 1099,
+              "id": 1125,
               "nodeType": "Block",
               "src": "1697:317:6",
               "statements": [
@@ -1160,18 +1160,18 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1087,
+                        "id": 1113,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 1083,
+                          "id": 1109,
                           "name": "_fraction",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1074,
+                          "referencedDeclaration": 1100,
                           "src": "1774:9:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -1187,32 +1187,32 @@
                             "argumentTypes": [],
                             "expression": {
                               "argumentTypes": null,
-                              "id": 1084,
+                              "id": 1110,
                               "name": "ConstantsLib",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 998,
+                              "referencedDeclaration": 1024,
                               "src": "1787:12:6",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$998_$",
+                                "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$1024_$",
                                 "typeString": "type(library ConstantsLib)"
                               }
                             },
-                            "id": 1085,
+                            "id": 1111,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "PARTS_PER",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 997,
+                            "referencedDeclaration": 1023,
                             "src": "1787:22:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
                               "typeString": "function () pure returns (uint256)"
                             }
                           },
-                          "id": 1086,
+                          "id": 1112,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1235,7 +1235,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4672616374696f6e616c42616c616e6365416c6c6f6361746f723a206672616374696f6e2069732067726561746572207468616e20656e746972657479",
-                        "id": 1088,
+                        "id": 1114,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1262,21 +1262,21 @@
                           "typeString": "literal_string \"FractionalBalanceAllocator: fraction is greater than entirety\""
                         }
                       ],
-                      "id": 1082,
+                      "id": 1108,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4502,
-                        4503
+                        4528,
+                        4529
                       ],
-                      "referencedDeclaration": 4503,
+                      "referencedDeclaration": 4529,
                       "src": "1766:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1089,
+                    "id": 1115,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1290,25 +1290,25 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1090,
+                  "id": 1116,
                   "nodeType": "ExpressionStatement",
                   "src": "1766:123:6"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1093,
+                    "id": 1119,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1091,
+                      "id": 1117,
                       "name": "fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1027,
+                      "referencedDeclaration": 1053,
                       "src": "1928:8:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1319,11 +1319,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1092,
+                      "id": 1118,
                       "name": "_fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1074,
+                      "referencedDeclaration": 1100,
                       "src": "1939:9:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1336,7 +1336,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1094,
+                  "id": 1120,
                   "nodeType": "ExpressionStatement",
                   "src": "1928:20:6"
                 },
@@ -1346,11 +1346,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1096,
+                        "id": 1122,
                         "name": "fraction",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1027,
+                        "referencedDeclaration": 1053,
                         "src": "1998:8:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1365,18 +1365,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 1095,
+                      "id": 1121,
                       "name": "FractionSet",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1025,
+                      "referencedDeclaration": 1051,
                       "src": "1986:11:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 1097,
+                    "id": 1123,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1390,14 +1390,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1098,
+                  "id": 1124,
                   "nodeType": "EmitStatement",
                   "src": "1981:26:6"
                 }
               ]
             },
             "documentation": "@notice Set the fraction\n @param _fraction The fraction to be set",
-            "id": 1100,
+            "id": 1126,
             "implemented": true,
             "kind": "function",
             "modifiers": [
@@ -1405,11 +1405,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 1077,
+                    "id": 1103,
                     "name": "OWNER_ROLE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2056,
+                    "referencedDeclaration": 2082,
                     "src": "1663:10:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory",
@@ -1417,14 +1417,14 @@
                     }
                   }
                 ],
-                "id": 1078,
+                "id": 1104,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1076,
+                  "id": 1102,
                   "name": "onlyRoleAccessor",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2096,
+                  "referencedDeclaration": 2122,
                   "src": "1646:16:6",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_string_memory_ptr_$",
@@ -1436,14 +1436,14 @@
               },
               {
                 "arguments": null,
-                "id": 1080,
+                "id": 1106,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1079,
+                  "id": 1105,
                   "name": "onlyNotFrozen",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1058,
+                  "referencedDeclaration": 1084,
                   "src": "1679:13:6",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1457,15 +1457,15 @@
             "name": "setFraction",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1075,
+              "id": 1101,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1074,
+                  "id": 1100,
                   "name": "_fraction",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1100,
+                  "scope": 1126,
                   "src": "1612:17:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1474,7 +1474,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1073,
+                    "id": 1099,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1612:7:6",
@@ -1490,12 +1490,12 @@
               "src": "1611:19:6"
             },
             "returnParameters": {
-              "id": 1081,
+              "id": 1107,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1697:0:6"
             },
-            "scope": 1128,
+            "scope": 1154,
             "src": "1591:423:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1503,7 +1503,7 @@
           },
           {
             "body": {
-              "id": 1126,
+              "id": 1152,
               "nodeType": "Block",
               "src": "2151:156:6",
               "statements": [
@@ -1518,32 +1518,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 1121,
+                            "id": 1147,
                             "name": "ConstantsLib",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 998,
+                            "referencedDeclaration": 1024,
                             "src": "2275:12:6",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$998_$",
+                              "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$1024_$",
                               "typeString": "type(library ConstantsLib)"
                             }
                           },
-                          "id": 1122,
+                          "id": 1148,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "PARTS_PER",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 997,
+                          "referencedDeclaration": 1023,
                           "src": "2275:22:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
                             "typeString": "function () pure returns (uint256)"
                           }
                         },
-                        "id": 1123,
+                        "id": 1149,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1570,11 +1570,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 1118,
+                            "id": 1144,
                             "name": "fraction",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1027,
+                            "referencedDeclaration": 1053,
                             "src": "2252:8:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1599,18 +1599,18 @@
                                     "argumentTypes": null,
                                     "expression": {
                                       "argumentTypes": null,
-                                      "id": 1113,
+                                      "id": 1139,
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 4499,
+                                      "referencedDeclaration": 4525,
                                       "src": "2226:3:6",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
                                         "typeString": "msg"
                                       }
                                     },
-                                    "id": 1114,
+                                    "id": 1140,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
@@ -1632,7 +1632,7 @@
                                       "typeString": "address payable"
                                     }
                                   ],
-                                  "id": 1112,
+                                  "id": 1138,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -1645,7 +1645,7 @@
                                   },
                                   "typeName": "address"
                                 },
-                                "id": 1115,
+                                "id": 1141,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -1679,18 +1679,18 @@
                                         "argumentTypes": null,
                                         "expression": {
                                           "argumentTypes": null,
-                                          "id": 1106,
+                                          "id": 1132,
                                           "name": "msg",
                                           "nodeType": "Identifier",
                                           "overloadedDeclarations": [],
-                                          "referencedDeclaration": 4499,
+                                          "referencedDeclaration": 4525,
                                           "src": "2179:3:6",
                                           "typeDescriptions": {
                                             "typeIdentifier": "t_magic_message",
                                             "typeString": "msg"
                                           }
                                         },
-                                        "id": 1107,
+                                        "id": 1133,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
@@ -1712,18 +1712,18 @@
                                           "typeString": "address payable"
                                         }
                                       ],
-                                      "id": 1105,
+                                      "id": 1131,
                                       "name": "BountyFund",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 987,
+                                      "referencedDeclaration": 1013,
                                       "src": "2168:10:6",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_type$_t_contract$_BountyFund_$987_$",
+                                        "typeIdentifier": "t_type$_t_contract$_BountyFund_$1013_$",
                                         "typeString": "type(contract BountyFund)"
                                       }
                                     },
-                                    "id": 1108,
+                                    "id": 1134,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
@@ -1733,25 +1733,25 @@
                                     "nodeType": "FunctionCall",
                                     "src": "2168:22:6",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_BountyFund_$987",
+                                      "typeIdentifier": "t_contract$_BountyFund_$1013",
                                       "typeString": "contract BountyFund"
                                     }
                                   },
-                                  "id": 1109,
+                                  "id": 1135,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "memberName": "token",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 809,
+                                  "referencedDeclaration": 835,
                                   "src": "2168:28:6",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ERC20_$4357_$",
+                                    "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ERC20_$4383_$",
                                     "typeString": "function () view external returns (contract ERC20)"
                                   }
                                 },
-                                "id": 1110,
+                                "id": 1136,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -1761,25 +1761,25 @@
                                 "nodeType": "FunctionCall",
                                 "src": "2168:30:6",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_ERC20_$4357",
+                                  "typeIdentifier": "t_contract$_ERC20_$4383",
                                   "typeString": "contract ERC20"
                                 }
                               },
-                              "id": 1111,
+                              "id": 1137,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "balanceOf",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 4001,
+                              "referencedDeclaration": 4027,
                               "src": "2168:49:6",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                                 "typeString": "function (address) view external returns (uint256)"
                               }
                             },
-                            "id": 1116,
+                            "id": 1142,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1793,21 +1793,21 @@
                               "typeString": "uint256"
                             }
                           },
-                          "id": 1117,
+                          "id": 1143,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "mul",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 3913,
+                          "referencedDeclaration": 3939,
                           "src": "2168:83:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
                             "typeString": "function (uint256,uint256) pure returns (uint256)"
                           }
                         },
-                        "id": 1119,
+                        "id": 1145,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1821,21 +1821,21 @@
                           "typeString": "uint256"
                         }
                       },
-                      "id": 1120,
+                      "id": 1146,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "div",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3938,
+                      "referencedDeclaration": 3964,
                       "src": "2168:106:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
                         "typeString": "function (uint256,uint256) pure returns (uint256)"
                       }
                     },
-                    "id": 1124,
+                    "id": 1150,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1849,36 +1849,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 1104,
-                  "id": 1125,
+                  "functionReturnParameters": 1130,
+                  "id": 1151,
                   "nodeType": "Return",
                   "src": "2161:139:6"
                 }
               ]
             },
             "documentation": "@notice Return the defined allocation from the allocator",
-            "id": 1127,
+            "id": 1153,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "allocate",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1101,
+              "id": 1127,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2102:2:6"
             },
             "returnParameters": {
-              "id": 1104,
+              "id": 1130,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1103,
+                  "id": 1129,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1127,
+                  "scope": 1153,
                   "src": "2138:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1887,7 +1887,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1102,
+                    "id": 1128,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2138:7:6",
@@ -1902,14 +1902,14 @@
               ],
               "src": "2137:9:6"
             },
-            "scope": 1128,
+            "scope": 1154,
             "src": "2085:222:6",
             "stateMutability": "view",
             "superFunction": 305,
             "visibility": "public"
           }
         ],
-        "scope": 1129,
+        "scope": 1155,
         "src": "597:1712:6"
       }
     ],
@@ -1919,14 +1919,14 @@
     "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/FractionalBalanceAllocator.sol",
     "exportedSymbols": {
       "FractionalBalanceAllocator": [
-        1128
+        1154
       ]
     },
-    "id": 1129,
+    "id": 1155,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1000,
+        "id": 1026,
         "literals": [
           "solidity",
           "^",
@@ -1939,14 +1939,14 @@
       {
         "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/Allocator.sol",
         "file": "./Allocator.sol",
-        "id": 1002,
+        "id": 1028,
         "nodeType": "ImportDirective",
-        "scope": 1129,
+        "scope": 1155,
         "sourceUnit": 307,
         "src": "91:42:6",
         "symbolAliases": [
           {
-            "foreign": 1001,
+            "foreign": 1027,
             "local": null
           }
         ],
@@ -1955,14 +1955,14 @@
       {
         "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/RBACed.sol",
         "file": "./RBACed.sol",
-        "id": 1004,
+        "id": 1030,
         "nodeType": "ImportDirective",
-        "scope": 1129,
-        "sourceUnit": 2267,
+        "scope": 1155,
+        "sourceUnit": 2293,
         "src": "134:36:6",
         "symbolAliases": [
           {
-            "foreign": 1003,
+            "foreign": 1029,
             "local": null
           }
         ],
@@ -1971,14 +1971,14 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/math/SafeMath.sol",
         "file": "openzeppelin-solidity/contracts/math/SafeMath.sol",
-        "id": 1006,
+        "id": 1032,
         "nodeType": "ImportDirective",
-        "scope": 1129,
-        "sourceUnit": 3961,
+        "scope": 1155,
+        "sourceUnit": 3987,
         "src": "171:75:6",
         "symbolAliases": [
           {
-            "foreign": 1005,
+            "foreign": 1031,
             "local": null
           }
         ],
@@ -1987,14 +1987,14 @@
       {
         "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/BountyFund.sol",
         "file": "./BountyFund.sol",
-        "id": 1008,
+        "id": 1034,
         "nodeType": "ImportDirective",
-        "scope": 1129,
-        "sourceUnit": 988,
+        "scope": 1155,
+        "sourceUnit": 1014,
         "src": "247:44:6",
         "symbolAliases": [
           {
-            "foreign": 1007,
+            "foreign": 1033,
             "local": null
           }
         ],
@@ -2003,14 +2003,14 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
         "file": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
-        "id": 1010,
+        "id": 1036,
         "nodeType": "ImportDirective",
-        "scope": 1129,
-        "sourceUnit": 4358,
+        "scope": 1155,
+        "sourceUnit": 4384,
         "src": "292:76:6",
         "symbolAliases": [
           {
-            "foreign": 1009,
+            "foreign": 1035,
             "local": null
           }
         ],
@@ -2019,14 +2019,14 @@
       {
         "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol",
         "file": "./ConstantsLib.sol",
-        "id": 1012,
+        "id": 1038,
         "nodeType": "ImportDirective",
-        "scope": 1129,
-        "sourceUnit": 999,
+        "scope": 1155,
+        "sourceUnit": 1025,
         "src": "369:48:6",
         "symbolAliases": [
           {
-            "foreign": 1011,
+            "foreign": 1037,
             "local": null
           }
         ],
@@ -2038,7 +2038,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1013,
+              "id": 1039,
               "name": "Allocator",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 306,
@@ -2048,7 +2048,7 @@
                 "typeString": "contract Allocator"
               }
             },
-            "id": 1014,
+            "id": 1040,
             "nodeType": "InheritanceSpecifier",
             "src": "636:9:6"
           },
@@ -2056,55 +2056,55 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1015,
+              "id": 1041,
               "name": "RBACed",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2266,
+              "referencedDeclaration": 2292,
               "src": "647:6:6",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_RBACed_$2266",
+                "typeIdentifier": "t_contract$_RBACed_$2292",
                 "typeString": "contract RBACed"
               }
             },
-            "id": 1016,
+            "id": 1042,
             "nodeType": "InheritanceSpecifier",
             "src": "647:6:6"
           }
         ],
         "contractDependencies": [
           306,
-          2266
+          2292
         ],
         "contractKind": "contract",
         "documentation": "@title FractionalBalanceAllocator\n @author Jens Ivar Jørdre <jensivar@hubii.com>\n @notice A bounty allocator allocating by fraction of the bounty fund's token balance",
         "fullyImplemented": true,
-        "id": 1128,
+        "id": 1154,
         "linearizedBaseContracts": [
-          1128,
-          2266,
+          1154,
+          2292,
           306
         ],
         "name": "FractionalBalanceAllocator",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 1019,
+            "id": 1045,
             "libraryName": {
               "contractScope": null,
-              "id": 1017,
+              "id": 1043,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3960,
+              "referencedDeclaration": 3986,
               "src": "666:8:6",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$3960",
+                "typeIdentifier": "t_contract$_SafeMath_$3986",
                 "typeString": "library SafeMath"
               }
             },
             "nodeType": "UsingForDirective",
             "src": "660:27:6",
             "typeName": {
-              "id": 1018,
+              "id": 1044,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "679:7:6",
@@ -2117,11 +2117,11 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 1021,
+            "id": 1047,
             "name": "Frozen",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 1020,
+              "id": 1046,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "705:2:6"
@@ -2131,20 +2131,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 1025,
+            "id": 1051,
             "name": "FractionSet",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 1024,
+              "id": 1050,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1023,
+                  "id": 1049,
                   "indexed": false,
                   "name": "_fraction",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1025,
+                  "scope": 1051,
                   "src": "731:17:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2153,7 +2153,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1022,
+                    "id": 1048,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "731:7:6",
@@ -2172,10 +2172,10 @@
           },
           {
             "constant": false,
-            "id": 1027,
+            "id": 1053,
             "name": "fraction",
             "nodeType": "VariableDeclaration",
-            "scope": 1128,
+            "scope": 1154,
             "src": "756:23:6",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2184,7 +2184,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 1026,
+              "id": 1052,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "756:7:6",
@@ -2198,10 +2198,10 @@
           },
           {
             "constant": false,
-            "id": 1029,
+            "id": 1055,
             "name": "frozen",
             "nodeType": "VariableDeclaration",
-            "scope": 1128,
+            "scope": 1154,
             "src": "785:18:6",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2210,7 +2210,7 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 1028,
+              "id": 1054,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
               "src": "785:4:6",
@@ -2224,7 +2224,7 @@
           },
           {
             "body": {
-              "id": 1047,
+              "id": 1073,
               "nodeType": "Block",
               "src": "856:261:6",
               "statements": [
@@ -2238,18 +2238,18 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1039,
+                        "id": 1065,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 1035,
+                          "id": 1061,
                           "name": "_fraction",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1031,
+                          "referencedDeclaration": 1057,
                           "src": "933:9:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -2265,32 +2265,32 @@
                             "argumentTypes": [],
                             "expression": {
                               "argumentTypes": null,
-                              "id": 1036,
+                              "id": 1062,
                               "name": "ConstantsLib",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 998,
+                              "referencedDeclaration": 1024,
                               "src": "946:12:6",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$998_$",
+                                "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$1024_$",
                                 "typeString": "type(library ConstantsLib)"
                               }
                             },
-                            "id": 1037,
+                            "id": 1063,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "PARTS_PER",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 997,
+                            "referencedDeclaration": 1023,
                             "src": "946:22:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
                               "typeString": "function () pure returns (uint256)"
                             }
                           },
-                          "id": 1038,
+                          "id": 1064,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2313,7 +2313,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4672616374696f6e616c42616c616e6365416c6c6f6361746f723a206672616374696f6e2069732067726561746572207468616e20656e746972657479",
-                        "id": 1040,
+                        "id": 1066,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2340,21 +2340,21 @@
                           "typeString": "literal_string \"FractionalBalanceAllocator: fraction is greater than entirety\""
                         }
                       ],
-                      "id": 1034,
+                      "id": 1060,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4502,
-                        4503
+                        4528,
+                        4529
                       ],
-                      "referencedDeclaration": 4503,
+                      "referencedDeclaration": 4529,
                       "src": "925:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1041,
+                    "id": 1067,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2368,25 +2368,25 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1042,
+                  "id": 1068,
                   "nodeType": "ExpressionStatement",
                   "src": "925:123:6"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1045,
+                    "id": 1071,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1043,
+                      "id": 1069,
                       "name": "fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1027,
+                      "referencedDeclaration": 1053,
                       "src": "1090:8:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2397,11 +2397,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1044,
+                      "id": 1070,
                       "name": "_fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1031,
+                      "referencedDeclaration": 1057,
                       "src": "1101:9:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2414,29 +2414,29 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1046,
+                  "id": 1072,
                   "nodeType": "ExpressionStatement",
                   "src": "1090:20:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 1048,
+            "id": 1074,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1032,
+              "id": 1058,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1031,
+                  "id": 1057,
                   "name": "_fraction",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1048,
+                  "scope": 1074,
                   "src": "822:17:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2445,7 +2445,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1030,
+                    "id": 1056,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "822:7:6",
@@ -2461,12 +2461,12 @@
               "src": "821:19:6"
             },
             "returnParameters": {
-              "id": 1033,
+              "id": 1059,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "856:0:6"
             },
-            "scope": 1128,
+            "scope": 1154,
             "src": "810:307:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2474,7 +2474,7 @@
           },
           {
             "body": {
-              "id": 1057,
+              "id": 1083,
               "nodeType": "Block",
               "src": "1148:85:6",
               "statements": [
@@ -2484,7 +2484,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1052,
+                        "id": 1078,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2495,11 +2495,11 @@
                         "src": "1166:7:6",
                         "subExpression": {
                           "argumentTypes": null,
-                          "id": 1051,
+                          "id": 1077,
                           "name": "frozen",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1029,
+                          "referencedDeclaration": 1055,
                           "src": "1167:6:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
@@ -2514,7 +2514,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4672616374696f6e616c42616c616e6365416c6c6f6361746f723a2069732066726f7a656e",
-                        "id": 1053,
+                        "id": 1079,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2541,21 +2541,21 @@
                           "typeString": "literal_string \"FractionalBalanceAllocator: is frozen\""
                         }
                       ],
-                      "id": 1050,
+                      "id": 1076,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4502,
-                        4503
+                        4528,
+                        4529
                       ],
-                      "referencedDeclaration": 4503,
+                      "referencedDeclaration": 4529,
                       "src": "1158:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1054,
+                    "id": 1080,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2569,23 +2569,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1055,
+                  "id": 1081,
                   "nodeType": "ExpressionStatement",
                   "src": "1158:57:6"
                 },
                 {
-                  "id": 1056,
+                  "id": 1082,
                   "nodeType": "PlaceholderStatement",
                   "src": "1225:1:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 1058,
+            "id": 1084,
             "name": "onlyNotFrozen",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 1049,
+              "id": 1075,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1145:2:6"
@@ -2595,25 +2595,25 @@
           },
           {
             "body": {
-              "id": 1071,
+              "id": 1097,
               "nodeType": "Block",
               "src": "1397:107:6",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1066,
+                    "id": 1092,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1064,
+                      "id": 1090,
                       "name": "frozen",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1029,
+                      "referencedDeclaration": 1055,
                       "src": "1438:6:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -2625,7 +2625,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 1065,
+                      "id": 1091,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2646,7 +2646,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 1067,
+                  "id": 1093,
                   "nodeType": "ExpressionStatement",
                   "src": "1438:13:6"
                 },
@@ -2656,18 +2656,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 1068,
+                      "id": 1094,
                       "name": "Frozen",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1021,
+                      "referencedDeclaration": 1047,
                       "src": "1489:6:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$__$returns$__$",
                         "typeString": "function ()"
                       }
                     },
-                    "id": 1069,
+                    "id": 1095,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2681,14 +2681,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1070,
+                  "id": 1096,
                   "nodeType": "EmitStatement",
                   "src": "1484:13:6"
                 }
               ]
             },
             "documentation": "@notice Freeze updates this allocator\n @dev This operation can not be undone",
-            "id": 1072,
+            "id": 1098,
             "implemented": true,
             "kind": "function",
             "modifiers": [
@@ -2696,11 +2696,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 1061,
+                    "id": 1087,
                     "name": "OWNER_ROLE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2056,
+                    "referencedDeclaration": 2082,
                     "src": "1381:10:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory",
@@ -2708,14 +2708,14 @@
                     }
                   }
                 ],
-                "id": 1062,
+                "id": 1088,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1060,
+                  "id": 1086,
                   "name": "onlyRoleAccessor",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2096,
+                  "referencedDeclaration": 2122,
                   "src": "1364:16:6",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_string_memory_ptr_$",
@@ -2729,18 +2729,18 @@
             "name": "freeze",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1059,
+              "id": 1085,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1346:2:6"
             },
             "returnParameters": {
-              "id": 1063,
+              "id": 1089,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1397:0:6"
             },
-            "scope": 1128,
+            "scope": 1154,
             "src": "1331:173:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2748,7 +2748,7 @@
           },
           {
             "body": {
-              "id": 1099,
+              "id": 1125,
               "nodeType": "Block",
               "src": "1697:317:6",
               "statements": [
@@ -2762,18 +2762,18 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1087,
+                        "id": 1113,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 1083,
+                          "id": 1109,
                           "name": "_fraction",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1074,
+                          "referencedDeclaration": 1100,
                           "src": "1774:9:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -2789,32 +2789,32 @@
                             "argumentTypes": [],
                             "expression": {
                               "argumentTypes": null,
-                              "id": 1084,
+                              "id": 1110,
                               "name": "ConstantsLib",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 998,
+                              "referencedDeclaration": 1024,
                               "src": "1787:12:6",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$998_$",
+                                "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$1024_$",
                                 "typeString": "type(library ConstantsLib)"
                               }
                             },
-                            "id": 1085,
+                            "id": 1111,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "PARTS_PER",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 997,
+                            "referencedDeclaration": 1023,
                             "src": "1787:22:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
                               "typeString": "function () pure returns (uint256)"
                             }
                           },
-                          "id": 1086,
+                          "id": 1112,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2837,7 +2837,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4672616374696f6e616c42616c616e6365416c6c6f6361746f723a206672616374696f6e2069732067726561746572207468616e20656e746972657479",
-                        "id": 1088,
+                        "id": 1114,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2864,21 +2864,21 @@
                           "typeString": "literal_string \"FractionalBalanceAllocator: fraction is greater than entirety\""
                         }
                       ],
-                      "id": 1082,
+                      "id": 1108,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4502,
-                        4503
+                        4528,
+                        4529
                       ],
-                      "referencedDeclaration": 4503,
+                      "referencedDeclaration": 4529,
                       "src": "1766:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1089,
+                    "id": 1115,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2892,25 +2892,25 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1090,
+                  "id": 1116,
                   "nodeType": "ExpressionStatement",
                   "src": "1766:123:6"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1093,
+                    "id": 1119,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1091,
+                      "id": 1117,
                       "name": "fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1027,
+                      "referencedDeclaration": 1053,
                       "src": "1928:8:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2921,11 +2921,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1092,
+                      "id": 1118,
                       "name": "_fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1074,
+                      "referencedDeclaration": 1100,
                       "src": "1939:9:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2938,7 +2938,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1094,
+                  "id": 1120,
                   "nodeType": "ExpressionStatement",
                   "src": "1928:20:6"
                 },
@@ -2948,11 +2948,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1096,
+                        "id": 1122,
                         "name": "fraction",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1027,
+                        "referencedDeclaration": 1053,
                         "src": "1998:8:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2967,18 +2967,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 1095,
+                      "id": 1121,
                       "name": "FractionSet",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1025,
+                      "referencedDeclaration": 1051,
                       "src": "1986:11:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 1097,
+                    "id": 1123,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2992,14 +2992,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1098,
+                  "id": 1124,
                   "nodeType": "EmitStatement",
                   "src": "1981:26:6"
                 }
               ]
             },
             "documentation": "@notice Set the fraction\n @param _fraction The fraction to be set",
-            "id": 1100,
+            "id": 1126,
             "implemented": true,
             "kind": "function",
             "modifiers": [
@@ -3007,11 +3007,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 1077,
+                    "id": 1103,
                     "name": "OWNER_ROLE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2056,
+                    "referencedDeclaration": 2082,
                     "src": "1663:10:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory",
@@ -3019,14 +3019,14 @@
                     }
                   }
                 ],
-                "id": 1078,
+                "id": 1104,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1076,
+                  "id": 1102,
                   "name": "onlyRoleAccessor",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2096,
+                  "referencedDeclaration": 2122,
                   "src": "1646:16:6",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_string_memory_ptr_$",
@@ -3038,14 +3038,14 @@
               },
               {
                 "arguments": null,
-                "id": 1080,
+                "id": 1106,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1079,
+                  "id": 1105,
                   "name": "onlyNotFrozen",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1058,
+                  "referencedDeclaration": 1084,
                   "src": "1679:13:6",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -3059,15 +3059,15 @@
             "name": "setFraction",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1075,
+              "id": 1101,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1074,
+                  "id": 1100,
                   "name": "_fraction",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1100,
+                  "scope": 1126,
                   "src": "1612:17:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3076,7 +3076,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1073,
+                    "id": 1099,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1612:7:6",
@@ -3092,12 +3092,12 @@
               "src": "1611:19:6"
             },
             "returnParameters": {
-              "id": 1081,
+              "id": 1107,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1697:0:6"
             },
-            "scope": 1128,
+            "scope": 1154,
             "src": "1591:423:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3105,7 +3105,7 @@
           },
           {
             "body": {
-              "id": 1126,
+              "id": 1152,
               "nodeType": "Block",
               "src": "2151:156:6",
               "statements": [
@@ -3120,32 +3120,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 1121,
+                            "id": 1147,
                             "name": "ConstantsLib",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 998,
+                            "referencedDeclaration": 1024,
                             "src": "2275:12:6",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$998_$",
+                              "typeIdentifier": "t_type$_t_contract$_ConstantsLib_$1024_$",
                               "typeString": "type(library ConstantsLib)"
                             }
                           },
-                          "id": 1122,
+                          "id": 1148,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "PARTS_PER",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 997,
+                          "referencedDeclaration": 1023,
                           "src": "2275:22:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
                             "typeString": "function () pure returns (uint256)"
                           }
                         },
-                        "id": 1123,
+                        "id": 1149,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3172,11 +3172,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 1118,
+                            "id": 1144,
                             "name": "fraction",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1027,
+                            "referencedDeclaration": 1053,
                             "src": "2252:8:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3201,18 +3201,18 @@
                                     "argumentTypes": null,
                                     "expression": {
                                       "argumentTypes": null,
-                                      "id": 1113,
+                                      "id": 1139,
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 4499,
+                                      "referencedDeclaration": 4525,
                                       "src": "2226:3:6",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
                                         "typeString": "msg"
                                       }
                                     },
-                                    "id": 1114,
+                                    "id": 1140,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
@@ -3234,7 +3234,7 @@
                                       "typeString": "address payable"
                                     }
                                   ],
-                                  "id": 1112,
+                                  "id": 1138,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -3247,7 +3247,7 @@
                                   },
                                   "typeName": "address"
                                 },
-                                "id": 1115,
+                                "id": 1141,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -3281,18 +3281,18 @@
                                         "argumentTypes": null,
                                         "expression": {
                                           "argumentTypes": null,
-                                          "id": 1106,
+                                          "id": 1132,
                                           "name": "msg",
                                           "nodeType": "Identifier",
                                           "overloadedDeclarations": [],
-                                          "referencedDeclaration": 4499,
+                                          "referencedDeclaration": 4525,
                                           "src": "2179:3:6",
                                           "typeDescriptions": {
                                             "typeIdentifier": "t_magic_message",
                                             "typeString": "msg"
                                           }
                                         },
-                                        "id": 1107,
+                                        "id": 1133,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
@@ -3314,18 +3314,18 @@
                                           "typeString": "address payable"
                                         }
                                       ],
-                                      "id": 1105,
+                                      "id": 1131,
                                       "name": "BountyFund",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 987,
+                                      "referencedDeclaration": 1013,
                                       "src": "2168:10:6",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_type$_t_contract$_BountyFund_$987_$",
+                                        "typeIdentifier": "t_type$_t_contract$_BountyFund_$1013_$",
                                         "typeString": "type(contract BountyFund)"
                                       }
                                     },
-                                    "id": 1108,
+                                    "id": 1134,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
@@ -3335,25 +3335,25 @@
                                     "nodeType": "FunctionCall",
                                     "src": "2168:22:6",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_BountyFund_$987",
+                                      "typeIdentifier": "t_contract$_BountyFund_$1013",
                                       "typeString": "contract BountyFund"
                                     }
                                   },
-                                  "id": 1109,
+                                  "id": 1135,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "memberName": "token",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 809,
+                                  "referencedDeclaration": 835,
                                   "src": "2168:28:6",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ERC20_$4357_$",
+                                    "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ERC20_$4383_$",
                                     "typeString": "function () view external returns (contract ERC20)"
                                   }
                                 },
-                                "id": 1110,
+                                "id": 1136,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -3363,25 +3363,25 @@
                                 "nodeType": "FunctionCall",
                                 "src": "2168:30:6",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_ERC20_$4357",
+                                  "typeIdentifier": "t_contract$_ERC20_$4383",
                                   "typeString": "contract ERC20"
                                 }
                               },
-                              "id": 1111,
+                              "id": 1137,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "balanceOf",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 4001,
+                              "referencedDeclaration": 4027,
                               "src": "2168:49:6",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                                 "typeString": "function (address) view external returns (uint256)"
                               }
                             },
-                            "id": 1116,
+                            "id": 1142,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -3395,21 +3395,21 @@
                               "typeString": "uint256"
                             }
                           },
-                          "id": 1117,
+                          "id": 1143,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "mul",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 3913,
+                          "referencedDeclaration": 3939,
                           "src": "2168:83:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
                             "typeString": "function (uint256,uint256) pure returns (uint256)"
                           }
                         },
-                        "id": 1119,
+                        "id": 1145,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3423,21 +3423,21 @@
                           "typeString": "uint256"
                         }
                       },
-                      "id": 1120,
+                      "id": 1146,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "div",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3938,
+                      "referencedDeclaration": 3964,
                       "src": "2168:106:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
                         "typeString": "function (uint256,uint256) pure returns (uint256)"
                       }
                     },
-                    "id": 1124,
+                    "id": 1150,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3451,36 +3451,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 1104,
-                  "id": 1125,
+                  "functionReturnParameters": 1130,
+                  "id": 1151,
                   "nodeType": "Return",
                   "src": "2161:139:6"
                 }
               ]
             },
             "documentation": "@notice Return the defined allocation from the allocator",
-            "id": 1127,
+            "id": 1153,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "allocate",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1101,
+              "id": 1127,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2102:2:6"
             },
             "returnParameters": {
-              "id": 1104,
+              "id": 1130,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1103,
+                  "id": 1129,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1127,
+                  "scope": 1153,
                   "src": "2138:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3489,7 +3489,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1102,
+                    "id": 1128,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2138:7:6",
@@ -3504,14 +3504,14 @@
               ],
               "src": "2137:9:6"
             },
-            "scope": 1128,
+            "scope": 1154,
             "src": "2085:222:6",
             "stateMutability": "view",
             "superFunction": 305,
             "visibility": "public"
           }
         ],
-        "scope": 1129,
+        "scope": 1155,
         "src": "597:1712:6"
       }
     ],
@@ -3601,14 +3601,14 @@
         }
       },
       "links": {
-        "ConstantsLib": "0xBd1854a8aE9D26E38Ce7d81a4E6D356c9F4D2cef"
+        "ConstantsLib": "0x44d6A47F5f62C30aFbD23fb31d24c07331C70b1b"
       },
-      "address": "0xeF641B01C66fa8EA125604e319fBa890058B06e7",
-      "transactionHash": "0x8f350cfc341c499867baf7ab33902ea0103aea674997ec6a248fe91845f7c3ae"
+      "address": "0x8e8cF1d6CF8BFD5992fBa2428cA9e17A644140e6",
+      "transactionHash": "0x2f5cd365e32ca9c67358dff7c1952958144a50ed1b5a756379b2321a70825c0f"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-10-03T22:53:22.146Z",
+  "updatedAt": "2019-10-06T10:19:29.295Z",
   "devdoc": {
     "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
     "methods": {
