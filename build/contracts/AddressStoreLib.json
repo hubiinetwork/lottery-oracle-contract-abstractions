@@ -2259,7 +2259,7 @@
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4512,
+                            "referencedDeclaration": 4528,
                             "src": "1518:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_abi",
@@ -2306,7 +2306,7 @@
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4519,
+                      "referencedDeclaration": 4535,
                       "src": "1508:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -4672,7 +4672,7 @@
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4512,
+                            "referencedDeclaration": 4528,
                             "src": "1518:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_abi",
@@ -4719,7 +4719,7 @@
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4519,
+                      "referencedDeclaration": 4535,
                       "src": "1508:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -4842,12 +4842,12 @@
     "3": {
       "events": {},
       "links": {},
-      "address": "0xDF893dBA801BEEbE76E6cFFea692BF8cF0716411",
-      "transactionHash": "0xeb7a810fc1342541711cf0b895429331cfe278c72926135f2847ab984e67ce7f"
+      "address": "0x99F8f469cBa89Af3B22E6f349cCc1e4e8c7591f8",
+      "transactionHash": "0xd1fad31099f836969ff1fdc7a276320ec863aa20aebe5c70647720eb7c0e3c51"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-10-06T10:11:25.318Z",
+  "updatedAt": "2019-10-07T22:13:51.595Z",
   "devdoc": {
     "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
     "methods": {},

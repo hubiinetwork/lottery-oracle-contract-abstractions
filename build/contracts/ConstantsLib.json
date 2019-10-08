@@ -28,14 +28,14 @@
     "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol",
     "exportedSymbols": {
       "ConstantsLib": [
-        1024
+        1040
       ]
     },
-    "id": 1025,
+    "id": 1041,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1015,
+        "id": 1031,
         "literals": [
           "solidity",
           "^",
@@ -51,16 +51,16 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1024,
+        "id": 1040,
         "linearizedBaseContracts": [
-          1024
+          1040
         ],
         "name": "ConstantsLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1022,
+              "id": 1038,
               "nodeType": "Block",
               "src": "258:28:5",
               "statements": [
@@ -68,7 +68,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "31653138",
-                    "id": 1020,
+                    "id": 1036,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -83,36 +83,36 @@
                     },
                     "value": "1e18"
                   },
-                  "functionReturnParameters": 1019,
-                  "id": 1021,
+                  "functionReturnParameters": 1035,
+                  "id": 1037,
                   "nodeType": "Return",
                   "src": "268:11:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1023,
+            "id": 1039,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "PARTS_PER",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1016,
+              "id": 1032,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "209:2:5"
             },
             "returnParameters": {
-              "id": 1019,
+              "id": 1035,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1018,
+                  "id": 1034,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1023,
+                  "scope": 1039,
                   "src": "245:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -121,7 +121,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1017,
+                    "id": 1033,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "245:7:5",
@@ -136,14 +136,14 @@
               ],
               "src": "244:9:5"
             },
-            "scope": 1024,
+            "scope": 1040,
             "src": "191:95:5",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1025,
+        "scope": 1041,
         "src": "91:197:5"
       }
     ],
@@ -153,14 +153,14 @@
     "absolutePath": "/opt/buildagent/work/9988d0feca52d9d9/contracts/ConstantsLib.sol",
     "exportedSymbols": {
       "ConstantsLib": [
-        1024
+        1040
       ]
     },
-    "id": 1025,
+    "id": 1041,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1015,
+        "id": 1031,
         "literals": [
           "solidity",
           "^",
@@ -176,16 +176,16 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1024,
+        "id": 1040,
         "linearizedBaseContracts": [
-          1024
+          1040
         ],
         "name": "ConstantsLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1022,
+              "id": 1038,
               "nodeType": "Block",
               "src": "258:28:5",
               "statements": [
@@ -193,7 +193,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "31653138",
-                    "id": 1020,
+                    "id": 1036,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -208,36 +208,36 @@
                     },
                     "value": "1e18"
                   },
-                  "functionReturnParameters": 1019,
-                  "id": 1021,
+                  "functionReturnParameters": 1035,
+                  "id": 1037,
                   "nodeType": "Return",
                   "src": "268:11:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1023,
+            "id": 1039,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "PARTS_PER",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1016,
+              "id": 1032,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "209:2:5"
             },
             "returnParameters": {
-              "id": 1019,
+              "id": 1035,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1018,
+                  "id": 1034,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1023,
+                  "scope": 1039,
                   "src": "245:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -246,7 +246,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1017,
+                    "id": 1033,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "245:7:5",
@@ -261,14 +261,14 @@
               ],
               "src": "244:9:5"
             },
-            "scope": 1024,
+            "scope": 1040,
             "src": "191:95:5",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1025,
+        "scope": 1041,
         "src": "91:197:5"
       }
     ],
@@ -282,12 +282,12 @@
     "3": {
       "events": {},
       "links": {},
-      "address": "0x44d6A47F5f62C30aFbD23fb31d24c07331C70b1b",
-      "transactionHash": "0x1ccd317c0102af28271fb1655850145d74e3fb0f1262a99558fb7ebd68a772db"
+      "address": "0x93830c6251690A6b6343663Bf212D05332cCa604",
+      "transactionHash": "0xe80394a7c142e3ba1a0d2d4ac0d281c39bc6327f48a09dcc5ffb57a6d32929aa"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-10-06T10:19:29.292Z",
+  "updatedAt": "2019-10-07T22:19:49.231Z",
   "devdoc": {
     "methods": {}
   },
